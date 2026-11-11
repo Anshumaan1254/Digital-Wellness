@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { PageHeader, Section } from "@/components/site/PageHeader";
 import { ToolFinder } from "@/components/finder/ToolFinder";
 
@@ -15,7 +16,9 @@ export default function FindPage() {
         watch out for — so the choice stays yours.
       </PageHeader>
       <Section>
-        <ToolFinder />
+        <Suspense fallback={<p className="text-muted-foreground">Loading the tool finder…</p>}>
+          <ToolFinder />
+        </Suspense>
       </Section>
     </>
   );

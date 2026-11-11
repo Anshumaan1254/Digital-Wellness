@@ -29,7 +29,12 @@
     "apple-screen-time": {
       "shortName": "Apple Screen Time & Focus",
       "category": "phone-bedtime",
-      "goals": ["screen-time", "notifications", "sleep", "focus"],
+      "goals": [
+        "screen-time",
+        "notifications",
+        "sleep",
+        "focus"
+      ],
       "strictness": "adjustable",
       "costTone": "free",
       "costShort": "Built in · no extra cost",
@@ -38,15 +43,26 @@
       "privacyShort": "No extra app. An Apple Account is only needed to sync across devices; Screen Time data is end-to-end encrypted in iCloud.",
       "accessibilityShort": "Lives in Settings, so it works with VoiceOver, Larger Text and other built-in Apple accessibility features. No Screen Time-specific accessibility statement.",
       "install": [
-        { "label": "Apple's guide: set up Screen Time on iPhone", "url": "https://support.apple.com/guide/iphone/set-up-screen-time-for-yourself-iphbfa595995/ios" },
-        { "label": "Apple's guide: set up a Sleep Focus", "url": "https://support.apple.com/en-us/guide/iphone/iphaf56dceb4/ios" }
+        {
+          "label": "Apple's guide: set up Screen Time on iPhone",
+          "url": "https://support.apple.com/guide/iphone/set-up-screen-time-for-yourself-iphbfa595995/ios"
+        },
+        {
+          "label": "Apple's guide: set up a Sleep Focus",
+          "url": "https://support.apple.com/en-us/guide/iphone/iphaf56dceb4/ios"
+        }
       ],
       "guide": "phone-wind-down"
     },
     "google-digital-wellbeing": {
       "shortName": "Google Digital Wellbeing",
       "category": "phone-bedtime",
-      "goals": ["screen-time", "notifications", "sleep", "focus"],
+      "goals": [
+        "screen-time",
+        "notifications",
+        "sleep",
+        "focus"
+      ],
       "strictness": "gentle",
       "costTone": "free",
       "costShort": "Built in · no extra cost",
@@ -55,15 +71,23 @@
       "privacyShort": "No account needed. Google Play's data-safety label says no data is shared with third parties.",
       "accessibilityShort": "Part of Android Settings, so it works with TalkBack; Bedtime mode adds grayscale and dark screen options.",
       "install": [
-        { "label": "Google's help page for Digital Wellbeing", "url": "https://support.google.com/android/answer/9346420" },
-        { "label": "Digital Wellbeing on Google Play", "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing" }
+        {
+          "label": "Google's help page for Digital Wellbeing",
+          "url": "https://support.google.com/android/answer/9346420"
+        },
+        {
+          "label": "Digital Wellbeing on Google Play (only if it isn't already in your Settings)",
+          "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing"
+        }
       ],
       "guide": "phone-wind-down"
     },
     "f-lux": {
       "shortName": "f.lux",
       "category": "phone-bedtime",
-      "goals": ["sleep"],
+      "goals": [
+        "sleep"
+      ],
       "strictness": "gentle",
       "costTone": "free",
       "costShort": "Free for personal use (not open source)",
@@ -71,13 +95,21 @@
       "bestFor": "Late-night laptop work: it warms your screen colour after sunset so the evening feels less like midday.",
       "privacyShort": "No account. Looks up your location once to work out sunset times and checks for updates daily.",
       "accessibilityShort": "No accessibility statement found. Windows and macOS also have built-in Night Light / Night Shift as alternatives.",
-      "install": [{ "label": "Download f.lux from the official site", "url": "https://justgetflux.com/" }],
+      "install": [
+        {
+          "label": "Download f.lux from the official site",
+          "url": "https://justgetflux.com/"
+        }
+      ],
       "guide": null
     },
     "forest": {
       "shortName": "Forest",
       "category": "focus",
-      "goals": ["focus", "screen-time"],
+      "goals": [
+        "focus",
+        "screen-time"
+      ],
       "strictness": "gentle",
       "costTone": "free-core",
       "costShort": "Free with ads · optional Forest Plus (US$5.99/month or US$35.99/year on the US App Store)",
@@ -86,16 +118,29 @@
       "privacyShort": "Account optional. The App Store privacy label lists contact info and usage data as used for tracking.",
       "accessibilityShort": "The developer has not stated which accessibility features the app supports.",
       "install": [
-        { "label": "Forest on the App Store", "url": "https://apps.apple.com/us/app/forest-focus-for-productivity/id866450515" },
-        { "label": "Forest on Google Play", "url": "https://play.google.com/store/apps/details?id=cc.forestapp" },
-        { "label": "Forest for Chrome", "url": "https://chromewebstore.google.com/detail/kjacjjdnoddnpbbcjilcajfhhbdhkpgk" }
+        {
+          "label": "Forest on the App Store",
+          "url": "https://apps.apple.com/us/app/forest-focus-for-productivity/id866450515"
+        },
+        {
+          "label": "Forest on Google Play",
+          "url": "https://play.google.com/store/apps/details?id=cc.forestapp"
+        },
+        {
+          "label": "Forest for Chrome",
+          "url": "https://chromewebstore.google.com/detail/kjacjjdnoddnpbbcjilcajfhhbdhkpgk"
+        }
       ],
       "guide": null
     },
     "freedom": {
       "shortName": "Freedom",
       "category": "focus",
-      "goals": ["focus", "block-sites", "screen-time"],
+      "goals": [
+        "focus",
+        "block-sites",
+        "screen-time"
+      ],
       "strictness": "strict",
       "costTone": "limited",
       "costShort": "Limited free plan (2-hour sessions, no scheduling or Locked Mode) · Premium US$8.99/month or US$3.33/month billed yearly",
@@ -104,15 +149,24 @@
       "privacyShort": "Account required (name, email, password). Says it doesn't track browsing, but its App Store label lists identifiers used for tracking.",
       "accessibilityShort": "The developer has not stated which accessibility features the app supports.",
       "install": [
-        { "label": "Freedom downloads for every device", "url": "https://freedom.to/downloads" },
-        { "label": "Freedom plans and prices", "url": "https://freedom.to/pricing" }
+        {
+          "label": "Freedom downloads for every device",
+          "url": "https://freedom.to/downloads"
+        },
+        {
+          "label": "Freedom plans and prices",
+          "url": "https://freedom.to/pricing"
+        }
       ],
       "guide": null
     },
     "cold-turkey-blocker": {
       "shortName": "Cold Turkey Blocker",
       "category": "focus",
-      "goals": ["focus", "block-sites"],
+      "goals": [
+        "focus",
+        "block-sites"
+      ],
       "strictness": "strict",
       "costTone": "limited",
       "costShort": "Limited free version · Pro US$45 one-time for scheduled blocks, app blocking and locking",
@@ -121,15 +175,23 @@
       "privacyShort": "No account for the free version. Does not collect your web history or which sites you blocked.",
       "accessibilityShort": "No accessibility statement found.",
       "install": [
-        { "label": "Download Cold Turkey Blocker", "url": "https://getcoldturkey.com/download/" },
-        { "label": "Cold Turkey Free vs Pro", "url": "https://getcoldturkey.com/pricing/" }
+        {
+          "label": "Download Cold Turkey Blocker",
+          "url": "https://getcoldturkey.com/download/"
+        },
+        {
+          "label": "Cold Turkey Free vs Pro",
+          "url": "https://getcoldturkey.com/pricing/"
+        }
       ],
       "guide": null
     },
     "super-productivity": {
       "shortName": "Super Productivity",
       "category": "focus",
-      "goals": ["focus"],
+      "goals": [
+        "focus"
+      ],
       "strictness": "gentle",
       "costTone": "free",
       "costShort": "Free & open source (MIT licence)",
@@ -138,15 +200,24 @@
       "privacyShort": "No account and no in-app analytics. Tasks stay on your device unless you turn on sync.",
       "accessibilityShort": "Keyboard shortcuts and selectable themes; recent releases improved accessible names and keyboard control. No formal statement.",
       "install": [
-        { "label": "Download Super Productivity", "url": "https://super-productivity.com/download/" },
-        { "label": "Try the web version", "url": "https://app.super-productivity.com/" }
+        {
+          "label": "Download Super Productivity",
+          "url": "https://super-productivity.com/download/"
+        },
+        {
+          "label": "Try the web version",
+          "url": "https://app.super-productivity.com/"
+        }
       ],
       "guide": null
     },
     "leechblock-ng": {
       "shortName": "LeechBlock NG",
       "category": "browser",
-      "goals": ["block-sites", "focus"],
+      "goals": [
+        "block-sites",
+        "focus"
+      ],
       "strictness": "adjustable",
       "costTone": "free",
       "costShort": "Free & open source (MPL-2.0)",
@@ -155,16 +226,28 @@
       "privacyShort": "No account. The developer states it collects no personal information.",
       "accessibilityShort": "Plain HTML options page that works with the keyboard; no formal accessibility statement.",
       "install": [
-        { "label": "LeechBlock NG for Firefox", "url": "https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/" },
-        { "label": "LeechBlock NG for Chrome", "url": "https://chromewebstore.google.com/detail/leechblock-ng/blaaajhemilngeeffpbfkdjjoefldkok" },
-        { "label": "LeechBlock NG for Edge", "url": "https://microsoftedge.microsoft.com/addons/detail/leechblock-ng/hnncfhodpmpjchmmcnimoimkcojdmfhl" }
+        {
+          "label": "LeechBlock NG for Firefox",
+          "url": "https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/"
+        },
+        {
+          "label": "LeechBlock NG for Chrome",
+          "url": "https://chromewebstore.google.com/detail/leechblock-ng/blaaajhemilngeeffpbfkdjjoefldkok"
+        },
+        {
+          "label": "LeechBlock NG for Edge",
+          "url": "https://microsoftedge.microsoft.com/addons/detail/leechblock-ng/hnncfhodpmpjchmmcnimoimkcojdmfhl"
+        }
       ],
       "guide": "block-distracting-sites"
     },
     "unhook": {
       "shortName": "Unhook",
       "category": "browser",
-      "goals": ["block-sites", "focus"],
+      "goals": [
+        "block-sites",
+        "focus"
+      ],
       "strictness": "gentle",
       "costTone": "free",
       "costShort": "Free (not open source)",
@@ -173,33 +256,52 @@
       "privacyShort": "No account. Settings stay in your browser and nothing is sent off your computer.",
       "accessibilityShort": "No accessibility statement found.",
       "install": [
-        { "label": "Unhook for Chrome", "url": "https://chromewebstore.google.com/detail/khncfooichmfjbepaaaebmommgaepoid" },
-        { "label": "Unhook for Firefox", "url": "https://addons.mozilla.org/firefox/addon/youtube-recommended-videos/" },
-        { "label": "Unhook for Edge", "url": "https://microsoftedge.microsoft.com/addons/detail/unhook-remove-youtube-r/hebpjnnclppdnfghdnmhgdljmjpfhggk" }
+        {
+          "label": "Unhook for Chrome",
+          "url": "https://chromewebstore.google.com/detail/khncfooichmfjbepaaaebmommgaepoid"
+        },
+        {
+          "label": "Unhook for Firefox",
+          "url": "https://addons.mozilla.org/firefox/addon/youtube-recommended-videos/"
+        },
+        {
+          "label": "Unhook for Edge",
+          "url": "https://microsoftedge.microsoft.com/addons/detail/unhook-remove-youtube-r/hebpjnnclppdnfghdnmhgdljmjpfhggk"
+        }
       ],
       "guide": null
     },
     "bitwarden": {
       "shortName": "Bitwarden",
       "category": "privacy",
-      "goals": ["security"],
+      "goals": [
+        "security"
+      ],
       "strictness": null,
       "costTone": "free-core",
       "costShort": "Free plan covers the essentials · Premium US$19.80/year adds 2FA codes and vault reports",
       "account": "required",
       "bestFor": "Creating and remembering a different strong password for every account, on all your devices.",
-      "privacyShort": "Free account required. Your vault is end-to-end encrypted, so Bitwarden cannot read it.",
+      "privacyShort": "Free account required. Your vault is end-to-end encrypted, and Bitwarden lists \"zero-knowledge encryption\", so it cannot read your passwords.",
       "accessibilityShort": "Bitwarden aims to meet WCAG AA and supports keyboard and screen-reader use; no formal conformance report found.",
       "install": [
-        { "label": "Bitwarden downloads for every device", "url": "https://bitwarden.com/download/" },
-        { "label": "Bitwarden free password generator", "url": "https://bitwarden.com/password-generator/" }
+        {
+          "label": "Bitwarden downloads for every device",
+          "url": "https://bitwarden.com/download/"
+        },
+        {
+          "label": "Bitwarden free password generator",
+          "url": "https://bitwarden.com/password-generator/"
+        }
       ],
       "guide": "privacy-checkup"
     },
     "privacy-badger": {
       "shortName": "Privacy Badger",
       "category": "privacy",
-      "goals": ["privacy"],
+      "goals": [
+        "privacy"
+      ],
       "strictness": null,
       "costTone": "free",
       "costShort": "Free & open source (GPL-3.0+) from the nonprofit EFF",
@@ -208,16 +310,31 @@
       "privacyShort": "No account. Never shares your browsing data unless you choose to send a broken-site report.",
       "accessibilityShort": "No accessibility statement found.",
       "install": [
-        { "label": "Privacy Badger for Firefox", "url": "https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/" },
-        { "label": "Privacy Badger for Chrome", "url": "https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp" },
-        { "label": "Privacy Badger for Edge", "url": "https://microsoftedge.microsoft.com/addons/detail/mkejgcgkdlddbggjhhflekkondicpnop" }
+        {
+          "label": "Privacy Badger for Firefox",
+          "url": "https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/"
+        },
+        {
+          "label": "Privacy Badger for Chrome",
+          "url": "https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp"
+        },
+        {
+          "label": "Privacy Badger for Edge",
+          "url": "https://microsoftedge.microsoft.com/addons/detail/mkejgcgkdlddbggjhhflekkondicpnop"
+        },
+        {
+          "label": "Privacy Badger for Safari on Mac",
+          "url": "https://apps.apple.com/app/privacy-badger/id6761143693"
+        }
       ],
       "guide": "privacy-checkup"
     },
     "have-i-been-pwned": {
       "shortName": "Have I Been Pwned",
       "category": "privacy",
-      "goals": ["security"],
+      "goals": [
+        "security"
+      ],
       "strictness": null,
       "costTone": "free",
       "costShort": "Free for personal checks and alerts · paid plans are only for businesses and developers",
@@ -226,8 +343,14 @@
       "privacyShort": "No account for a search, and searches are not stored. Server logs (which may include your IP) are kept up to 31 days.",
       "accessibilityShort": "No accessibility statement found.",
       "install": [
-        { "label": "Search Have I Been Pwned", "url": "https://haveibeenpwned.com/" },
-        { "label": "Sign up for free breach alerts", "url": "https://haveibeenpwned.com/NotifyMe" }
+        {
+          "label": "Search Have I Been Pwned",
+          "url": "https://haveibeenpwned.com/"
+        },
+        {
+          "label": "Sign up for free breach alerts",
+          "url": "https://haveibeenpwned.com/NotifyMe"
+        }
       ],
       "guide": "privacy-checkup"
     }

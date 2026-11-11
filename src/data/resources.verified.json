@@ -11,7 +11,11 @@
       "Communication Limits and Always Allowed: choose who can call or message you and which apps and contacts always work",
       "Focus modes, including Sleep Focus, plus Scheduled Summary to bundle notifications at set times"
     ],
-    "platforms": ["iOS", "iPadOS", "macOS"],
+    "platforms": [
+      "iOS",
+      "iPadOS",
+      "macOS"
+    ],
     "costModel": "built-in",
     "costDetail": "No separate price. It is part of iOS, iPadOS and macOS on Apple devices, and the Apple pages checked list no cost. The newest Screen Time features (Screen Time Schedules, Time Allowances, Share Across Devices) need iOS 27, iPadOS 27 or macOS 27 or later on all your devices. The basic Scheduled Summary for notifications is described with no device restriction. Apple Intelligence notification summaries and Priority Notifications need an Apple Intelligence-capable iPhone (iPhone 15 Pro or iPhone 16 or later) and are not available in all languages and regions.",
     "openSource": false,
@@ -106,7 +110,9 @@
       "Focus mode: pause chosen apps and their notifications, on a schedule or on demand",
       "Website time limits for sites visited in Chrome, and an optional App limits PIN"
     ],
-    "platforms": ["Android"],
+    "platforms": [
+      "Android"
+    ],
     "costModel": "built-in",
     "costDetail": "No price. It is reached from the phone's Settings app. Its Google Play listing (developer Google LLC) shows Install with no in-app purchases or ads listed. Google says it is available 'on some phones' and steps vary by device.",
     "openSource": false,
@@ -161,7 +167,13 @@
       "Plant Together group focus rooms with friends",
       "Real trees planted with partner Trees for the Future (planting with coins is a Plus feature, up to 5 trees)"
     ],
-    "platforms": ["iOS", "iPadOS", "Android", "Chrome", "Firefox"],
+    "platforms": [
+      "iOS",
+      "iPadOS",
+      "Android",
+      "Chrome",
+      "Firefox"
+    ],
     "costModel": "freemium",
     "costDetail": "Free to download on iOS ('Free · In-App Purchases') and Android ('Contains ads · In-app purchases'). The free tier includes the focus timer, Deep Focus app blocking, Time Guard for 1 app or site, focus tracking and Plant Together, and shows occasional ads (never during active focus sessions). The optional Forest Plus subscription (free trial available) adds a custom app allowlist, multi-app Time Guard, Focus Analytics, pausing sessions, all soundscapes, real-tree planting and no ads. Forest says 'Plus pricing varies by region and platform.' The US App Store lists 'Annual (Early Bird) $35.99' and 'Monthly (Early Bird) $5.99' (USD). Google Play shows in-app items at '$0.99 - $59.99 per item'. The old one-time Forest Pro purchase is no longer sold. The Chrome and Firefox extensions install at no cost. Core blocking is free, so essential features do not require payment.",
     "openSource": false,
@@ -228,7 +240,16 @@
       "Premium: scheduled and recurring sessions, and sessions planned for later in the day",
       "Premium: Locked Mode (can't quit a session) and sessions longer than 2 hours"
     ],
-    "platforms": ["macOS", "Windows", "iOS", "iPadOS", "Android", "ChromeOS", "Linux", "Chrome"],
+    "platforms": [
+      "macOS",
+      "Windows",
+      "iOS",
+      "iPadOS",
+      "Android",
+      "ChromeOS",
+      "Linux",
+      "Chrome"
+    ],
     "costModel": "freemium",
     "costDetail": "The Free plan (US$0) lets you block apps, websites or the whole internet on unlimited devices. Free accounts are limited to 'Start Now' sessions and cannot run sessions longer than 2 hours, recurring sessions, Start Later sessions or Locked Mode. Premium costs US$8.99/month billed monthly, or US$3.33/month on the yearly plan ('Yearly - Save 40%'; the page does not print the annual total), with 'Try It Free For 7 Days'. A one-time 'Forever' plan is US$99.50, shown as 50% off US$199. Prices are 'plus tax where applicable'. In-app prices on the iOS App Store differ: 'Freedom Yearly Subscription $39.99', 'Freedom Yearly $59.99', 'Freedom Monthly $12.99', 'Freedom Forever $199.00'. Scheduling and Locked Mode, which help you stick to limits, require payment.",
     "openSource": false,
@@ -273,7 +294,8 @@
     "unverified": [
       "The annual total for the web yearly plan (only '$3.33 / month' is shown)",
       "Which browsers other than Chrome the main Freedom extension supports ('Also available for other browsers', not named)",
-      "No official accessibility information"
+      "No official accessibility information",
+      "Freedom's price on Google Play (the official pages checked list web and iOS App Store prices only)"
     ]
   },
   {
@@ -288,7 +310,10 @@
       "Pro: application password and 'All locking features', which make blocks hard to stop",
       "Can block YouTube channels, keyword searches or the entire internet (the pricing page doesn't say whether these are Free or Pro)"
     ],
-    "platforms": ["Windows", "macOS"],
+    "platforms": [
+      "Windows",
+      "macOS"
+    ],
     "costModel": "freemium",
     "costDetail": "Blocker Free covers blocking websites, website exceptions, timed blocks and statistics, and includes a 7-day free trial of Pro. Blocker Pro is a one-time purchase ('Pay once, own forever') that covers all computers you personally use, with free lifetime updates, a 30-day money-back guarantee and 20% off for students on request. The price is not in the pricing page's HTML. The page loads it from Paddle (its merchant of record), which returned US$45.00 one-time (US) and ₹2,499 (India) on 2026-11-11. Blocking apps, scheduled blocks, breaks and allowances, application passwords and 'All locking features' require Pro.",
     "openSource": false,
@@ -359,7 +384,15 @@
       "Calendar timeboxing and GitHub, GitLab and Jira integrations",
       "Optional sync through SuperSync, WebDAV or Dropbox"
     ],
-    "platforms": ["Windows", "macOS", "Linux", "Android", "iOS", "iPadOS", "Web"],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux",
+      "Android",
+      "iOS",
+      "iPadOS",
+      "Web"
+    ],
     "costModel": "free-open-source",
     "costDetail": "100% free under the MIT licence. The pricing page says 'There are no premium app tiers, hidden app costs, or paid app features.' Development is supported by optional GitHub Sponsors donations. The optional SuperSync cloud sync service 'is currently provided free of charge', but its terms reserve the right to introduce fees in the future and require an account. WebDAV and Dropbox sync are alternatives.",
     "openSource": true,
@@ -424,7 +457,12 @@
       "Lockdown to block sites immediately for a set duration",
       "Optional password or random access code to protect the options page"
     ],
-    "platforms": ["Firefox", "Chrome", "Edge", "Android"],
+    "platforms": [
+      "Firefox",
+      "Chrome",
+      "Edge",
+      "Android"
+    ],
     "costModel": "free-open-source",
     "costDetail": "Free ('A Simple Free Productivity Tool'). Mozilla Add-ons lists no payment required and an optional PayPal contribution link. There is no paid tier. The source code is on GitHub under MPL-2.0. On Android it works through Firefox for Android (Mozilla Add-ons lists it as compatible).",
     "openSource": true,
@@ -493,7 +531,12 @@
       "Toggle each option from the extension popup",
       "Works on mobile YouTube (m.youtube.com) through Firefox for Android"
     ],
-    "platforms": ["Chrome", "Firefox", "Edge", "Android"],
+    "platforms": [
+      "Chrome",
+      "Firefox",
+      "Edge",
+      "Android"
+    ],
     "costModel": "free",
     "costDetail": "Free. No paid tier or premium version was found on unhook.app or the Chrome, Firefox or Edge listings. Donations are invited via PayPal ('If you find Unhook useful, please consider making a donation'). Mozilla Add-ons lists no payment required. It is free to use but not open source (Mozilla Add-ons licence: 'All Rights Reserved').",
     "openSource": false,
@@ -552,7 +595,11 @@
       "Settings for the type of lighting in your room",
       "Optional control of compatible home lighting (personal edition)"
     ],
-    "platforms": ["Windows", "macOS", "Linux"],
+    "platforms": [
+      "Windows",
+      "macOS",
+      "Linux"
+    ],
     "costModel": "free",
     "costDetail": "Free for personal use ('Download f.lux Free on Windows, for personal use'; also offered free for macOS and Linux) under a proprietary EULA. It may be used on a work computer if your employer allows it. A paid Corporate Edition for Windows costs 'First 10 devices: $24 / Additional 11+ devices: $12' (USD). Optional PayPal donations. There is no official App Store or Google Play app (see limitations).",
     "openSource": false,
@@ -622,13 +669,28 @@
       "Two-step login options for your Bitwarden account",
       "Premium: built-in authenticator codes (TOTP), vault health reports and alerts, file attachments, emergency access"
     ],
-    "platforms": ["iOS", "iPadOS", "Android", "Windows", "macOS", "Linux", "Web", "Chrome", "Firefox", "Edge", "Safari", "Opera", "Brave", "Vivaldi"],
+    "platforms": [
+      "iOS",
+      "iPadOS",
+      "Android",
+      "Windows",
+      "macOS",
+      "Linux",
+      "Web",
+      "Chrome",
+      "Firefox",
+      "Edge",
+      "Safari",
+      "Opera",
+      "Brave",
+      "Vivaldi"
+    ],
     "costModel": "freemium",
     "costDetail": "The Free plan ('Always free') covers unlimited passwords on unlimited devices, passkeys, the generator, encrypted export, Bitwarden Send and sharing with one other user. Premium costs US$19.80 per year (shown as US$1.65/month billed annually; taxes not included) and adds an integrated authenticator (TOTP), 5 GB of file attachments, emergency access and vault health reports and alerts. Families costs US$47.88 per year (US$3.99/month) for up to 6 users. The current Premium price was announced on 21 January 2026. Core password management is free, so essential features do not need payment.",
     "openSource": true,
-    "licence": "GPL-3.0 (apps/clients) and AGPL-3.0 (server); some code under the separate Bitwarden License v1.0",
+    "licence": "GPL-3.0 (apps), with some code under the Bitwarden License v1.0",
     "accountRequired": "Yes. You create a free Bitwarden account to hold your encrypted vault. You can also run the Bitwarden server yourself (self-hosting).",
-    "privacyNotes": "The App Store listing describes 'an end-to-end encrypted password vault that only you can access', and the pricing page lists 'Zero-knowledge encryption'. The Chrome Web Store disclosure says it handles personally identifiable and authentication information and does not sell data to third parties.",
+    "privacyNotes": "The App Store listing describes 'an end-to-end encrypted password vault that only you can access', and the pricing page lists 'Zero-knowledge encryption'. The Chrome Web Store disclosure says the extension handles personally identifiable and authentication information.",
     "accessibilityNotes": "Bitwarden's contributor documentation says 'Bitwarden strives to comply with WCAG AA requirements' and covers keyboard navigation and screen-reader support. The App Store accessibility section says the developer has not indicated supported features, and no formal accessibility conformance report (VPAT) was found.",
     "limitations": [
       "Premium extras such as built-in 2FA codes and vault health reports now cost US$19.80 per year",
@@ -641,6 +703,11 @@
         "url": "https://bitwarden.com/pricing/",
         "what": "Plans and prices, free plan features",
         "quote": "Premium $ 1.65 per month Billed annually at $19.80 ... Families $ 3.99 per month Up to 6 users Billed annually at $47.88 ... Pricing shown in USD and based on an annual subscription. Taxes not included. Just getting started? Get basic password management today. Always free."
+      },
+      {
+        "url": "https://bitwarden.com/pricing/",
+        "what": "Zero-knowledge encryption (listed under Security and protection; re-checked 2026-11-11)",
+        "quote": "Open source security Zero-knowledge encryption Advanced two-step login"
       },
       {
         "url": "https://bitwarden.com/blog/bitwarden-launches-enhanced-premium-plan/",
@@ -706,7 +773,15 @@
       "Can replace tracking social media widgets (e.g. Like buttons) with click-to-activate placeholders",
       "Red, yellow and green sliders to adjust blocking per domain"
     ],
-    "platforms": ["Chrome", "Firefox", "Edge", "Safari", "Opera", "Brave", "Android"],
+    "platforms": [
+      "Chrome",
+      "Firefox",
+      "Edge",
+      "Safari",
+      "Opera",
+      "Brave",
+      "Android"
+    ],
     "costModel": "free-open-source",
     "costDetail": "Free: 'a free browser extension made by the leading digital rights nonprofit EFF'. The Safari version is listed as Free on the Mac App Store. Optional donations support EFF. The source code is under GPLv3+.",
     "openSource": true,
@@ -781,7 +856,9 @@
       "Domain monitoring (free up to 10 breached addresses; larger domains need a subscription)",
       "Paid API plans for apps and organisations"
     ],
-    "platforms": ["Web"],
+    "platforms": [
+      "Web"
+    ],
     "costModel": "freemium",
     "costDetail": "Free for individuals. The Free tier lists 'Browser email search, Email notifications, Pwned Passwords, Breach monitoring API, Monitor domains with up to 10 breached addresses'. Paid subscriptions are for API email search and larger domains: Core from US$4.39/month paid annually (Core 1: 'billed as $52.68/y'), Pro from US$379/month paid annually, High RPM from US$1,150/month paid annually. Amounts are in US dollars per the Terms of Use. The essential personal check (search your email, get alerts) is free.",
     "openSource": false,

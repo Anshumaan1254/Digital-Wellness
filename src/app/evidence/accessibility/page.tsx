@@ -21,11 +21,12 @@ type Contrast = { text: string; background: string; ratio: number; aaNormal: boo
 type MotionCheck = { scrollY: number; violations: { id: string; nodes: number }[] };
 const a11y = a11yJson as unknown as { generatedAt: string | null; tool: string; pages: PageResult[]; contrast: Contrast[]; motionChecks?: MotionCheck[] };
 
-type Status = "pass" | "design" | "todo" | "fail" | "pending";
+type Status = "pass" | "design" | "simulated" | "todo" | "fail" | "pending";
 
 const BADGE: Record<Status, { label: string; cls: string }> = {
   pass: { label: "Pass — automated test", cls: "bg-[#173a36] text-[#a6e6da]" },
   design: { label: "Built in — see how", cls: "bg-[#2a2f45] text-[#cfc9f5]" },
+  simulated: { label: "Checked in simulated test", cls: "bg-[#2a2f45] text-[#cfc9f5]" },
   todo: { label: "To do — needs a person", cls: "bg-[#3e2f24] text-[#f6d3b3]" },
   fail: { label: "Needs fixing", cls: "bg-[#4a2326] text-[#f2a7a0]" },
   pending: { label: "Audit not run yet", cls: "bg-white/10 text-muted-foreground" },
@@ -59,7 +60,11 @@ export default function AccessibilityPage() {
     { item: "Zoom is not blocked", how: "No maximum-scale or user-scalable=no in the viewport. axe meta-viewport.", status: auto(noRule("meta-viewport", "meta-viewport-large")) },
     { item: "Tables have captions and header cells", how: "Comparison, source and link tables use <caption>, <th scope> and a keyboard-scrollable region.", status: "design" },
     { item: "Tested with a real screen reader (NVDA or VoiceOver)", how: "Needs a person: navigate the home page, finder and one guide using only the screen reader, and note problems.", status: "todo" },
-    { item: "Tested at 200% browser zoom", how: "Needs a person: zoom to 200% and check every page can still be read and used.", status: "todo" },
+    {
+      item: "Usable at 200% zoom with the keyboard only",
+      how: "Simulated tester P4 used the hub by keyboard at an emulated 200% zoom. Its problems (lost focus in the finder, the mobile menu, small screenshots) were fixed; a real person should repeat it.",
+      status: "simulated",
+    },
   ];
 
   return (

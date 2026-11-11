@@ -22,6 +22,7 @@ const guides = read("src/data/guides.json");
 const revisions = read("src/data/revisions.json");
 const links = read("src/data/link-test-record.json");
 const a11y = read("src/data/a11y-results.json");
+const usability = read("src/data/usability-tests.json");
 const cell = (s) => String(s ?? "").replace(/\|/g, "\\|").replace(/\n/g, " ");
 const COST = { free: "Free", "free-core": "Free core · paid extras", limited: "Limited free · key features paid" };
 const tools = resources.map((r) => ({ ...r, ...meta.resources[r.id] }));
@@ -195,7 +196,7 @@ Target: WCAG 2.2 level AA. Automated checks by \`scripts/a11y-audit.mjs\` (${a11
 | Zoom not blocked | axe \`meta-viewport\` | ${okPages.every((p) => !p.violations.some((v) => v.id.startsWith("meta-viewport"))) ? "Pass" : "Fail"} |
 | Tables have captions and header cells | \`<caption>\`, \`<th scope>\` | Built in |
 | Screen-reader walkthrough (NVDA / VoiceOver) | needs a person | **To do** |
-| Readable at 200% zoom | needs a person | **To do** |
+| Usable at 200% zoom by keyboard | simulated tester P4 (emulated zoom); issues found were fixed | Checked in simulated test — repeat with a person |
 
 ## Colour contrast
 
@@ -218,33 +219,49 @@ ${pages
 );
 
 /* ---------- user feedback ---------- */
+const UP = usability.participants;
 write(
   "user-feedback.md",
   `# Anonymised user feedback
 
-## Our own user testing — status: not yet completed
+## 1. Usability test with 5 simulated students (AI test agents)
 
-The brief asks for three to five students to find a suitable resource and follow one guide. **This has not been done
-yet, and no results have been invented.** The test is built into the hub:
+> **${usability.label}.** Run on ${usability.runOn}.
 
-1. **Task 1 — find a tool.** Use the Tool finder or the Compare page to pick one tool that suits you.
-2. **Task 2 — follow one guide.** Follow any of the three setup guides on your own device.
-3. **Tell us what happened.** On the Share & feedback page choose "I tested the hub" and record whether you found a
-   tool, whether you finished the guide, how long it took, and where you got stuck.
+**Method.** ${usability.method}
 
-No names, emails or IP addresses are collected; anything that looks like contact details is removed before saving.
-Results appear on Evidence › User feedback. A moderator can export them from \`/admin\` as an anonymous CSV where
-participants are numbered P1, P2… — attach that CSV here once testing is done.
+**Limits.** ${usability.limits}
 
-### Record template
+**Tasks.** (1) Find a tool that suits you using the hub. (2) Follow one setup guide. Then send the anonymous feedback form.
 
-| Participant | Found a tool? | Guide finished? | Minutes | Where they got stuck | What we changed |
-| --- | --- | --- | --- | --- | --- |
-| P1 | | | | | |
-| P2 | | | | | |
-| P3 | | | | | |
+### Results
 
-## Published user feedback we relied on
+| Agent | Persona | Set-up | Tool chosen | Found a suitable tool? | Guide followed | Rating |
+| --- | --- | --- | --- | --- | --- | --- |
+${UP.map((p) => `| ${p.id} | ${cell(p.persona)} | ${cell(p.device)} | ${cell(p.toolChosen)} | ${p.foundSuitableTool} (${p.confidence} confidence) | ${p.guide} — ${p.guideCompleted} | ${p.rating}/5 |`).join("\n")}
+
+"Partly" for guides means every step was read, pictures checked and every link opened, but software could not be installed
+and phone settings could not be changed in a test browser.
+
+### In their own words
+
+${UP.map((p) => `- **${p.id}:** "${p.quote}"`).join("\n")}
+
+### What they found and what we changed
+
+${usability.fixes.length} grouped problems from ${UP.reduce((s, p) => s + p.problemsReported, 0)} reports; ${usability.fixes.filter((f) => f.status === "fixed").length} fixed.
+
+| Severity | Problem | Reported by | What we did |
+| --- | --- | --- | --- |
+${usability.fixes.map((f) => `| ${f.severity} | ${cell(f.problem)} | ${f.participants.join(", ")} | ${f.status === "fixed" ? "Fixed — " : "Not changed — "}${cell(f.change.replace(/^Not changed: /, ""))} |`).join("\n")}
+
+## 2. Testing with real classmates
+
+The same two tasks are ready for real students on the Share & feedback page ("I tested the hub"). No names, emails or IP
+addresses are collected, and anything that looks like contact details is removed before saving. A moderator can export
+the answers from \`/admin\` as an anonymous CSV where participants are numbered P1, P2… and attach it here.
+
+## 3. Published user feedback we relied on
 
 ${research.userFeedbackResearch
   .map(

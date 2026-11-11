@@ -22,6 +22,19 @@ export function Header() {
 
   useEffect(() => setOpen(false), [pathname]);
 
+  // Escape closes the menu and returns focus to the menu button
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+        document.getElementById("menu-button")?.focus();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [open]);
+
   const isActive = (href: string) => pathname === href || pathname.startsWith(href + "/");
 
   return (
@@ -63,6 +76,7 @@ export function Header() {
         <button
           type="button"
           className="inline-flex h-10 w-10 items-center justify-center rounded-full text-foreground hover:bg-white/10 lg:hidden"
+          id="menu-button"
           aria-expanded={open}
           aria-controls="mobile-nav"
           onClick={() => setOpen((v) => !v)}
@@ -72,7 +86,17 @@ export function Header() {
         </button>
       </div>
 
-      <nav id="mobile-nav" aria-label="Main" hidden={!open} className="lg:hidden border-t border-border px-4 pb-6 pt-2">
+      <nav
+        id="mobile-nav"
+        aria-label="Main"
+        hidden={!open}
+        className="max-h-[calc(100svh-4rem)] overflow-y-auto border-t border-border px-4 pb-6 pt-2 lg:hidden"
+        onBlur={(e) => {
+          // close once keyboard focus moves outside the menu and its button
+          const next = e.relatedTarget as Node | null;
+          if (next && !e.currentTarget.contains(next) && (next as HTMLElement).id !== "menu-button") setOpen(false);
+        }}
+      >
         <ul className="grid gap-1">
           {NAV.map((item) => (
             <li key={item.href}>

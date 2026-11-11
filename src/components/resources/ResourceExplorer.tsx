@@ -196,11 +196,11 @@ export function ResourceExplorer() {
       ) : (
         results.length > 0 && (
           <div className="mt-6 overflow-x-auto rounded-3xl border border-border" tabIndex={0} role="region" aria-label="Comparison table, scrolls sideways">
-            <table className="w-full min-w-[1100px] border-collapse text-left text-sm">
+            <table className="w-full min-w-[1200px] border-collapse text-left text-sm">
               <caption className="sr-only">Comparison of digital wellness tools by purpose, devices, cost, privacy, accessibility and limitations</caption>
               <thead className="bg-[#13273a] text-xs uppercase tracking-wider text-mist">
                 <tr>
-                  {["Tool", "Purpose", "Devices", "Cost", "Privacy", "Accessibility", "Main limitation", "Checked"].map((h) => (
+                  {["Tool", "Purpose", "Devices", "Cost", "How strict", "Privacy", "Accessibility", "Main limitation", "Checked"].map((h) => (
                     <th key={h} scope="col" className="px-4 py-3 font-semibold">
                       {h}
                     </th>
@@ -221,6 +221,7 @@ export function ResourceExplorer() {
                     <td className="px-4 py-4 text-muted-foreground">{r.purpose}</td>
                     <td className="px-4 py-4">{r.platforms.join(", ")}</td>
                     <td className="px-4 py-4">{r.costShort}</td>
+                    <td className="px-4 py-4">{r.strictness ? STRICTNESS_LABEL[r.strictness] : "Not a blocker"}</td>
                     <td className="px-4 py-4 text-muted-foreground">{r.privacyShort}</td>
                     <td className="px-4 py-4 text-muted-foreground">{r.accessibilityShort}</td>
                     <td className="px-4 py-4 text-muted-foreground">{r.limitations[0]}</td>

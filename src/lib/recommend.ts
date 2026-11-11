@@ -1,4 +1,4 @@
-import { RESOURCES, supportsDevice, type DeviceId, type Goal, type Resource } from "@/data/resources";
+import { DEVICES, GOAL_LABEL, RESOURCES, supportsDevice, type DeviceId, type Goal, type Resource } from "@/data/resources";
 
 export type FinderAnswers = {
   goals: Goal[];
@@ -34,7 +34,7 @@ export function recommend(a: FinderAnswers): Recommendation[] {
     const cautions: string[] = [];
     let score = goalHits.length * 3 + Math.min(deviceHits.length, 3);
 
-    reasons.push(`Helps with ${goalHits.length === 1 ? "your goal" : `${goalHits.length} of your goals`}: ${r.bestFor}`);
+    reasons.push(`Helps you ${goalHits.map((g) => GOAL_LABEL[g].toLowerCase()).join(" and ")}. ${r.bestFor}`);
 
     if (r.costTone === "free") {
       score += 2;
@@ -72,10 +72,13 @@ export function recommend(a: FinderAnswers): Recommendation[] {
     }
 
     const missing = a.devices.filter((d) => !supportsDevice(r, d));
-    if (missing.length && a.devices.length > 1) {
-      cautions.push(`Doesn't cover every device you picked.`);
+    if (missing.length) {
+      const names = missing.map((d) => DEVICES.find((x) => x.id === d)!.label);
+      cautions.push(`Doesn't work on your ${names.join(" or ")}.`);
     }
-    cautions.push(r.limitations[0]);
+    // don't repeat the price if the cost caution already gave it
+    const priced = cautions.some((c) => c.includes("US$"));
+    cautions.push(r.limitations.find((l) => !(priced && l.includes("US$"))) ?? r.limitations[0]);
 
     out.push({ resource: r, score, reasons, cautions });
   }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-11T14:18:39.009Z",
+  "generatedAt": "2026-11-11T15:22:53.326Z",
   "tool": "axe-core via @axe-core/playwright, Chromium, reduced motion on",
   "pages": [
     {
@@ -78,7 +78,7 @@
       "page": "/guides/block-distracting-sites",
       "status": 200,
       "violations": [],
-      "passes": 44,
+      "passes": 45,
       "firstTabStop": "Skip to main content",
       "skipLinkFirst": true,
       "focusVisible": true,
@@ -198,7 +198,7 @@
       "page": "/evidence/feedback",
       "status": 200,
       "violations": [],
-      "passes": 44,
+      "passes": 46,
       "firstTabStop": "Skip to main content",
       "skipLinkFirst": true,
       "focusVisible": true,

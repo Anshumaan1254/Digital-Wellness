@@ -74,11 +74,17 @@
 
 **What changed:** Rebuilt it in the style of Apple's product pages: a pinned chapter where each research figure takes over the screen, a horizontal sweep through the four kinds of calm, a phone whose screen changes as you scroll through settings, and an expanding lake frame for the videos. The 3D lake now stops drawing when it is off-screen to save battery, and everything falls back to a simple layout with reduced motion.
 
-### Pending — Changes from student testing
+### 2026-11-11 — Simulated usability test with 5 AI test agents
 
-**Why:** Waiting for 3–5 students to complete the usability test on the Share & feedback page.
+**Why:** The brief asks for 3–5 students to find a resource and follow a guide. We ran this first with five AI agents, each playing a student persona from our audience research (Android teen, Windows undergraduate, privacy-minded Mac user, keyboard-only Chromebook user at 200% zoom, and an exam-stressed student who wants strict blocking).
 
-**What changed:** Problems they report, and what we change in response, will be added here.
+**What changed:** All five found a suitable tool and rated the hub 4/5. Between them they reported 49 problems, which we grouped into 34 and fixed 31 — including the tool finder losing keyboard focus and forgetting answers, hidden matches, missing Safari and iPhone steps, and mouse-only instructions. Three were left unchanged, with reasons, on the feedback evidence page.
+
+### Pending — Testing with real classmates
+
+**Why:** The simulated test used AI agents, not people.
+
+**What changed:** The same two tasks and the anonymous form are ready for real students; anything they find will be added here.
 
 ## Commit history
 
@@ -88,3 +94,6 @@
 - 2026-11-11 — Build all hub pages: finder, comparison, guides, videos, research, community and evidence
 - 2026-11-11 — Fix accessibility audit findings and record link and accessibility tests
 - 2026-11-11 — Redesign home page as an Apple-style scroll story
+- 2026-11-11 — Add report, generated evidence documents and README
+- 2026-11-11 — Add presentation, fix cost badge wrapping and refresh lake image
+- 2026-11-11 — Ignore simulated user-test working files

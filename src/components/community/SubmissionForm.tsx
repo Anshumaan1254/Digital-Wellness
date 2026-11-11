@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ImageUp } from "lucide-react";
 import { RESOURCES } from "@/data/resources";
 import { cn } from "@/lib/utils";
@@ -42,6 +42,14 @@ export function SubmissionForm() {
   const [file, setFile] = useState<File | null>(null);
   const [status, setStatus] = useState<{ type: "idle" | "sending" | "ok" | "error"; message?: string }>({ type: "idle" });
   const wantsFile = kind === "animation" || kind === "app-screen";
+  const doneRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (status.type !== "ok" || !doneRef.current) return;
+    doneRef.current.focus({ preventScroll: true });
+    const top = doneRef.current.getBoundingClientRect().top + window.scrollY - 110;
+    window.scrollTo({ top, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  }, [status.type]);
 
   async function onFile(e: React.ChangeEvent<HTMLInputElement>) {
     const f = e.target.files?.[0];
@@ -86,7 +94,7 @@ export function SubmissionForm() {
 
   if (status.type === "ok") {
     return (
-      <div role="status" className="rounded-3xl border border-lake/40 bg-lake/10 p-8">
+      <div ref={doneRef} tabIndex={-1} role="status" className="rounded-3xl border border-lake/40 bg-lake/10 p-8 outline-none">
         <p className="font-serif text-2xl">Thanks for sharing!</p>
         <p className="mt-2 text-muted-foreground">
           A moderator checks every submission for personal information before it appears in the gallery.

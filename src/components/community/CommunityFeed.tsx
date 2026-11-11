@@ -43,10 +43,15 @@ export function FeedbackSummary() {
   const [data, setData] = useState<Summary | null>(null);
   const [error, setError] = useState(false);
   useEffect(() => {
-    fetch("/api/feedback")
-      .then((r) => (r.ok ? r.json() : Promise.reject()))
-      .then(setData)
-      .catch(() => setError(true));
+    const load = () =>
+      fetch("/api/feedback", { cache: "no-store" })
+        .then((r) => (r.ok ? r.json() : Promise.reject()))
+        .then(setData)
+        .catch(() => setError(true));
+    load();
+    // refresh as soon as someone on this page sends feedback
+    window.addEventListener("dw:feedback-sent", load);
+    return () => window.removeEventListener("dw:feedback-sent", load);
   }, []);
 
   if (error) return <p className="text-muted-foreground">Feedback results are unavailable right now.</p>;

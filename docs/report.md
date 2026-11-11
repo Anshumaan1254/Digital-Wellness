@@ -62,7 +62,7 @@ Checking official sources changed several things we thought we knew: Bitwarden P
 
 ## 4. Setup guides
 
-We wrote three short guides, each checked against the official help pages (they have not yet been followed by student testers — see section 7):
+We wrote three short guides, each checked against the official help pages and then followed by our five simulated testers (section 7):
 
 1. **Block distracting websites during study hours** — LeechBlock NG (5 minutes).
 2. **A 15-minute privacy and account check-up** — Have I Been Pwned, Bitwarden and Privacy Badger.
@@ -86,24 +86,34 @@ We wrote three short guides, each checked against the official help pages (they 
 
 We designed for WCAG 2.2 AA from the start: a skip link, visible focus outlines, one `h1` per page and headings in order, labels on every form field, alt text on every screenshot, captions and header cells on tables, no sideways scrolling on phones, and a reduced-motion mode in which the 3D scene holds still and all scroll animations are replaced by a simple layout. Every text colour meets the 4.5:1 contrast ratio on its background (the lowest is 8.4:1).
 
-We tested 19 pages with axe-core in a real browser. The first run found invalid list markup, a skipped heading level, step buttons whose spoken names did not match their visible text, one low-contrast label and pages that scrolled sideways on a 375px phone. After fixing them, **all 19 pages report no axe violations** and pass our checks for the skip link, focus visibility, link text and phone width. Two checks still need a person: a full screen-reader run (NVDA or VoiceOver) and reading every page at 200% zoom.
+We tested 19 pages with axe-core in a real browser. The first run found invalid list markup, a skipped heading level, step buttons whose spoken names did not match their visible text, one low-contrast label and pages that scrolled sideways on a 375px phone. After fixing them, **all 19 pages report no axe violations** and pass our checks for the skip link, focus visibility, link text and phone width. Our simulated keyboard-only tester also used the hub at an emulated 200% zoom, and the problems it found are fixed. A full screen-reader run (NVDA or VoiceOver) still needs a person.
 
 ## 7. Testing
 
-**Link test.** A script tests every external link the hub uses and crawls every internal page. Of **114 external links, none are broken**: 98 loaded directly, 8 Apple support pages loaded when re-opened in a real browser, and 7 research DOIs were confirmed through the official DOI registry because the publishers block automated requests. One OECD page blocks automated checks completely and needs a manual click before submission. All **29 internal pages** loaded successfully.
+**Link test.** A script tests every external link the hub uses and crawls every internal page. Of **116 external links, none are broken**: 100 loaded directly, 8 Apple support pages loaded when re-opened in a real browser, and 7 research DOIs were confirmed through the official DOI registry because the publishers block automated requests. One OECD page blocks automated checks completely and needs a manual click before submission. All **29 internal pages** loaded successfully.
 
 **Functional testing.** We tested the forms and API end to end against a local MongoDB database: valid feedback is saved; feedback without consent is rejected; an email address and phone number typed into a comment were replaced with "[email removed]" and "[number removed]"; uploads of the wrong file type are rejected; an uploaded screenshot stayed hidden from the public until approved and then appeared in the gallery; and the moderation API refuses requests without the admin key. All test records were deleted afterwards so they are not counted as feedback.
 
-**User testing — not yet complete.** The brief asks us to ask three to five students to find a suitable resource and follow one guide. That testing has **not** been done yet, and we have not invented any results. Everything is ready: the Share & feedback page explains the two tasks, and the feedback form records whether each tester found a tool, whether they finished the guide, how long it took and where they got stuck, without names or emails. Results appear live on the Evidence pages, and moderators can export them as an anonymous CSV with participants numbered P1, P2 and so on.
+**Usability test — five simulated students.** The brief asks for three to five students to find a suitable resource and follow one guide. We ran this test with **five AI test agents, each playing a student persona** from our audience research, and we label it that way everywhere: these were simulations, not real classmates. Each agent used the live hub in an automated Chromium browser and did not read the code:
+
+| Agent | Persona | Tool chosen | Guide followed | Rating |
+| --- | --- | --- | --- | --- |
+| P1 | 15, Android phone only, scrolls late at night | Google Digital Wellbeing | Phone wind-down | 4/5 |
+| P2 | 19, Windows laptop with Chrome, distracted by YouTube | LeechBlock NG | Block distracting websites | 4/5 |
+| P3 | 22, Mac and iPhone, privacy-minded, prefers open source | Bitwarden | Privacy check-up | 4/5 |
+| P4 | 17, school Chromebook, keyboard only at 200% zoom | LeechBlock NG | Block distracting websites | 4/5 |
+| P5 | 20, exams soon, wants strict blocking, will pay a little | Freedom | Block distracting websites | 4/5 |
+
+All five found a suitable tool. Each read every step of a guide, checked the pictures and opened every link, but none could install software or change real phone settings, so every guide counts as "partly" completed. They reported 49 problems, which we grouped into 34. The most serious: the tool finder lost keyboard focus after every step and forgot all answers when you pressed Back, it showed only four of its matches, the top match for strict blocking (Freedom) had no guide, and the guides lacked Safari, iPhone and keyboard-only instructions. **We fixed 31 of the 34** and explain on the feedback evidence page why the other three were left unchanged. The limits are real — no real devices, no Safari, no screen reader, and an AI's judgement of what is confusing — so repeating the test with real classmates is our first next step. The anonymous form and CSV export are ready for that.
 
 ## 8. Revisions
 
-The revisions log on the site lists every change and why it was made. Most came from checking official sources (prices, plan limits and renamed iPhone settings), from our screenshot policy (removing the misleading bot-check screenshot, re-capturing LeechBlock, using labelled illustrations for phones), from the accessibility audit, and from a design review that replaced the original grid of cards on the home page with a scroll-driven story. A final entry is reserved for changes made after student testing.
+The revisions log on the site lists every change and why it was made. Most came from checking official sources (prices, plan limits and renamed iPhone settings), from the simulated usability test (31 fixes), from our screenshot policy (removing the misleading bot-check screenshot, re-capturing LeechBlock, using labelled illustrations for phones), from the accessibility audit, and from a design review that replaced the original grid of cards on the home page with a scroll-driven story. A final entry is reserved for changes made after testing with real classmates.
 
 ## 9. Limitations and next steps
 
-- **Run the user test** with three to five students, record their problems, fix them and add the changes to the revisions log.
-- **Finish the manual accessibility checks** (screen reader and 200% zoom).
+- **Repeat the usability test with real classmates** — three to five students — and add what they find to the revisions log. Our simulated test found real problems, but it cannot replace real people.
+- **Finish the manual accessibility checks** — a real screen-reader run, and repeating the 200% zoom check with a person.
 - **Re-check prices regularly.** Several prices are introductory or region-specific (for example Forest Plus is labelled "Early Bird" in the US App Store), and tools change their plans often.
 - **Our needs analysis is secondary research.** It describes students in the US and UK in general; a short survey of our own school would make it more specific.
 - **Uploads are stored in the database** and limited to 3 MB. A larger hub would use dedicated file storage.

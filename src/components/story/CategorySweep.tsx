@@ -110,7 +110,10 @@ export function CategorySweep({ categories, resources }: { categories: Category[
   return (
     <section aria-label="Four kinds of calm" className="py-24">
       <Header />
-      <div className="mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 pb-4 sm:px-6 [scrollbar-width:thin]">
+      <div
+        className="mt-10 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 pb-4 sm:px-6 [scrollbar-width:thin]"
+        onFocusCapture={(e) => (e.target as HTMLElement).scrollIntoView({ block: "nearest", inline: "center" })}
+      >
         {categories.map((c) => (
           <Panel key={c.id} c={c} tools={resources.filter((r) => r.category === c.id)} className="min-h-[520px] w-[86vw] max-w-[560px] snap-start" />
         ))}

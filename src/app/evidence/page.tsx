@@ -35,7 +35,7 @@ export default function EvidencePage() {
       title: "Accessibility checklist",
       body: a11y.generatedAt ? `Automated axe-core audit of ${axePages.length} pages plus a manual checklist.` : "Manual checklist; automated audit pending.",
     },
-    { href: "/evidence/feedback", title: "Anonymised user feedback", body: "Live, anonymous results from the feedback form, plus published user-feedback research." },
+    { href: "/evidence/feedback", title: "Anonymised user feedback", body: "A usability test by 5 AI agents playing students (34 problems, 31 fixed), published user-feedback research, and live anonymous responses." },
     { href: "/evidence/revisions", title: "Revisions", body: "What we changed, and why — mostly corrections found by checking official sources." },
     { href: "/evidence/report", title: "Report", body: "How we planned, built, tested and revised the hub, and what we would do next." },
   ];

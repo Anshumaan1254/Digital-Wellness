@@ -1,0 +1,430 @@
+{
+  "label": "Simulated user test — 5 AI test agents playing students (not real students)",
+  "runOn": "2026-11-11",
+  "method": "Five AI test agents each played a different student persona based on our audience research. Each one used the live hub in a real (automated) Chromium browser — on a phone-sized screen, laptop screens, or keyboard-only at 200% zoom — to find a suitable tool and follow one setup guide, then sent the anonymous feedback form. They could not install software or change real phone settings, so 'following' a guide meant reading every step, checking pictures against the text and opening every link. They did not read the code.",
+  "limits": "These were simulations, not real students: no real devices, no Safari, no screen reader, and an AI's judgement of what is confusing. They found real, reproducible problems on the site, but they don't replace testing with classmates.",
+  "participants": [
+    {
+      "id": "P1",
+      "persona": "15-year-old secondary student, Android phone only, scrolls late at night, no money",
+      "device": "Android phone (390×844)",
+      "toolChosen": "Google Digital Wellbeing",
+      "foundSuitableTool": "yes",
+      "confidence": "medium",
+      "pagesVisited": 3,
+      "guide": "phone-wind-down",
+      "guideCompleted": "partly",
+      "linksOpened": 6,
+      "rating": 4,
+      "problemsReported": 11,
+      "quote": "The quiz was easy and it told me the thing I need is already on my phone and free, which is nice. The guide was mostly clear, but it never told me how to stop myself just turning the timer off again at 1am.",
+      "topProblems": [
+        "Results opened scrolled past the top match's name",
+        "Android had no notification step, only iPhone's",
+        "No path to the App limits PIN that makes limits stick"
+      ]
+    },
+    {
+      "id": "P2",
+      "persona": "19-year-old undergraduate, Windows laptop with Chrome and an iPhone, distracted by YouTube while revising",
+      "device": "Windows laptop (1366×768)",
+      "toolChosen": "LeechBlock NG",
+      "foundSuitableTool": "yes",
+      "confidence": "high",
+      "pagesVisited": 3,
+      "guide": "block-distracting-sites",
+      "guideCompleted": "partly",
+      "linksOpened": 6,
+      "rating": 4,
+      "problemsReported": 7,
+      "quote": "Honestly, the finder got me to LeechBlock in about a minute, and the screenshots for setting my study hours are spot on. But hitting Back wiped all my answers, and when step 1 said the links were 'below', all I could see was a Firefox page telling me to download Firefox. I nearly gave up there.",
+      "topProblems": [
+        "Back button wiped all finder answers",
+        "Result card said 'Browser', not Chrome or Windows",
+        "Step 1 said links were 'below' — they were in the sidebar"
+      ]
+    },
+    {
+      "id": "P3",
+      "persona": "22-year-old postgraduate, MacBook (Safari) and iPhone, reused passwords, prefers open source",
+      "device": "MacBook-size screen (1440×900)",
+      "toolChosen": "Bitwarden",
+      "foundSuitableTool": "yes",
+      "confidence": "high",
+      "pagesVisited": 5,
+      "guide": "privacy-checkup",
+      "guideCompleted": "partly",
+      "linksOpened": 11,
+      "rating": 4,
+      "problemsReported": 11,
+      "quote": "I came in suspicious and left fairly convinced. Every price and licence claim I checked against the official pages was right, and Bitwarden is what I'll set up. But as a Safari and iPhone person, the guide left me to work out the Apple-specific install bits myself, which is exactly where I'd stall.",
+      "topProblems": [
+        "No Safari install link for Privacy Badger",
+        "Finder forgot answers after Back",
+        "No Mac or iPhone setup help for Bitwarden"
+      ]
+    },
+    {
+      "id": "P4",
+      "persona": "17-year-old on a school Chromebook, keyboard only (motor impairment), 200% zoom, reduce motion on",
+      "device": "Keyboard only, 200% zoom",
+      "toolChosen": "LeechBlock NG",
+      "foundSuitableTool": "yes",
+      "confidence": "medium",
+      "pagesVisited": 3,
+      "guide": "block-distracting-sites",
+      "guideCompleted": "partly",
+      "linksOpened": 6,
+      "rating": 4,
+      "problemsReported": 10,
+      "quote": "The finder got me to LeechBlock, which is exactly what I wanted: free, and it blocks YouTube just during school hours. But every time I pressed Continue I got thrown to the bottom of the page and had to Shift+Tab back up, and the guide tells me to click an icon I can't click.",
+      "topProblems": [
+        "Finder lost keyboard focus after every Continue",
+        "Guide step 2 only gave mouse instructions",
+        "Nothing warned that school Chromebooks may block extensions"
+      ]
+    },
+    {
+      "id": "P5",
+      "persona": "20-year-old with exams soon, Windows laptop and Android phone, ignores soft limits, will pay a little",
+      "device": "Large laptop screen (1920×1080)",
+      "toolChosen": "Freedom",
+      "foundSuitableTool": "yes",
+      "confidence": "medium",
+      "pagesVisited": 5,
+      "guide": "block-distracting-sites",
+      "guideCompleted": "partly",
+      "linksOpened": 8,
+      "rating": 4,
+      "problemsReported": 10,
+      "quote": "Honestly the most upfront site I've used about what's free and what isn't. It told me straight away that the strict lock in Freedom costs money, which is what I needed to know. But once it found me the strict tool, there was no guide for it, and the guide I followed in its place doesn't say whether I could just switch the blocker off.",
+      "topProblems": [
+        "Only 4 of 7 matches shown, no way to see the rest",
+        "Top match (Freedom) had no guide or pointer to one",
+        "Step 6 didn't say if the block could just be switched off"
+      ]
+    }
+  ],
+  "fixes": [
+    {
+      "problem": "Tool finder lost keyboard focus after each Continue, and new questions or results sat under the sticky header",
+      "participants": [
+        "P4",
+        "P1",
+        "P2",
+        "P3",
+        "P5"
+      ],
+      "severity": "high",
+      "change": "Focus now moves to each new question (and to the results heading), which scroll into view just below the header.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Pressing Back from a tool page wiped all finder answers",
+      "participants": [
+        "P2",
+        "P3"
+      ],
+      "severity": "medium",
+      "change": "Answers are kept in the page address, so Back, refresh and shared links bring the same results back.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Finder said '7 tools fit' but only showed 4",
+      "participants": [
+        "P5",
+        "P2"
+      ],
+      "severity": "medium",
+      "change": "Added a 'Show all matches' button.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Result cards said 'Browser' instead of naming Chrome, Windows or Chromebook",
+      "participants": [
+        "P2",
+        "P4"
+      ],
+      "severity": "medium",
+      "change": "Cards list every platform, and the caution names the exact device a tool doesn't cover.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Top match had no setup guide (Freedom)",
+      "participants": [
+        "P5"
+      ],
+      "severity": "medium",
+      "change": "Tools without a guide now point to the closest guide, on the finder and the tool page.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Guide step 1 said store links were 'below' and showed a 'Download Firefox' button",
+      "participants": [
+        "P2",
+        "P5",
+        "P3"
+      ],
+      "severity": "medium",
+      "change": "Store buttons now sit inside the step, and the caption explains why the button looks different in other browsers.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Step 6 didn't say whether the block could simply be switched off",
+      "participants": [
+        "P5"
+      ],
+      "severity": "medium",
+      "change": "Added how to lock LeechBlock's options and Firefox's add-ons page during blocks, and that a whole-computer blocker is stricter.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Guide step 2 only gave mouse instructions",
+      "participants": [
+        "P4"
+      ],
+      "severity": "medium",
+      "change": "Added a keyboard route to the options page and how to set a keyboard shortcut.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Nothing warned that school Chromebooks may block extensions",
+      "participants": [
+        "P4"
+      ],
+      "severity": "medium",
+      "change": "Added to 'You'll need' and to the troubleshooting list.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Screenshots were hard to read at 200% zoom",
+      "participants": [
+        "P4"
+      ],
+      "severity": "medium",
+      "change": "Every screenshot has an 'Open full size' link.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Phone guide: Android users might try the iPhone-only notification step",
+      "participants": [
+        "P1"
+      ],
+      "severity": "medium",
+      "change": "Each step is now tagged 'Android only' or 'iPhone only', and the iPhone step points Android users to Focus mode.",
+      "status": "fixed"
+    },
+    {
+      "problem": "No path to the App limits PIN",
+      "participants": [
+        "P1"
+      ],
+      "severity": "medium",
+      "change": "Added Settings › Digital Wellbeing › App limits › App limits PIN to step 1 and the troubleshooting answer.",
+      "status": "fixed"
+    },
+    {
+      "problem": "No Safari install link for Privacy Badger",
+      "participants": [
+        "P3"
+      ],
+      "severity": "medium",
+      "change": "Added the Mac App Store link for Safari to the guide and the tool page.",
+      "status": "fixed"
+    },
+    {
+      "problem": "No Mac or iPhone setup help for Bitwarden",
+      "participants": [
+        "P3"
+      ],
+      "severity": "medium",
+      "change": "Added how to get the Safari extension and turn on iPhone AutoFill, and how saving new passwords works.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Mobile menu ignored Escape and let focus slip behind it",
+      "participants": [
+        "P4"
+      ],
+      "severity": "medium",
+      "change": "Escape closes it, focus leaving closes it, and the menu scrolls at high zoom.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Focused links in the swipeable card row stayed off-screen",
+      "participants": [
+        "P4"
+      ],
+      "severity": "medium",
+      "change": "The row now scrolls each focused link into view.",
+      "status": "fixed"
+    },
+    {
+      "problem": "'Keep the screen dark' was described wrongly",
+      "participants": [
+        "P1"
+      ],
+      "severity": "low",
+      "change": "Now matches Google's wording: it turns off the always-on display.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Google Play link for a built-in tool looked like you must install it",
+      "participants": [
+        "P1"
+      ],
+      "severity": "low",
+      "change": "Link now says it's only needed if Digital Wellbeing isn't already in Settings.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Mentions of other guides and videos weren't links",
+      "participants": [
+        "P2",
+        "P5",
+        "P3"
+      ],
+      "severity": "low",
+      "change": "They are now links.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Bitwarden screenshot sat on the wrong step",
+      "participants": [
+        "P3"
+      ],
+      "severity": "low",
+      "change": "Moved to the step that uses the password generator.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Bitwarden's 'watch out' repeated its price",
+      "participants": [
+        "P3"
+      ],
+      "severity": "low",
+      "change": "Cautions no longer repeat a price already shown.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Some Bitwarden claims weren't backed by the quotes shown",
+      "participants": [
+        "P3"
+      ],
+      "severity": "low",
+      "change": "Trimmed the claims to what the quotes show and added the 'Zero-knowledge encryption' quote.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Video previews loaded from YouTube before pressing play",
+      "participants": [
+        "P3"
+      ],
+      "severity": "low",
+      "change": "Thumbnails are now fetched by our own server and served from the site, so a visitor's browser contacts nothing on YouTube until they press play.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Thank-you message after feedback appeared off-screen, focus dropped to the page",
+      "participants": [
+        "P2",
+        "P3",
+        "P4",
+        "P5"
+      ],
+      "severity": "low",
+      "change": "The message scrolls into view and receives keyboard focus.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Feedback numbers didn't update after sending",
+      "participants": [
+        "P1"
+      ],
+      "severity": "low",
+      "change": "The summary refreshes as soon as feedback is sent.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Missing-rating error appeared far below the stars",
+      "participants": [
+        "P1"
+      ],
+      "severity": "low",
+      "change": "The error now appears right under the stars.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Home page: video title overlapped the text after it",
+      "participants": [
+        "P1"
+      ],
+      "severity": "low",
+      "change": "The title fades out fully before the next text fades in.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Headline still blurred in with 'reduce motion' on",
+      "participants": [
+        "P4"
+      ],
+      "severity": "low",
+      "change": "With reduce motion, headlines appear straight away.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Budget question started on 'optional extras are fine'",
+      "participants": [
+        "P1"
+      ],
+      "severity": "low",
+      "change": "It now starts on 'free only', so nothing that needs payment appears unless chosen.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Match reasons didn't name the student's goals",
+      "participants": [
+        "P1"
+      ],
+      "severity": "low",
+      "change": "Each reason now names the goals it matches.",
+      "status": "fixed"
+    },
+    {
+      "problem": "Comparison table had no strictness column",
+      "participants": [
+        "P5"
+      ],
+      "severity": "low",
+      "change": "Added a 'How strict' column.",
+      "status": "fixed"
+    },
+    {
+      "problem": "'Works on' filter takes one device at a time",
+      "participants": [
+        "P5"
+      ],
+      "severity": "low",
+      "change": "Not changed: the comparison narrows by one device; the tool finder already accepts several devices.",
+      "status": "not-changed"
+    },
+    {
+      "problem": "Freedom's Google Play price isn't shown",
+      "participants": [
+        "P5"
+      ],
+      "severity": "low",
+      "change": "Not changed: Freedom's official pages don't publish it; now listed under 'What we could not confirm'.",
+      "status": "not-changed"
+    },
+    {
+      "problem": "First arrow key on the star rating selects star 1",
+      "participants": [
+        "P4"
+      ],
+      "severity": "low",
+      "change": "Not changed: this is how the rating component behaves; the rating is still fully usable by keyboard.",
+      "status": "not-changed"
+    }
+  ]
+}

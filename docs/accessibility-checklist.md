@@ -1,6 +1,6 @@
 # Accessibility checklist
 
-Target: WCAG 2.2 level AA. Automated checks by `scripts/a11y-audit.mjs` (axe-core via @axe-core/playwright, Chromium, reduced motion on) on 2026-11-11 14:18 UTC.
+Target: WCAG 2.2 level AA. Automated checks by `scripts/a11y-audit.mjs` (axe-core via @axe-core/playwright, Chromium, reduced motion on) on 2026-11-11 15:22 UTC.
 
 ## Checklist
 
@@ -22,7 +22,7 @@ Target: WCAG 2.2 level AA. Automated checks by `scripts/a11y-audit.mjs` (axe-cor
 | Zoom not blocked | axe `meta-viewport` | Pass |
 | Tables have captions and header cells | `<caption>`, `<th scope>` | Built in |
 | Screen-reader walkthrough (NVDA / VoiceOver) | needs a person | **To do** |
-| Readable at 200% zoom | needs a person | **To do** |
+| Usable at 200% zoom by keyboard | simulated tester P4 (emulated zoom); issues found were fixed | Checked in simulated test — repeat with a person |
 
 ## Colour contrast
 

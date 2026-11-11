@@ -85,12 +85,12 @@ export default function ResearchPage() {
         title="What real users say about these tools"
         intro={
           <>
-            We have not yet run our own user tests (see the{" "}
+            Alongside our own simulated usability test (see the{" "}
             <Link href="/evidence/feedback" className="inline-link">
               feedback record
             </Link>
-            ), so we used studies that analysed real users&apos; reviews and experiences of digital-wellbeing apps. Their
-            themes shaped our cautions and the tool finder.
+            ), we used studies that analysed real users&apos; reviews and experiences of digital-wellbeing apps. Their themes
+            shaped our cautions and the tool finder.
           </>
         }
       >

@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useRef, useState } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight, Check, RotateCcw } from "lucide-react";
 import Stepper, { Step } from "@/components/reactbits/Stepper";
 import { BorderBeam } from "@/components/ui/border-beam";
 import { CostBadge } from "@/components/site/CostBadge";
-import { DEVICES, GOAL_LABEL, platformSummary, type DeviceId, type Goal } from "@/data/resources";
+import { DEVICES, GOAL_LABEL, type DeviceId, type Goal } from "@/data/resources";
+import { guideFor } from "@/data/content";
 import { recommend, type FinderAnswers } from "@/lib/recommend";
 import { cn } from "@/lib/utils";
 
@@ -54,32 +56,96 @@ function Option({
 const INITIAL: FinderAnswers = {
   goals: [],
   devices: [],
-  budget: "free-core-ok",
+  budget: "free-only", // safest default for students: nothing that needs payment unless they say so
   strictness: "either",
   noAccount: false,
   openSourcePreferred: false,
 };
 
+/* Answers live in the address bar, so Back, refresh and shared links keep them. */
+function fromParams(p: URLSearchParams): { answers: FinderAnswers; step: number } {
+  const list = (k: string) => (p.get(k) ? p.get(k)!.split(",").filter(Boolean) : []);
+  const goals = list("goals").filter((g) => g in GOAL_LABEL) as Goal[];
+  const devices = list("devices").filter((d) => DEVICES.some((x) => x.id === d)) as DeviceId[];
+  const budget = (["free-only", "free-core-ok", "will-pay"] as const).find((b) => b === p.get("budget")) ?? INITIAL.budget;
+  const strictness = (["gentle", "strict", "either"] as const).find((b) => b === p.get("strict")) ?? INITIAL.strictness;
+  const answers = { goals, devices, budget, strictness, noAccount: p.get("noacct") === "1", openSourcePreferred: p.get("open") === "1" };
+  const wanted = Number(p.get("step")) || 1;
+  // never resume past a step whose answer is missing
+  const step = !goals.length ? 1 : !devices.length ? Math.min(wanted, 2) : Math.min(Math.max(wanted, 1), 5);
+  return { answers, step };
+}
+
+function toParams(a: FinderAnswers, step: number) {
+  const p = new URLSearchParams();
+  if (a.goals.length) p.set("goals", a.goals.join(","));
+  if (a.devices.length) p.set("devices", a.devices.join(","));
+  if (a.budget !== INITIAL.budget) p.set("budget", a.budget);
+  if (a.strictness !== INITIAL.strictness) p.set("strict", a.strictness);
+  if (a.noAccount) p.set("noacct", "1");
+  if (a.openSourcePreferred) p.set("open", "1");
+  if (step > 1) p.set("step", String(step));
+  return p.toString();
+}
+
+const HEADER_OFFSET = 96;
+function scrollToTop(el: HTMLElement | null) {
+  if (!el) return;
+  const top = el.getBoundingClientRect().top + window.scrollY - HEADER_OFFSET;
+  const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (Math.abs(window.scrollY - top) > 4) window.scrollTo({ top, behavior: reduce ? "auto" : "smooth" });
+}
+
 export function ToolFinder() {
-  const [step, setStep] = useState(1);
-  const [a, setA] = useState<FinderAnswers>(INITIAL);
-  const resultsRef = useRef<HTMLDivElement>(null);
+  const params = useSearchParams();
+  const router = useRouter();
+  const [initial] = useState(() => fromParams(new URLSearchParams(params.toString())));
+  const [step, setStep] = useState(initial.step);
+  const [a, setA] = useState<FinderAnswers>(initial.answers);
+  const [showAll, setShowAll] = useState(false);
+  const wrapRef = useRef<HTMLDivElement>(null);
+  const resultsRef = useRef<HTMLHeadingElement>(null);
+  const moved = useRef(false);
   const done = step > 4;
   const results = useMemo(() => (done ? recommend(a) : []), [a, done]);
+
+  // keep the address bar in step with the answers
+  useEffect(() => {
+    const qs = toParams(a, step);
+    router.replace(qs ? `/find?${qs}` : "/find", { scroll: false });
+  }, [a, step, router]);
+
+  // after Continue/Back, put keyboard focus on the new question (or the results) and bring it into view
+  useEffect(() => {
+    if (!moved.current) return;
+    const id = window.setTimeout(() => {
+      if (step > 4) {
+        resultsRef.current?.focus({ preventScroll: true });
+        scrollToTop(resultsRef.current);
+      } else {
+        const q = wrapRef.current?.querySelector<HTMLElement>(`[data-step-heading="${step}"]`);
+        q?.focus({ preventScroll: true });
+        scrollToTop(wrapRef.current);
+      }
+    }, 80);
+    return () => window.clearTimeout(id);
+  }, [step]);
+
+  const go = (n: number) => {
+    moved.current = true;
+    setStep(n);
+  };
 
   const toggle = <T,>(list: T[], v: T) => (list.includes(v) ? list.filter((x) => x !== v) : [...list, v]);
   const canContinue = (step === 1 && a.goals.length > 0) || (step === 2 && a.devices.length > 0) || step >= 3;
 
   return (
     <div className="grid gap-10 lg:grid-cols-[minmax(0,560px)_1fr]">
-      <div className="min-w-0">
+      <div className="min-w-0" ref={wrapRef}>
         <Stepper
           step={step}
-          onStepChange={setStep}
-          onFinalStepCompleted={() => {
-            setStep(5);
-            setTimeout(() => resultsRef.current?.focus(), 50);
-          }}
+          onStepChange={go}
+          onFinalStepCompleted={() => go(5)}
           accentColor="#8fd3c8"
           width="100%"
           linear
@@ -93,7 +159,8 @@ export function ToolFinder() {
                 type="button"
                 onClick={() => {
                   setA(INITIAL);
-                  setStep(1);
+                  setShowAll(false);
+                  go(1);
                 }}
                 className="inline-flex items-center gap-2 rounded-full border border-border px-4 py-2 text-sm hover:bg-white/5"
               >
@@ -105,7 +172,7 @@ export function ToolFinder() {
         >
           <Step title="Goals">
             <fieldset className="space-y-2 p-1">
-              <legend className="mb-3 font-serif text-xl">What do you want help with?</legend>
+              <legend data-step-heading="1" tabIndex={-1} className="mb-3 font-serif text-xl outline-none">What do you want help with?</legend>
               <p className="mb-3 text-sm text-muted-foreground">Choose one or more.</p>
               {GOALS.map((g) => (
                 <Option
@@ -122,7 +189,7 @@ export function ToolFinder() {
           </Step>
           <Step title="Devices">
             <fieldset className="space-y-2 p-1">
-              <legend className="mb-3 font-serif text-xl">Which devices do you use?</legend>
+              <legend data-step-heading="2" tabIndex={-1} className="mb-3 font-serif text-xl outline-none">Which devices do you use?</legend>
               <p className="mb-3 text-sm text-muted-foreground">Choose every device you want the tool to work on.</p>
               {DEVICES.map((d) => (
                 <Option
@@ -138,15 +205,15 @@ export function ToolFinder() {
           </Step>
           <Step title="Budget">
             <fieldset className="space-y-2 p-1">
-              <legend className="mb-3 font-serif text-xl">How much can you spend?</legend>
-              <Option type="radio" name="budget" checked={a.budget === "free-only"} onChange={() => setA({ ...a, budget: "free-only" })} title="Nothing — free only" hint="We hide tools whose key features need payment." />
+              <legend data-step-heading="3" tabIndex={-1} className="mb-3 font-serif text-xl outline-none">How much can you spend?</legend>
+              <Option type="radio" name="budget" checked={a.budget === "free-only"} onChange={() => setA({ ...a, budget: "free-only" })} title="Nothing — free only" hint="Selected to start with. We hide tools whose key features need payment." />
               <Option type="radio" name="budget" checked={a.budget === "free-core-ok"} onChange={() => setA({ ...a, budget: "free-core-ok" })} title="Free is best, but optional extras are fine" />
               <Option type="radio" name="budget" checked={a.budget === "will-pay"} onChange={() => setA({ ...a, budget: "will-pay" })} title="I can pay if it's worth it" />
             </fieldset>
           </Step>
           <Step title="Style">
             <fieldset className="space-y-2 p-1">
-              <legend className="mb-3 font-serif text-xl">How firm should it be?</legend>
+              <legend data-step-heading="4" tabIndex={-1} className="mb-3 font-serif text-xl outline-none">How firm should it be?</legend>
               <Option type="radio" name="strict" checked={a.strictness === "gentle"} onChange={() => setA({ ...a, strictness: "gentle" })} title="Gentle reminders" hint="Easy to pause when you really need to." />
               <Option type="radio" name="strict" checked={a.strictness === "strict"} onChange={() => setA({ ...a, strictness: "strict" })} title="Strict — lock me out" hint="Research shows hard limits work better, but can be frustrating." />
               <Option type="radio" name="strict" checked={a.strictness === "either"} onChange={() => setA({ ...a, strictness: "either" })} title="Not sure" />
@@ -164,7 +231,7 @@ export function ToolFinder() {
         )}
       </div>
 
-      <div ref={resultsRef} tabIndex={-1} aria-live="polite" className="outline-none">
+      <div aria-live="polite">
         {!done ? (
           <div className="rounded-3xl border border-dashed border-border p-8 text-muted-foreground">
             <h2 className="font-serif text-2xl text-foreground">How the finder decides</h2>
@@ -176,7 +243,9 @@ export function ToolFinder() {
           </div>
         ) : results.length === 0 ? (
           <div className="rounded-3xl border border-border bg-card p-8">
-            <h2 className="font-serif text-2xl">No exact match</h2>
+            <h2 ref={resultsRef} tabIndex={-1} className="font-serif text-2xl outline-none">
+              No exact match
+            </h2>
             <p className="mt-2 text-muted-foreground">
               Nothing fits every answer. Try adding another device or allowing paid extras, or{" "}
               <Link href="/resources" className="inline-link">
@@ -187,12 +256,16 @@ export function ToolFinder() {
           </div>
         ) : (
           <div>
-            <h2 className="font-serif text-3xl">Your best matches</h2>
+            <h2 ref={resultsRef} tabIndex={-1} className="font-serif text-3xl outline-none">
+              Your best matches
+            </h2>
             <p className="mt-2 text-muted-foreground">
-              {results.length} tool{results.length > 1 ? "s" : ""} fit your answers. Start with the first one.
+              {results.length} tool{results.length > 1 ? "s" : ""} fit your answers
+              {results.length > 4 && !showAll ? " — here are the top 4" : ""}. Start with the first one. Your answers are
+              saved in this page&apos;s address, so the Back button brings you straight back here.
             </p>
             <ol className="mt-6 space-y-5">
-              {results.slice(0, 4).map((m, i) => (
+              {(showAll ? results : results.slice(0, 4)).map((m, i) => (
                 <li key={m.resource.id} className="relative overflow-hidden rounded-3xl border border-border bg-card p-6">
                   {i === 0 && <BorderBeam size={120} duration={9} colorFrom="#8fd3c8" colorTo="#f1c9a5" />}
                   <div className="flex flex-wrap items-start justify-between gap-3">
@@ -202,7 +275,7 @@ export function ToolFinder() {
                     </div>
                     <CostBadge tone={m.resource.costTone} />
                   </div>
-                  <p className="mt-2 text-sm text-muted-foreground">Works on {platformSummary(m.resource).join(", ")}</p>
+                  <p className="mt-2 text-sm text-muted-foreground">Works on: {m.resource.platforms.join(", ")}</p>
                   <ul className="mt-4 space-y-1.5 text-[15px]">
                     {m.reasons.map((r) => (
                       <li key={r} className="flex gap-2">
@@ -223,18 +296,33 @@ export function ToolFinder() {
                     <Link href={`/resources/${m.resource.id}`} className="inline-flex items-center gap-1.5 text-lake hover:text-dawn">
                       Compare {m.resource.shortName} in detail <ArrowRight aria-hidden className="h-4 w-4" />
                     </Link>
-                    {m.resource.guide && (
-                      <Link href={`/guides/${m.resource.guide}`} className="inline-flex items-center gap-1.5 text-lake hover:text-dawn">
-                        Setup guide for {m.resource.shortName} <ArrowRight aria-hidden className="h-4 w-4" />
-                      </Link>
-                    )}
+                    <GuideLink resource={m.resource} />
                   </div>
                 </li>
               ))}
             </ol>
+            {results.length > 4 && (
+              <button
+                type="button"
+                onClick={() => setShowAll((v) => !v)}
+                className="mt-6 inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium hover:bg-white/5"
+              >
+                {showAll ? "Show only the top 4" : `Show all ${results.length} matches`}
+              </button>
+            )}
           </div>
         )}
       </div>
     </div>
+  );
+}
+
+function GuideLink({ resource }: { resource: { id: string; shortName: string; guide: string | null; category: string } }) {
+  const { guide, exact } = guideFor(resource);
+  return (
+    <Link href={`/guides/${guide.slug}`} className="inline-flex items-center gap-1.5 text-lake hover:text-dawn">
+      {exact ? `Setup guide for ${resource.shortName}` : `No ${resource.shortName} guide yet — closest: ${guide.title}`}
+      <ArrowRight aria-hidden className="h-4 w-4" />
+    </Link>
   );
 }

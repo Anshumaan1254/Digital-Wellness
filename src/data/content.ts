@@ -15,6 +15,7 @@ export type GuideStep = {
   platform?: string;
   image?: GuideImage;
   tip?: string;
+  links?: { label: string; url: string }[];
 };
 
 export type Guide = {
@@ -30,12 +31,24 @@ export type Guide = {
   why: string;
   screenshotNote: string;
   steps: GuideStep[];
-  troubleshooting: { q: string; a: string }[];
+  troubleshooting: { q: string; a: string; link?: { label: string; href: string } }[];
   sources: { label: string; url: string }[];
 };
 
 export const GUIDES = guides as Guide[];
 export const getGuide = (slug: string) => GUIDES.find((g) => g.slug === slug);
+
+/* The tool's own guide, or the closest one for tools we haven't written a guide for. */
+const CLOSEST: Record<string, string> = {
+  focus: "block-distracting-sites",
+  browser: "block-distracting-sites",
+  "phone-bedtime": "phone-wind-down",
+  privacy: "privacy-checkup",
+};
+export function guideFor(r: { guide: string | null; category: string }) {
+  const slug = r.guide ?? CLOSEST[r.category];
+  return { guide: getGuide(slug)!, exact: Boolean(r.guide) };
+}
 
 export type Need = (typeof research.needs)[number];
 export type FeedbackStudy = (typeof research.userFeedbackResearch)[number];

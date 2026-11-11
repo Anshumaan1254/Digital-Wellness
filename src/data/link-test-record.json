@@ -1,9 +1,9 @@
 {
   "summary": {
-    "generatedAt": "2026-11-11T14:19:59.949Z",
+    "generatedAt": "2026-11-11T15:24:17.211Z",
     "external": {
-      "total": 114,
-      "pass": 98,
+      "total": 116,
+      "pass": 100,
       "passInBrowser": 8,
       "doiRegistered": 7,
       "blocked": 1,
@@ -23,10 +23,10 @@
       ],
       "status": 404,
       "finalUrl": "https://support.apple.com/guide/iphone/set-up-screen-time-for-yourself-iphbfa595995/ios",
-      "ms": 2203,
+      "ms": 2064,
       "method": "GET",
       "result": "pass-in-browser",
-      "checkedAt": "2026-11-11T14:18:48.843Z",
+      "checkedAt": "2026-11-11T15:22:57.090Z",
       "browserStatus": 200,
       "browserTitle": "Set up Screen Time for yourself on iPhone - Apple Support"
     },
@@ -37,10 +37,10 @@
       ],
       "status": 404,
       "finalUrl": "https://support.apple.com/guide/iphone/set-up-screen-time-for-yourself-iphbfa595995/ios",
-      "ms": 4105,
+      "ms": 4674,
       "method": "GET",
       "result": "pass-in-browser",
-      "checkedAt": "2026-11-11T14:18:50.770Z",
+      "checkedAt": "2026-11-11T15:22:59.732Z",
       "browserStatus": 200,
       "browserTitle": "Set up Screen Time for yourself on iPhone - Apple Support"
     },
@@ -52,10 +52,10 @@
       ],
       "status": 404,
       "finalUrl": "https://support.apple.com/guide/iphone/set-schedules-and-time-allowances-iphb0c7313c9/ios",
-      "ms": 5501,
+      "ms": 5068,
       "method": "GET",
       "result": "pass-in-browser",
-      "checkedAt": "2026-11-11T14:18:52.167Z",
+      "checkedAt": "2026-11-11T15:23:00.127Z",
       "browserStatus": 200,
       "browserTitle": "Set Screen Time Schedules and Time Allowances in Screen Time on iPhone - Apple Support"
     },
@@ -66,10 +66,10 @@
       ],
       "status": 404,
       "finalUrl": "https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/26/ios/26",
-      "ms": 4647,
+      "ms": 5851,
       "method": "GET",
       "result": "pass-in-browser",
-      "checkedAt": "2026-11-11T14:18:51.315Z",
+      "checkedAt": "2026-11-11T15:23:00.911Z",
       "browserStatus": 200,
       "browserTitle": "Set schedules with Screen Time on iPhone - Apple Support"
     },
@@ -80,10 +80,10 @@
       ],
       "status": 404,
       "finalUrl": "https://support.apple.com/guide/iphone/choose-communicate-times-iph4df1c0dad/ios",
-      "ms": 4733,
+      "ms": 5310,
       "method": "GET",
       "result": "pass-in-browser",
-      "checkedAt": "2026-11-11T14:18:51.401Z",
+      "checkedAt": "2026-11-11T15:23:00.372Z",
       "browserStatus": 200,
       "browserTitle": "Choose who you can communicate with at certain times with Screen Time on iPhone - Apple Support"
     },
@@ -94,10 +94,10 @@
       ],
       "status": 404,
       "finalUrl": "https://support.apple.com/guide/mac-help/set-up-screen-time-for-yourself-mchle4e2edfe/mac",
-      "ms": 4267,
+      "ms": 5286,
       "method": "GET",
       "result": "pass-in-browser",
-      "checkedAt": "2026-11-11T14:18:50.935Z",
+      "checkedAt": "2026-11-11T15:23:00.349Z",
       "browserStatus": 200,
       "browserTitle": "Set up Screen Time for yourself on Mac - Apple Support"
     },
@@ -108,10 +108,10 @@
       ],
       "status": 200,
       "finalUrl": "https://support.apple.com/en-us/108806",
-      "ms": 21,
+      "ms": 37,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:48.864Z"
+      "checkedAt": "2026-11-11T15:22:57.128Z"
     },
     {
       "url": "https://support.apple.com/en-us/guide/iphone/iphd6288a67f/ios",
@@ -120,10 +120,10 @@
       ],
       "status": 404,
       "finalUrl": "https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios",
-      "ms": 4109,
+      "ms": 5917,
       "method": "GET",
       "result": "pass-in-browser",
-      "checkedAt": "2026-11-11T14:18:52.974Z",
+      "checkedAt": "2026-11-11T15:23:03.045Z",
       "browserStatus": 200,
       "browserTitle": "Set up a Focus on iPhone - Apple Support"
     },
@@ -136,10 +136,10 @@
       ],
       "status": 404,
       "finalUrl": "https://support.apple.com/guide/iphone/set-up-sleep-iphaf56dceb4/ios",
-      "ms": 4252,
+      "ms": 5448,
       "method": "GET",
       "result": "pass-in-browser",
-      "checkedAt": "2026-11-11T14:18:55.022Z",
+      "checkedAt": "2026-11-11T15:23:05.180Z",
       "browserStatus": 200,
       "browserTitle": "Set up sleep in Health on iPhone - Apple Support"
     },
@@ -151,10 +151,10 @@
       ],
       "status": 200,
       "finalUrl": "https://support.apple.com/guide/iphone/change-notification-settings-iph7c3d96bab/ios",
-      "ms": 2687,
+      "ms": 3242,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:53.624Z"
+      "checkedAt": "2026-11-11T15:23:03.369Z"
     },
     {
       "url": "https://support.apple.com/en-us/guide/iphone/iph1fbe7d2b9/ios",
@@ -163,10 +163,10 @@
       ],
       "status": 200,
       "finalUrl": "https://support.apple.com/guide/iphone/summarize-notifications-reduce-interruptions-iph1fbe7d2b9/ios",
-      "ms": 2436,
+      "ms": 3596,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:53.751Z"
+      "checkedAt": "2026-11-11T15:23:03.946Z"
     },
     {
       "url": "https://support.apple.com/en-us/102651",
@@ -175,10 +175,10 @@
       ],
       "status": 200,
       "finalUrl": "https://support.apple.com/en-us/102651",
-      "ms": 27,
+      "ms": 18,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:51.428Z"
+      "checkedAt": "2026-11-11T15:23:00.391Z"
     },
     {
       "url": "https://www.apple.com/accessibility/vision/",
@@ -187,10 +187,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.apple.com/accessibility/features/?vision",
-      "ms": 827,
+      "ms": 787,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:52.255Z"
+      "checkedAt": "2026-11-11T15:23:01.178Z"
     },
     {
       "url": "https://support.google.com/android/answer/9346420",
@@ -201,10 +201,10 @@
       ],
       "status": 200,
       "finalUrl": "https://support.google.com/android/answer/9346420",
-      "ms": 787,
+      "ms": 896,
       "method": "GET",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:52.955Z"
+      "checkedAt": "2026-11-11T15:23:01.807Z"
     },
     {
       "url": "https://support.google.com/android/answer/9346420?hl=en",
@@ -213,10 +213,10 @@
       ],
       "status": 200,
       "finalUrl": "https://support.google.com/android/answer/9346420?hl=en",
-      "ms": 1948,
+      "ms": 2251,
       "method": "GET",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:54.204Z"
+      "checkedAt": "2026-11-11T15:23:03.429Z"
     },
     {
       "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&hl=en_US&gl=US",
@@ -225,10 +225,10 @@
       ],
       "status": 200,
       "finalUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&hl=en_US&gl=US",
-      "ms": 252,
+      "ms": 245,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:53.207Z"
+      "checkedAt": "2026-11-11T15:23:02.052Z"
     },
     {
       "url": "https://support.google.com/accessibility/android/answer/6283677?hl=en",
@@ -237,10 +237,10 @@
       ],
       "status": 200,
       "finalUrl": "https://support.google.com/accessibility/android/answer/6283677?hl=en",
-      "ms": 1961,
+      "ms": 953,
       "method": "GET",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:54.935Z"
+      "checkedAt": "2026-11-11T15:23:03.005Z"
     },
     {
       "url": "https://www.forestapp.cc/",
@@ -250,10 +250,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.forestapp.cc/",
-      "ms": 98,
+      "ms": 84,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:53.305Z"
+      "checkedAt": "2026-11-11T15:23:03.089Z"
     },
     {
       "url": "https://apps.apple.com/us/app/forest-focus-for-productivity/id866450515",
@@ -263,10 +263,10 @@
       ],
       "status": 200,
       "finalUrl": "https://apps.apple.com/us/app/forest-focus-for-productivity/id866450515",
-      "ms": 459,
+      "ms": 765,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:53.764Z"
+      "checkedAt": "2026-11-11T15:23:03.810Z"
     },
     {
       "url": "https://play.google.com/store/apps/details?id=cc.forestapp&hl=en_US&gl=US",
@@ -275,10 +275,10 @@
       ],
       "status": 200,
       "finalUrl": "https://play.google.com/store/apps/details?id=cc.forestapp&hl=en_US&gl=US",
-      "ms": 287,
+      "ms": 214,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:53.912Z"
+      "checkedAt": "2026-11-11T15:23:03.303Z"
     },
     {
       "url": "https://chromewebstore.google.com/detail/kjacjjdnoddnpbbcjilcajfhhbdhkpgk?hl=en",
@@ -287,10 +287,10 @@
       ],
       "status": 200,
       "finalUrl": "https://chromewebstore.google.com/detail/forest-stay-focused-be-pr/kjacjjdnoddnpbbcjilcajfhhbdhkpgk?hl=en",
-      "ms": 1024,
+      "ms": 1180,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:54.775Z"
+      "checkedAt": "2026-11-11T15:23:04.483Z"
     },
     {
       "url": "https://addons.mozilla.org/api/v5/addons/addon/forest-stay-focused-be-present/?lang=en-US",
@@ -299,10 +299,10 @@
       ],
       "status": 200,
       "finalUrl": "https://addons.mozilla.org/api/v5/addons/addon/forest-stay-focused-be-present/?lang=en-US",
-      "ms": 515,
+      "ms": 479,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:54.279Z"
+      "checkedAt": "2026-11-11T15:23:03.849Z"
     },
     {
       "url": "https://freedom.to/",
@@ -311,10 +311,10 @@
       ],
       "status": 200,
       "finalUrl": "https://freedom.to/",
-      "ms": 85,
+      "ms": 91,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:53.997Z"
+      "checkedAt": "2026-11-11T15:23:03.520Z"
     },
     {
       "url": "https://freedom.to/pricing",
@@ -324,10 +324,10 @@
       ],
       "status": 200,
       "finalUrl": "https://freedom.to/premium",
-      "ms": 957,
+      "ms": 527,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:54.954Z"
+      "checkedAt": "2026-11-11T15:23:04.047Z"
     },
     {
       "url": "https://support.freedom.to/en/articles/13764747-what-s-included-in-free-and-premium-plans",
@@ -336,10 +336,10 @@
       ],
       "status": 200,
       "finalUrl": "https://support.freedom.to/en/articles/13764747-what-s-included-in-free-and-premium-plans",
-      "ms": 1023,
+      "ms": 1063,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:55.227Z"
+      "checkedAt": "2026-11-11T15:23:04.873Z"
     },
     {
       "url": "https://freedom.to/downloads",
@@ -349,10 +349,10 @@
       ],
       "status": 200,
       "finalUrl": "https://freedom.to/downloads",
-      "ms": 64,
+      "ms": 237,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:54.343Z"
+      "checkedAt": "2026-11-11T15:23:04.087Z"
     },
     {
       "url": "https://apps.apple.com/us/app/freedom-screen-time-control/id1269788228",
@@ -361,10 +361,10 @@
       ],
       "status": 200,
       "finalUrl": "https://apps.apple.com/us/app/freedom-screen-time-control/id1269788228",
-      "ms": 487,
+      "ms": 955,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:54.830Z"
+      "checkedAt": "2026-11-11T15:23:04.901Z"
     },
     {
       "url": "https://chrome.google.com/webstore/detail/abdkjmofmjelgafcdffaimhgdgpagmop",
@@ -373,10 +373,10 @@
       ],
       "status": 200,
       "finalUrl": "https://chromewebstore.google.com/detail/freedom-website-blocker-f/abdkjmofmjelgafcdffaimhgdgpagmop",
-      "ms": 960,
+      "ms": 1219,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:55.735Z"
+      "checkedAt": "2026-11-11T15:23:05.266Z"
     },
     {
       "url": "https://getcoldturkey.com/",
@@ -386,10 +386,10 @@
       ],
       "status": 200,
       "finalUrl": "https://getcoldturkey.com/",
-      "ms": 643,
+      "ms": 1164,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:55.473Z"
+      "checkedAt": "2026-11-11T15:23:05.252Z"
     },
     {
       "url": "https://getcoldturkey.com/pricing/",
@@ -399,10 +399,10 @@
       ],
       "status": 200,
       "finalUrl": "https://getcoldturkey.com/pricing/",
-      "ms": 543,
+      "ms": 871,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:55.478Z"
+      "checkedAt": "2026-11-11T15:23:05.355Z"
     },
     {
       "url": "https://checkout.paddle.com/api/2.0/prices?product_ids=598305&customer_country=US",
@@ -411,10 +411,10 @@
       ],
       "status": 200,
       "finalUrl": "https://checkout.paddle.com/api/2.0/prices?product_ids=598305&customer_country=US",
-      "ms": 614,
+      "ms": 599,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:55.568Z"
+      "checkedAt": "2026-11-11T15:23:05.472Z"
     },
     {
       "url": "https://getcoldturkey.com/download/",
@@ -424,10 +424,10 @@
       ],
       "status": 200,
       "finalUrl": "https://getcoldturkey.com/download/",
-      "ms": 454,
+      "ms": 624,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:55.476Z"
+      "checkedAt": "2026-11-11T15:23:05.525Z"
     },
     {
       "url": "https://getcoldturkey.com/privacy/",
@@ -436,10 +436,10 @@
       ],
       "status": 200,
       "finalUrl": "https://getcoldturkey.com/privacy/",
-      "ms": 331,
+      "ms": 347,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:55.558Z"
+      "checkedAt": "2026-11-11T15:23:05.527Z"
     },
     {
       "url": "https://getcoldturkey.com/compare/",
@@ -448,10 +448,10 @@
       ],
       "status": 200,
       "finalUrl": "https://getcoldturkey.com/compare/",
-      "ms": 334,
+      "ms": 329,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:55.808Z"
+      "checkedAt": "2026-11-11T15:23:05.581Z"
     },
     {
       "url": "https://super-productivity.com/",
@@ -461,10 +461,10 @@
       ],
       "status": 200,
       "finalUrl": "https://super-productivity.com/",
-      "ms": 998,
+      "ms": 1051,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:56.474Z"
+      "checkedAt": "2026-11-11T15:23:06.317Z"
     },
     {
       "url": "https://super-productivity.com/pricing/",
@@ -473,10 +473,10 @@
       ],
       "status": 200,
       "finalUrl": "https://super-productivity.com/pricing/",
-      "ms": 978,
+      "ms": 985,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:56.456Z"
+      "checkedAt": "2026-11-11T15:23:06.340Z"
     },
     {
       "url": "https://super-productivity.com/download/",
@@ -486,10 +486,10 @@
       ],
       "status": 200,
       "finalUrl": "https://super-productivity.com/download/",
-      "ms": 1035,
+      "ms": 1017,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:56.593Z"
+      "checkedAt": "2026-11-11T15:23:06.489Z"
     },
     {
       "url": "https://api.github.com/repositories/78243781",
@@ -498,10 +498,10 @@
       ],
       "status": 200,
       "finalUrl": "https://api.github.com/repositories/78243781",
-      "ms": 853,
+      "ms": 812,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:56.421Z"
+      "checkedAt": "2026-11-11T15:23:06.337Z"
     },
     {
       "url": "https://sync.super-productivity.com/terms.html",
@@ -510,10 +510,10 @@
       ],
       "status": 200,
       "finalUrl": "https://sync.super-productivity.com/terms.html",
-      "ms": 1177,
+      "ms": 1423,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:56.912Z"
+      "checkedAt": "2026-11-11T15:23:06.951Z"
     },
     {
       "url": "https://apps.apple.com/us/app/super-productivity/id1482572463",
@@ -522,10 +522,10 @@
       ],
       "status": 200,
       "finalUrl": "https://apps.apple.com/us/app/super-productivity/id1482572463",
-      "ms": 524,
+      "ms": 1008,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:56.332Z"
+      "checkedAt": "2026-11-11T15:23:06.590Z"
     },
     {
       "url": "https://www.proginosko.com/leechblock/",
@@ -536,10 +536,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.proginosko.com/leechblock/",
-      "ms": 5803,
+      "ms": 3789,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.135Z"
+      "checkedAt": "2026-11-11T15:23:10.106Z"
     },
     {
       "url": "https://www.proginosko.com/leechblock/install/",
@@ -548,10 +548,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.proginosko.com/leechblock/install/",
-      "ms": 5796,
+      "ms": 3553,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.217Z"
+      "checkedAt": "2026-11-11T15:23:09.890Z"
     },
     {
       "url": "https://www.proginosko.com/leechblock/faq/privacy/",
@@ -561,10 +561,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.proginosko.com/leechblock/faq/privacy/",
-      "ms": 5676,
+      "ms": 5860,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.132Z"
+      "checkedAt": "2026-11-11T15:23:12.200Z"
     },
     {
       "url": "https://api.github.com/repos/proginosko/LeechBlockNG",
@@ -573,10 +573,10 @@
       ],
       "status": 200,
       "finalUrl": "https://api.github.com/repos/proginosko/LeechBlockNG",
-      "ms": 1222,
+      "ms": 1047,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:57.697Z"
+      "checkedAt": "2026-11-11T15:23:07.536Z"
     },
     {
       "url": "https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/",
@@ -586,10 +586,10 @@
       ],
       "status": 200,
       "finalUrl": "https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/",
-      "ms": 857,
+      "ms": 897,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:57.450Z"
+      "checkedAt": "2026-11-11T15:23:07.487Z"
     },
     {
       "url": "https://chromewebstore.google.com/detail/leechblock-ng/blaaajhemilngeeffpbfkdjjoefldkok",
@@ -599,10 +599,10 @@
       ],
       "status": 200,
       "finalUrl": "https://chromewebstore.google.com/detail/leechblock-ng/blaaajhemilngeeffpbfkdjjoefldkok",
-      "ms": 648,
+      "ms": 800,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:57.560Z"
+      "checkedAt": "2026-11-11T15:23:07.751Z"
     },
     {
       "url": "https://microsoftedge.microsoft.com/addons/detail/leechblock-ng/hnncfhodpmpjchmmcnimoimkcojdmfhl",
@@ -612,10 +612,10 @@
       ],
       "status": 200,
       "finalUrl": "https://microsoftedge.microsoft.com/addons/detail/leechblock-ng/hnncfhodpmpjchmmcnimoimkcojdmfhl",
-      "ms": 286,
+      "ms": 325,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:57.737Z"
+      "checkedAt": "2026-11-11T15:23:07.812Z"
     },
     {
       "url": "https://unhook.app/",
@@ -625,10 +625,10 @@
       ],
       "status": 200,
       "finalUrl": "https://unhook.app/",
-      "ms": 175,
+      "ms": 368,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:57.735Z"
+      "checkedAt": "2026-11-11T15:23:07.904Z"
     },
     {
       "url": "https://unhook.app/privacy-policy",
@@ -637,10 +637,10 @@
       ],
       "status": 200,
       "finalUrl": "https://unhook.app/privacy-policy",
-      "ms": 304,
+      "ms": 299,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:58.001Z"
+      "checkedAt": "2026-11-11T15:23:08.050Z"
     },
     {
       "url": "https://chromewebstore.google.com/detail/khncfooichmfjbepaaaebmommgaepoid?hl=en",
@@ -649,10 +649,10 @@
       ],
       "status": 200,
       "finalUrl": "https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid?hl=en",
-      "ms": 1263,
+      "ms": 1173,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:58.999Z"
+      "checkedAt": "2026-11-11T15:23:08.985Z"
     },
     {
       "url": "https://addons.mozilla.org/firefox/addon/youtube-recommended-videos/",
@@ -662,10 +662,10 @@
       ],
       "status": 200,
       "finalUrl": "https://addons.mozilla.org/firefox/addon/youtube-recommended-videos/",
-      "ms": 372,
+      "ms": 515,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:58.109Z"
+      "checkedAt": "2026-11-11T15:23:08.419Z"
     },
     {
       "url": "https://microsoftedge.microsoft.com/addons/detail/unhook-remove-youtube-r/hebpjnnclppdnfghdnmhgdljmjpfhggk",
@@ -675,10 +675,10 @@
       ],
       "status": 200,
       "finalUrl": "https://microsoftedge.microsoft.com/addons/detail/unhook-remove-youtube-r/hebpjnnclppdnfghdnmhgdljmjpfhggk",
-      "ms": 281,
+      "ms": 297,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:58.283Z"
+      "checkedAt": "2026-11-11T15:23:08.347Z"
     },
     {
       "url": "https://justgetflux.com/",
@@ -689,10 +689,10 @@
       ],
       "status": 200,
       "finalUrl": "https://justgetflux.com/",
-      "ms": 798,
+      "ms": 786,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:58.907Z"
+      "checkedAt": "2026-11-11T15:23:09.133Z"
     },
     {
       "url": "https://justgetflux.com/eula/",
@@ -701,10 +701,10 @@
       ],
       "status": 200,
       "finalUrl": "https://justgetflux.com/eula/",
-      "ms": 774,
+      "ms": 870,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:59.057Z"
+      "checkedAt": "2026-11-11T15:23:09.289Z"
     },
     {
       "url": "https://justgetflux.com/corp/",
@@ -713,10 +713,10 @@
       ],
       "status": 200,
       "finalUrl": "https://justgetflux.com/corp/",
-      "ms": 794,
+      "ms": 862,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:59.702Z"
+      "checkedAt": "2026-11-11T15:23:09.847Z"
     },
     {
       "url": "https://justgetflux.com/privacy/",
@@ -725,10 +725,10 @@
       ],
       "status": 200,
       "finalUrl": "https://justgetflux.com/privacy/",
-      "ms": 795,
+      "ms": 848,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:59.795Z"
+      "checkedAt": "2026-11-11T15:23:09.981Z"
     },
     {
       "url": "https://justgetflux.com/ios.html",
@@ -737,10 +737,10 @@
       ],
       "status": 200,
       "finalUrl": "https://justgetflux.com/ios.html",
-      "ms": 859,
+      "ms": 796,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:18:59.916Z"
+      "checkedAt": "2026-11-11T15:23:10.085Z"
     },
     {
       "url": "https://justgetflux.com/android/",
@@ -752,7 +752,7 @@
       "ms": 801,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:00.504Z"
+      "checkedAt": "2026-11-11T15:23:10.648Z"
     },
     {
       "url": "https://justgetflux.com/faq.html",
@@ -761,10 +761,10 @@
       ],
       "status": 200,
       "finalUrl": "https://justgetflux.com/faq.html",
-      "ms": 837,
+      "ms": 791,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:00.632Z"
+      "checkedAt": "2026-11-11T15:23:10.681Z"
     },
     {
       "url": "https://bitwarden.com/",
@@ -773,10 +773,10 @@
       ],
       "status": 200,
       "finalUrl": "https://bitwarden.com/",
-      "ms": 157,
+      "ms": 282,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:00.073Z"
+      "checkedAt": "2026-11-11T15:23:10.263Z"
     },
     {
       "url": "https://bitwarden.com/pricing/",
@@ -786,10 +786,10 @@
       ],
       "status": 200,
       "finalUrl": "https://bitwarden.com/pricing/",
-      "ms": 139,
+      "ms": 166,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:00.212Z"
+      "checkedAt": "2026-11-11T15:23:10.251Z"
     },
     {
       "url": "https://bitwarden.com/blog/bitwarden-launches-enhanced-premium-plan/",
@@ -798,10 +798,10 @@
       ],
       "status": 200,
       "finalUrl": "https://bitwarden.com/blog/bitwarden-launches-enhanced-premium-plan/",
-      "ms": 556,
+      "ms": 159,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:00.768Z"
+      "checkedAt": "2026-11-11T15:23:10.265Z"
     },
     {
       "url": "https://bitwarden.com/download/",
@@ -811,10 +811,10 @@
       ],
       "status": 200,
       "finalUrl": "https://bitwarden.com/download/",
-      "ms": 154,
+      "ms": 155,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:00.658Z"
+      "checkedAt": "2026-11-11T15:23:10.406Z"
     },
     {
       "url": "https://raw.githubusercontent.com/bitwarden/clients/main/LICENSE.txt",
@@ -823,10 +823,10 @@
       ],
       "status": 200,
       "finalUrl": "https://raw.githubusercontent.com/bitwarden/clients/main/LICENSE.txt",
-      "ms": 447,
+      "ms": 469,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:01.079Z"
+      "checkedAt": "2026-11-11T15:23:10.732Z"
     },
     {
       "url": "https://chromewebstore.google.com/detail/nngceckbapebfimnlniiiahkandclblb",
@@ -835,10 +835,10 @@
       ],
       "status": 200,
       "finalUrl": "https://chromewebstore.google.com/detail/bitwarden-password-manage/nngceckbapebfimnlniiiahkandclblb",
-      "ms": 980,
+      "ms": 958,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:01.639Z"
+      "checkedAt": "2026-11-11T15:23:11.224Z"
     },
     {
       "url": "https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/",
@@ -847,10 +847,10 @@
       ],
       "status": 200,
       "finalUrl": "https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/",
-      "ms": 418,
+      "ms": 386,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:01.186Z"
+      "checkedAt": "2026-11-11T15:23:10.792Z"
     },
     {
       "url": "https://microsoftedge.microsoft.com/addons/detail/jbkfoedolllekgbhcbcoahefnbanhhlh",
@@ -859,10 +859,10 @@
       ],
       "status": 200,
       "finalUrl": "https://microsoftedge.microsoft.com/addons/detail/jbkfoedolllekgbhcbcoahefnbanhhlh",
-      "ms": 298,
+      "ms": 284,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:01.377Z"
+      "checkedAt": "2026-11-11T15:23:10.933Z"
     },
     {
       "url": "https://apps.apple.com/us/app/id1137397744",
@@ -871,10 +871,10 @@
       ],
       "status": 200,
       "finalUrl": "https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744",
-      "ms": 714,
+      "ms": 1136,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:01.900Z"
+      "checkedAt": "2026-11-11T15:23:11.817Z"
     },
     {
       "url": "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden",
@@ -883,10 +883,10 @@
       ],
       "status": 200,
       "finalUrl": "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden",
-      "ms": 232,
+      "ms": 254,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:01.609Z"
+      "checkedAt": "2026-11-11T15:23:10.986Z"
     },
     {
       "url": "https://contributing.bitwarden.com/contributing/accessibility/",
@@ -895,10 +895,10 @@
       ],
       "status": 200,
       "finalUrl": "https://contributing.bitwarden.com/contributing/accessibility/",
-      "ms": 280,
+      "ms": 129,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:01.889Z"
+      "checkedAt": "2026-11-11T15:23:10.921Z"
     },
     {
       "url": "https://privacybadger.org/",
@@ -909,10 +909,10 @@
       ],
       "status": 200,
       "finalUrl": "https://privacybadger.org/",
-      "ms": 1410,
+      "ms": 1394,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:03.049Z"
+      "checkedAt": "2026-11-11T15:23:12.315Z"
     },
     {
       "url": "https://raw.githubusercontent.com/EFForg/privacybadger/master/LICENSE",
@@ -921,10 +921,10 @@
       ],
       "status": 200,
       "finalUrl": "https://raw.githubusercontent.com/EFForg/privacybadger/master/LICENSE",
-      "ms": 467,
+      "ms": 405,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.356Z"
+      "checkedAt": "2026-11-11T15:23:11.338Z"
     },
     {
       "url": "https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp",
@@ -934,10 +934,10 @@
       ],
       "status": 200,
       "finalUrl": "https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp",
-      "ms": 614,
+      "ms": 504,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.514Z"
+      "checkedAt": "2026-11-11T15:23:11.490Z"
     },
     {
       "url": "https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/",
@@ -947,10 +947,10 @@
       ],
       "status": 200,
       "finalUrl": "https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/",
-      "ms": 386,
+      "ms": 410,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.518Z"
+      "checkedAt": "2026-11-11T15:23:11.634Z"
     },
     {
       "url": "https://microsoftedge.microsoft.com/addons/detail/mkejgcgkdlddbggjhhflekkondicpnop",
@@ -960,22 +960,23 @@
       ],
       "status": 200,
       "finalUrl": "https://microsoftedge.microsoft.com/addons/detail/mkejgcgkdlddbggjhhflekkondicpnop",
-      "ms": 304,
+      "ms": 280,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.439Z"
+      "checkedAt": "2026-11-11T15:23:11.618Z"
     },
     {
       "url": "https://apps.apple.com/app/privacy-badger/id6761143693",
       "usedIn": [
-        "Tool page: Privacy Badger (source)"
+        "Tool page: Privacy Badger (source)",
+        "Install link: privacy-badger"
       ],
       "status": 200,
       "finalUrl": "https://apps.apple.com/us/app/privacy-badger/id6761143693?mt=12",
-      "ms": 495,
+      "ms": 800,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.712Z"
+      "checkedAt": "2026-11-11T15:23:12.290Z"
     },
     {
       "url": "https://addons.opera.com/en/extensions/details/privacy-badger/",
@@ -984,10 +985,10 @@
       ],
       "status": 200,
       "finalUrl": "https://addons.opera.com/en/extensions/details/privacy-badger/",
-      "ms": 1904,
+      "ms": 1013,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:04.260Z"
+      "checkedAt": "2026-11-11T15:23:12.632Z"
     },
     {
       "url": "https://haveibeenpwned.com/",
@@ -997,10 +998,10 @@
       ],
       "status": 200,
       "finalUrl": "https://haveibeenpwned.com/",
-      "ms": 73,
+      "ms": 70,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.512Z"
+      "checkedAt": "2026-11-11T15:23:11.704Z"
     },
     {
       "url": "https://haveibeenpwned.com/Subscription",
@@ -1012,7 +1013,7 @@
       "ms": 48,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.560Z"
+      "checkedAt": "2026-11-11T15:23:11.752Z"
     },
     {
       "url": "https://haveibeenpwned.com/TermsOfUse",
@@ -1021,10 +1022,10 @@
       ],
       "status": 200,
       "finalUrl": "https://haveibeenpwned.com/TermsOfUse",
-      "ms": 51,
+      "ms": 138,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.565Z"
+      "checkedAt": "2026-11-11T15:23:11.890Z"
     },
     {
       "url": "https://haveibeenpwned.com/NotifyMe",
@@ -1034,10 +1035,10 @@
       ],
       "status": 200,
       "finalUrl": "https://haveibeenpwned.com/NotifyMe",
-      "ms": 44,
+      "ms": 53,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.562Z"
+      "checkedAt": "2026-11-11T15:23:11.870Z"
     },
     {
       "url": "https://haveibeenpwned.com/Privacy",
@@ -1047,10 +1048,10 @@
       ],
       "status": 200,
       "finalUrl": "https://haveibeenpwned.com/Privacy",
-      "ms": 45,
+      "ms": 48,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.605Z"
+      "checkedAt": "2026-11-11T15:23:11.918Z"
     },
     {
       "url": "https://haveibeenpwned.com/Passwords",
@@ -1059,10 +1060,10 @@
       ],
       "status": 200,
       "finalUrl": "https://haveibeenpwned.com/Passwords",
-      "ms": 48,
+      "ms": 55,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.610Z"
+      "checkedAt": "2026-11-11T15:23:11.945Z"
     },
     {
       "url": "https://haveibeenpwned.com/FAQs",
@@ -1071,10 +1072,10 @@
       ],
       "status": 200,
       "finalUrl": "https://haveibeenpwned.com/FAQs",
-      "ms": 50,
+      "ms": 142,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.615Z"
+      "checkedAt": "2026-11-11T15:23:12.060Z"
     },
     {
       "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing",
@@ -1083,10 +1084,10 @@
       ],
       "status": 200,
       "finalUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing",
-      "ms": 193,
+      "ms": 232,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.799Z"
+      "checkedAt": "2026-11-11T15:23:12.177Z"
     },
     {
       "url": "https://play.google.com/store/apps/details?id=cc.forestapp",
@@ -1095,10 +1096,10 @@
       ],
       "status": 200,
       "finalUrl": "https://play.google.com/store/apps/details?id=cc.forestapp",
-      "ms": 217,
+      "ms": 188,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.828Z"
+      "checkedAt": "2026-11-11T15:23:12.248Z"
     },
     {
       "url": "https://chromewebstore.google.com/detail/kjacjjdnoddnpbbcjilcajfhhbdhkpgk",
@@ -1107,10 +1108,10 @@
       ],
       "status": 200,
       "finalUrl": "https://chromewebstore.google.com/detail/forest-stay-focused-be-pr/kjacjjdnoddnpbbcjilcajfhhbdhkpgk",
-      "ms": 996,
+      "ms": 1027,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:03.611Z"
+      "checkedAt": "2026-11-11T15:23:13.205Z"
     },
     {
       "url": "https://app.super-productivity.com/",
@@ -1119,10 +1120,10 @@
       ],
       "status": 200,
       "finalUrl": "https://app.super-productivity.com/",
-      "ms": 1019,
+      "ms": 1326,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:03.732Z"
+      "checkedAt": "2026-11-11T15:23:13.526Z"
     },
     {
       "url": "https://chromewebstore.google.com/detail/khncfooichmfjbepaaaebmommgaepoid",
@@ -1131,10 +1132,10 @@
       ],
       "status": 200,
       "finalUrl": "https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid",
-      "ms": 972,
+      "ms": 952,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:03.771Z"
+      "checkedAt": "2026-11-11T15:23:13.200Z"
     },
     {
       "url": "https://bitwarden.com/password-generator/",
@@ -1143,10 +1144,10 @@
       ],
       "status": 200,
       "finalUrl": "https://bitwarden.com/password-generator/",
-      "ms": 165,
+      "ms": 144,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:02.994Z"
+      "checkedAt": "2026-11-11T15:23:12.434Z"
     },
     {
       "url": "https://www.pewresearch.org/internet/2025/04/22/teens-social-media-and-mental-health/",
@@ -1155,10 +1156,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.pewresearch.org/internet/2025/04/22/teens-social-media-and-mental-health/",
-      "ms": 127,
+      "ms": 130,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:03.121Z"
+      "checkedAt": "2026-11-11T15:23:12.445Z"
     },
     {
       "url": "https://www.commonsensemedia.org/sites/default/files/research/report/2023-cs-smartphone-research-report_final-for-web.pdf",
@@ -1167,10 +1168,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.commonsensemedia.org/sites/default/files/research/report/2023-cs-smartphone-research-report_final-for-web.pdf",
-      "ms": 309,
+      "ms": 653,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:03.358Z"
+      "checkedAt": "2026-11-11T15:23:13.088Z"
     },
     {
       "url": "https://www.oecd.org/en/publications/managing-screen-time_7c225af4-en.html",
@@ -1179,10 +1180,10 @@
       ],
       "status": 403,
       "finalUrl": "https://www.oecd.org/en/publications/managing-screen-time_7c225af4-en.html",
-      "ms": 138,
+      "ms": 122,
       "method": "GET",
       "result": "blocked-automated",
-      "checkedAt": "2026-11-11T14:19:03.259Z",
+      "checkedAt": "2026-11-11T15:23:12.567Z",
       "browserStatus": 403,
       "browserTitle": "Just a moment..."
     },
@@ -1193,10 +1194,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.unesco.org/en/articles/smartphones-school-only-when-they-clearly-support-learning",
-      "ms": 766,
+      "ms": 765,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:04.025Z"
+      "checkedAt": "2026-11-11T15:23:13.333Z"
     },
     {
       "url": "https://doi.org/10.1037/xhp0000100",
@@ -1205,10 +1206,10 @@
       ],
       "status": 200,
       "finalUrl": "https://psycnet.apa.org/doiLanding?doi=10.1037/xhp0000100",
-      "ms": 3691,
+      "ms": 3275,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:07.049Z"
+      "checkedAt": "2026-11-11T15:23:15.907Z"
     },
     {
       "url": "https://doi.org/10.1086/691462",
@@ -1217,10 +1218,10 @@
       ],
       "status": 403,
       "finalUrl": "https://www.journals.uchicago.edu/doi/10.1086/691462",
-      "ms": 754,
+      "ms": 601,
       "method": "GET",
       "result": "doi-registered",
-      "checkedAt": "2026-11-11T14:19:04.366Z",
+      "checkedAt": "2026-11-11T15:23:13.689Z",
       "browserStatus": 403,
       "browserTitle": "Just a moment...",
       "doiResolvesTo": "https://www.journals.uchicago.edu/doi/10.1086/691462"
@@ -1232,10 +1233,10 @@
       ],
       "status": 200,
       "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S1087079214000811",
-      "ms": 1425,
+      "ms": 1422,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:05.157Z"
+      "checkedAt": "2026-11-11T15:23:14.622Z"
     },
     {
       "url": "https://doi.org/10.1521/jscp.2018.37.10.751",
@@ -1244,10 +1245,10 @@
       ],
       "status": 403,
       "finalUrl": "https://guilfordjournals.com/doi/10.1521/jscp.2018.37.10.751",
-      "ms": 735,
+      "ms": 770,
       "method": "GET",
       "result": "doi-registered",
-      "checkedAt": "2026-11-11T14:19:04.506Z",
+      "checkedAt": "2026-11-11T15:23:13.975Z",
       "browserStatus": 403,
       "browserTitle": "Just a moment...",
       "doiResolvesTo": "https://guilfordjournals.com/doi/10.1521/jscp.2018.37.10.751"
@@ -1259,10 +1260,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/media-literacy-research/children/childrens-media-use-and-attitudes-report-2025/childrens-media-literacy-report-2025.pdf?v=396621",
-      "ms": 793,
+      "ms": 414,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:04.818Z"
+      "checkedAt": "2026-11-11T15:23:13.747Z"
     },
     {
       "url": "https://www.pewresearch.org/internet/2022/12/15/teens-and-cyberbullying-2022/",
@@ -1271,10 +1272,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.pewresearch.org/internet/2022/12/15/teens-and-cyberbullying-2022/",
-      "ms": 103,
+      "ms": 106,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:04.363Z"
+      "checkedAt": "2026-11-11T15:23:13.632Z"
     },
     {
       "url": "https://doi.org/10.1145/3290605.3300616",
@@ -1283,10 +1284,10 @@
       ],
       "status": 403,
       "finalUrl": "https://dl.acm.org/doi/10.1145/3290605.3300616",
-      "ms": 560,
+      "ms": 622,
       "method": "GET",
       "result": "doi-registered",
-      "checkedAt": "2026-11-11T14:19:04.923Z",
+      "checkedAt": "2026-11-11T15:23:14.254Z",
       "browserStatus": 403,
       "browserTitle": "Just a moment...",
       "doiResolvesTo": "https://dl.acm.org/doi/10.1145/3290605.3300616"
@@ -1298,10 +1299,10 @@
       ],
       "status": 403,
       "finalUrl": "https://dl.acm.org/doi/10.1145/3290605.3300361",
-      "ms": 407,
+      "ms": 575,
       "method": "GET",
       "result": "doi-registered",
-      "checkedAt": "2026-11-11T14:19:04.773Z",
+      "checkedAt": "2026-11-11T15:23:14.264Z",
       "browserStatus": 403,
       "browserTitle": "Just a moment...",
       "doiResolvesTo": "https://dl.acm.org/doi/10.1145/3290605.3300361"
@@ -1313,10 +1314,10 @@
       ],
       "status": 403,
       "finalUrl": "https://dl.acm.org/doi/10.1145/3313831.3376672",
-      "ms": 358,
+      "ms": 552,
       "method": "GET",
       "result": "doi-registered",
-      "checkedAt": "2026-11-11T14:19:04.864Z",
+      "checkedAt": "2026-11-11T15:23:14.299Z",
       "browserStatus": 403,
       "browserTitle": "Just a moment...",
       "doiResolvesTo": "https://dl.acm.org/doi/10.1145/3313831.3376672"
@@ -1328,10 +1329,10 @@
       ],
       "status": 403,
       "finalUrl": "https://dl.acm.org/doi/10.1145/3314403",
-      "ms": 513,
+      "ms": 568,
       "method": "GET",
       "result": "doi-registered",
-      "checkedAt": "2026-11-11T14:19:05.286Z",
+      "checkedAt": "2026-11-11T15:23:14.543Z",
       "browserStatus": 403,
       "browserTitle": "Just a moment...",
       "doiResolvesTo": "https://dl.acm.org/doi/10.1145/3314403"
@@ -1343,10 +1344,10 @@
       ],
       "status": 403,
       "finalUrl": "https://www.journals.uchicago.edu/doi/10.1086/714365",
-      "ms": 343,
+      "ms": 330,
       "method": "GET",
       "result": "doi-registered",
-      "checkedAt": "2026-11-11T14:19:05.161Z",
+      "checkedAt": "2026-11-11T15:23:14.584Z",
       "browserStatus": 403,
       "browserTitle": "Just a moment...",
       "doiResolvesTo": "https://www.journals.uchicago.edu/doi/10.1086/714365"
@@ -1358,10 +1359,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.youtube.com/watch?v=0K5OO2ybueM",
-      "ms": 751,
+      "ms": 710,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:05.615Z"
+      "checkedAt": "2026-11-11T15:23:14.974Z"
     },
     {
       "url": "https://www.youtube.com/watch?v=C74amJRp730",
@@ -1370,10 +1371,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.youtube.com/watch?v=C74amJRp730",
-      "ms": 672,
+      "ms": 824,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:05.595Z"
+      "checkedAt": "2026-11-11T15:23:15.123Z"
     },
     {
       "url": "https://www.youtube.com/watch?v=D4VSG41nDOo",
@@ -1382,10 +1383,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.youtube.com/watch?v=D4VSG41nDOo",
-      "ms": 591,
+      "ms": 559,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:05.748Z"
+      "checkedAt": "2026-11-11T15:23:15.102Z"
     },
     {
       "url": "https://www.youtube.com/watch?v=N1SQR9sri5c",
@@ -1394,10 +1395,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.youtube.com/watch?v=N1SQR9sri5c",
-      "ms": 762,
+      "ms": 665,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:05.923Z"
+      "checkedAt": "2026-11-11T15:23:15.250Z"
     },
     {
       "url": "https://www.youtube.com/watch?v=L_2JaFnkZ4o",
@@ -1406,10 +1407,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.youtube.com/watch?v=L_2JaFnkZ4o",
-      "ms": 828,
+      "ms": 963,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:06.114Z"
+      "checkedAt": "2026-11-11T15:23:15.585Z"
     },
     {
       "url": "https://www.youtube.com/watch?v=sQ5oFX8ZMNA",
@@ -1418,10 +1419,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.youtube.com/watch?v=sQ5oFX8ZMNA",
-      "ms": 611,
+      "ms": 736,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:06.206Z"
+      "checkedAt": "2026-11-11T15:23:15.710Z"
     },
     {
       "url": "https://www.youtube.com/watch?v=w68BBPDAWr8",
@@ -1430,10 +1431,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.youtube.com/watch?v=w68BBPDAWr8",
-      "ms": 600,
+      "ms": 723,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:06.216Z"
+      "checkedAt": "2026-11-11T15:23:15.825Z"
     },
     {
       "url": "https://www.youtube.com/watch?v=dYmb1qz2zmE",
@@ -1442,10 +1443,10 @@
       ],
       "status": 200,
       "finalUrl": "https://www.youtube.com/watch?v=dYmb1qz2zmE",
-      "ms": 645,
+      "ms": 638,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:06.394Z"
+      "checkedAt": "2026-11-11T15:23:15.762Z"
     },
     {
       "url": "https://github.com/proginosko/LeechBlockNG",
@@ -1454,10 +1455,34 @@
       ],
       "status": 200,
       "finalUrl": "https://github.com/proginosko/LeechBlockNG",
-      "ms": 1092,
+      "ms": 1084,
       "method": "HEAD",
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:07.015Z"
+      "checkedAt": "2026-11-11T15:23:16.334Z"
+    },
+    {
+      "url": "https://bitwarden.com/help/auto-fill-ios/",
+      "usedIn": [
+        "Guide: A 15-minute privacy and account check-up"
+      ],
+      "status": 200,
+      "finalUrl": "https://bitwarden.com/help/auto-fill-ios/",
+      "ms": 142,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T15:23:15.728Z"
+    },
+    {
+      "url": "https://bitwarden.com/help/getting-started-browserext/",
+      "usedIn": [
+        "Guide: A 15-minute privacy and account check-up"
+      ],
+      "status": 200,
+      "finalUrl": "https://bitwarden.com/help/getting-started-browserext/",
+      "ms": 153,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T15:23:15.863Z"
     }
   ],
   "internal": [
@@ -1465,175 +1490,175 @@
       "url": "/",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.809Z"
+      "checkedAt": "2026-11-11T15:24:16.966Z"
     },
     {
       "url": "/find",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.817Z"
+      "checkedAt": "2026-11-11T15:24:16.976Z"
     },
     {
       "url": "/resources",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.822Z"
+      "checkedAt": "2026-11-11T15:24:16.983Z"
     },
     {
       "url": "/guides",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.827Z"
+      "checkedAt": "2026-11-11T15:24:16.990Z"
     },
     {
       "url": "/videos",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.832Z"
+      "checkedAt": "2026-11-11T15:24:16.998Z"
     },
     {
       "url": "/research",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.842Z"
+      "checkedAt": "2026-11-11T15:24:17.010Z"
     },
     {
       "url": "/community",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.846Z"
+      "checkedAt": "2026-11-11T15:24:17.016Z"
     },
     {
       "url": "/evidence",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.852Z"
+      "checkedAt": "2026-11-11T15:24:17.023Z"
     },
     {
       "url": "/resources/apple-screen-time",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.857Z"
+      "checkedAt": "2026-11-11T15:24:17.032Z"
     },
     {
       "url": "/resources/google-digital-wellbeing",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.862Z"
+      "checkedAt": "2026-11-11T15:24:17.039Z"
     },
     {
       "url": "/resources/f-lux",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.865Z"
+      "checkedAt": "2026-11-11T15:24:17.046Z"
     },
     {
       "url": "/resources/forest",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.871Z"
+      "checkedAt": "2026-11-11T15:24:17.053Z"
     },
     {
       "url": "/resources/freedom",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.875Z"
+      "checkedAt": "2026-11-11T15:24:17.059Z"
     },
     {
       "url": "/resources/cold-turkey-blocker",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.879Z"
+      "checkedAt": "2026-11-11T15:24:17.066Z"
     },
     {
       "url": "/resources/super-productivity",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.883Z"
+      "checkedAt": "2026-11-11T15:24:17.072Z"
     },
     {
       "url": "/resources/leechblock-ng",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.887Z"
+      "checkedAt": "2026-11-11T15:24:17.079Z"
     },
     {
       "url": "/resources/unhook",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.891Z"
+      "checkedAt": "2026-11-11T15:24:17.085Z"
     },
     {
       "url": "/resources/bitwarden",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.896Z"
+      "checkedAt": "2026-11-11T15:24:17.093Z"
     },
     {
       "url": "/resources/privacy-badger",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.900Z"
+      "checkedAt": "2026-11-11T15:24:17.102Z"
     },
     {
       "url": "/resources/have-i-been-pwned",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.904Z"
+      "checkedAt": "2026-11-11T15:24:17.108Z"
     },
     {
       "url": "/guides/phone-wind-down",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.909Z"
+      "checkedAt": "2026-11-11T15:24:17.116Z"
     },
     {
       "url": "/guides/block-distracting-sites",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.913Z"
+      "checkedAt": "2026-11-11T15:24:17.124Z"
     },
     {
       "url": "/guides/privacy-checkup",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.917Z"
+      "checkedAt": "2026-11-11T15:24:17.133Z"
     },
     {
       "url": "/evidence/accessibility",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.922Z"
+      "checkedAt": "2026-11-11T15:24:17.142Z"
     },
     {
       "url": "/evidence/sources",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.928Z"
+      "checkedAt": "2026-11-11T15:24:17.156Z"
     },
     {
       "url": "/evidence/report",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.933Z"
+      "checkedAt": "2026-11-11T15:24:17.166Z"
     },
     {
       "url": "/evidence/feedback",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.937Z"
+      "checkedAt": "2026-11-11T15:24:17.184Z"
     },
     {
       "url": "/evidence/link-test",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.944Z"
+      "checkedAt": "2026-11-11T15:24:17.202Z"
     },
     {
       "url": "/evidence/revisions",
       "status": 200,
       "result": "pass",
-      "checkedAt": "2026-11-11T14:19:59.948Z"
+      "checkedAt": "2026-11-11T15:24:17.211Z"
     }
   ]
 }

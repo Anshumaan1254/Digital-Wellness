@@ -1,28 +1,84 @@
 # Anonymised user feedback
 
-## Our own user testing — status: not yet completed
+## 1. Usability test with 5 simulated students (AI test agents)
 
-The brief asks for three to five students to find a suitable resource and follow one guide. **This has not been done
-yet, and no results have been invented.** The test is built into the hub:
+> **Simulated user test — 5 AI test agents playing students (not real students).** Run on 2026-11-11.
 
-1. **Task 1 — find a tool.** Use the Tool finder or the Compare page to pick one tool that suits you.
-2. **Task 2 — follow one guide.** Follow any of the three setup guides on your own device.
-3. **Tell us what happened.** On the Share & feedback page choose "I tested the hub" and record whether you found a
-   tool, whether you finished the guide, how long it took, and where you got stuck.
+**Method.** Five AI test agents each played a different student persona based on our audience research. Each one used the live hub in a real (automated) Chromium browser — on a phone-sized screen, laptop screens, or keyboard-only at 200% zoom — to find a suitable tool and follow one setup guide, then sent the anonymous feedback form. They could not install software or change real phone settings, so 'following' a guide meant reading every step, checking pictures against the text and opening every link. They did not read the code.
 
-No names, emails or IP addresses are collected; anything that looks like contact details is removed before saving.
-Results appear on Evidence › User feedback. A moderator can export them from `/admin` as an anonymous CSV where
-participants are numbered P1, P2… — attach that CSV here once testing is done.
+**Limits.** These were simulations, not real students: no real devices, no Safari, no screen reader, and an AI's judgement of what is confusing. They found real, reproducible problems on the site, but they don't replace testing with classmates.
 
-### Record template
+**Tasks.** (1) Find a tool that suits you using the hub. (2) Follow one setup guide. Then send the anonymous feedback form.
 
-| Participant | Found a tool? | Guide finished? | Minutes | Where they got stuck | What we changed |
-| --- | --- | --- | --- | --- | --- |
-| P1 | | | | | |
-| P2 | | | | | |
-| P3 | | | | | |
+### Results
 
-## Published user feedback we relied on
+| Agent | Persona | Set-up | Tool chosen | Found a suitable tool? | Guide followed | Rating |
+| --- | --- | --- | --- | --- | --- | --- |
+| P1 | 15-year-old secondary student, Android phone only, scrolls late at night, no money | Android phone (390×844) | Google Digital Wellbeing | yes (medium confidence) | phone-wind-down — partly | 4/5 |
+| P2 | 19-year-old undergraduate, Windows laptop with Chrome and an iPhone, distracted by YouTube while revising | Windows laptop (1366×768) | LeechBlock NG | yes (high confidence) | block-distracting-sites — partly | 4/5 |
+| P3 | 22-year-old postgraduate, MacBook (Safari) and iPhone, reused passwords, prefers open source | MacBook-size screen (1440×900) | Bitwarden | yes (high confidence) | privacy-checkup — partly | 4/5 |
+| P4 | 17-year-old on a school Chromebook, keyboard only (motor impairment), 200% zoom, reduce motion on | Keyboard only, 200% zoom | LeechBlock NG | yes (medium confidence) | block-distracting-sites — partly | 4/5 |
+| P5 | 20-year-old with exams soon, Windows laptop and Android phone, ignores soft limits, will pay a little | Large laptop screen (1920×1080) | Freedom | yes (medium confidence) | block-distracting-sites — partly | 4/5 |
+
+"Partly" for guides means every step was read, pictures checked and every link opened, but software could not be installed
+and phone settings could not be changed in a test browser.
+
+### In their own words
+
+- **P1:** "The quiz was easy and it told me the thing I need is already on my phone and free, which is nice. The guide was mostly clear, but it never told me how to stop myself just turning the timer off again at 1am."
+- **P2:** "Honestly, the finder got me to LeechBlock in about a minute, and the screenshots for setting my study hours are spot on. But hitting Back wiped all my answers, and when step 1 said the links were 'below', all I could see was a Firefox page telling me to download Firefox. I nearly gave up there."
+- **P3:** "I came in suspicious and left fairly convinced. Every price and licence claim I checked against the official pages was right, and Bitwarden is what I'll set up. But as a Safari and iPhone person, the guide left me to work out the Apple-specific install bits myself, which is exactly where I'd stall."
+- **P4:** "The finder got me to LeechBlock, which is exactly what I wanted: free, and it blocks YouTube just during school hours. But every time I pressed Continue I got thrown to the bottom of the page and had to Shift+Tab back up, and the guide tells me to click an icon I can't click."
+- **P5:** "Honestly the most upfront site I've used about what's free and what isn't. It told me straight away that the strict lock in Freedom costs money, which is what I needed to know. But once it found me the strict tool, there was no guide for it, and the guide I followed in its place doesn't say whether I could just switch the blocker off."
+
+### What they found and what we changed
+
+34 grouped problems from 49 reports; 31 fixed.
+
+| Severity | Problem | Reported by | What we did |
+| --- | --- | --- | --- |
+| high | Tool finder lost keyboard focus after each Continue, and new questions or results sat under the sticky header | P4, P1, P2, P3, P5 | Fixed — Focus now moves to each new question (and to the results heading), which scroll into view just below the header. |
+| medium | Pressing Back from a tool page wiped all finder answers | P2, P3 | Fixed — Answers are kept in the page address, so Back, refresh and shared links bring the same results back. |
+| medium | Finder said '7 tools fit' but only showed 4 | P5, P2 | Fixed — Added a 'Show all matches' button. |
+| medium | Result cards said 'Browser' instead of naming Chrome, Windows or Chromebook | P2, P4 | Fixed — Cards list every platform, and the caution names the exact device a tool doesn't cover. |
+| medium | Top match had no setup guide (Freedom) | P5 | Fixed — Tools without a guide now point to the closest guide, on the finder and the tool page. |
+| medium | Guide step 1 said store links were 'below' and showed a 'Download Firefox' button | P2, P5, P3 | Fixed — Store buttons now sit inside the step, and the caption explains why the button looks different in other browsers. |
+| medium | Step 6 didn't say whether the block could simply be switched off | P5 | Fixed — Added how to lock LeechBlock's options and Firefox's add-ons page during blocks, and that a whole-computer blocker is stricter. |
+| medium | Guide step 2 only gave mouse instructions | P4 | Fixed — Added a keyboard route to the options page and how to set a keyboard shortcut. |
+| medium | Nothing warned that school Chromebooks may block extensions | P4 | Fixed — Added to 'You'll need' and to the troubleshooting list. |
+| medium | Screenshots were hard to read at 200% zoom | P4 | Fixed — Every screenshot has an 'Open full size' link. |
+| medium | Phone guide: Android users might try the iPhone-only notification step | P1 | Fixed — Each step is now tagged 'Android only' or 'iPhone only', and the iPhone step points Android users to Focus mode. |
+| medium | No path to the App limits PIN | P1 | Fixed — Added Settings › Digital Wellbeing › App limits › App limits PIN to step 1 and the troubleshooting answer. |
+| medium | No Safari install link for Privacy Badger | P3 | Fixed — Added the Mac App Store link for Safari to the guide and the tool page. |
+| medium | No Mac or iPhone setup help for Bitwarden | P3 | Fixed — Added how to get the Safari extension and turn on iPhone AutoFill, and how saving new passwords works. |
+| medium | Mobile menu ignored Escape and let focus slip behind it | P4 | Fixed — Escape closes it, focus leaving closes it, and the menu scrolls at high zoom. |
+| medium | Focused links in the swipeable card row stayed off-screen | P4 | Fixed — The row now scrolls each focused link into view. |
+| low | 'Keep the screen dark' was described wrongly | P1 | Fixed — Now matches Google's wording: it turns off the always-on display. |
+| low | Google Play link for a built-in tool looked like you must install it | P1 | Fixed — Link now says it's only needed if Digital Wellbeing isn't already in Settings. |
+| low | Mentions of other guides and videos weren't links | P2, P5, P3 | Fixed — They are now links. |
+| low | Bitwarden screenshot sat on the wrong step | P3 | Fixed — Moved to the step that uses the password generator. |
+| low | Bitwarden's 'watch out' repeated its price | P3 | Fixed — Cautions no longer repeat a price already shown. |
+| low | Some Bitwarden claims weren't backed by the quotes shown | P3 | Fixed — Trimmed the claims to what the quotes show and added the 'Zero-knowledge encryption' quote. |
+| low | Video previews loaded from YouTube before pressing play | P3 | Fixed — Thumbnails are now fetched by our own server and served from the site, so a visitor's browser contacts nothing on YouTube until they press play. |
+| low | Thank-you message after feedback appeared off-screen, focus dropped to the page | P2, P3, P4, P5 | Fixed — The message scrolls into view and receives keyboard focus. |
+| low | Feedback numbers didn't update after sending | P1 | Fixed — The summary refreshes as soon as feedback is sent. |
+| low | Missing-rating error appeared far below the stars | P1 | Fixed — The error now appears right under the stars. |
+| low | Home page: video title overlapped the text after it | P1 | Fixed — The title fades out fully before the next text fades in. |
+| low | Headline still blurred in with 'reduce motion' on | P4 | Fixed — With reduce motion, headlines appear straight away. |
+| low | Budget question started on 'optional extras are fine' | P1 | Fixed — It now starts on 'free only', so nothing that needs payment appears unless chosen. |
+| low | Match reasons didn't name the student's goals | P1 | Fixed — Each reason now names the goals it matches. |
+| low | Comparison table had no strictness column | P5 | Fixed — Added a 'How strict' column. |
+| low | 'Works on' filter takes one device at a time | P5 | Not changed — the comparison narrows by one device; the tool finder already accepts several devices. |
+| low | Freedom's Google Play price isn't shown | P5 | Not changed — Freedom's official pages don't publish it; now listed under 'What we could not confirm'. |
+| low | First arrow key on the star rating selects star 1 | P4 | Not changed — this is how the rating component behaves; the rating is still fully usable by keyboard. |
+
+## 2. Testing with real classmates
+
+The same two tasks are ready for real students on the Share & feedback page ("I tested the hub"). No names, emails or IP
+addresses are collected, and anything that looks like contact details is removed before saving. A moderator can export
+the answers from `/admin` as an anonymous CSV where participants are numbered P1, P2… and attach it here.
+
+## 3. Published user feedback we relied on
 
 ### The Race Towards Digital Wellbeing: Issues and Opportunities (2019)
 

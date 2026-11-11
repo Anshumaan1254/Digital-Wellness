@@ -71,11 +71,39 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                         {i + 1}
                       </span>
                       <div className="min-w-0 flex-1">
+                        {s.platform && (
+                          <p className="mb-1 text-xs font-medium uppercase tracking-[0.16em] text-dawn">{s.platform} only</p>
+                        )}
                         <h3 className="font-serif text-2xl leading-snug">
                           <span className="sr-only">Step {i + 1}: </span>
                           {s.title}
                         </h3>
                         <p className="mt-3 max-w-[68ch] leading-relaxed text-[#d6e1ea]">{s.body}</p>
+                        {s.links && (
+                          <ul className="mt-4 flex flex-wrap gap-2">
+                            {s.links.map((l) => (
+                              <li key={l.url}>
+                                {l.url.startsWith("/") ? (
+                                  <Link
+                                    href={l.url}
+                                    className="inline-flex items-center gap-1.5 rounded-full border border-lake/40 bg-lake/10 px-4 py-2 text-sm text-foreground hover:bg-lake/20"
+                                  >
+                                    {l.label}
+                                  </Link>
+                                ) : (
+                                  <a
+                                    href={l.url}
+                                    rel="noopener"
+                                    className="inline-flex items-center gap-1.5 rounded-full border border-lake/40 bg-lake/10 px-4 py-2 text-sm text-foreground hover:bg-lake/20"
+                                  >
+                                    <ExternalLink aria-hidden className="h-3.5 w-3.5 text-lake" />
+                                    {l.label}
+                                  </a>
+                                )}
+                              </li>
+                            ))}
+                          </ul>
+                        )}
                         {s.tip && (
                           <p className="mt-4 flex max-w-[68ch] gap-2 rounded-2xl bg-dawn/10 p-4 text-sm">
                             <Lightbulb aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-dawn" />
@@ -98,6 +126,16 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
                             ) : (
                               <PhoneIllustration variant={s.image.illustration!} alt={s.image.alt} />
                             )}
+                            {s.image.src && (
+                              <a
+                                href={s.image.src}
+                                target="_blank"
+                                rel="noopener"
+                                className="mt-2 inline-block text-sm text-lake underline underline-offset-4 hover:text-dawn"
+                              >
+                                Open this screenshot full size<span className="sr-only">: {s.image.alt}</span>
+                              </a>
+                            )}
                             <figcaption className="mt-2 text-sm text-muted-foreground">
                               <span className="mr-2 rounded-full border border-border px-2 py-0.5 text-xs uppercase tracking-wider">
                                 {s.image.kind === "illustration" ? "Illustration" : "Screenshot"}
@@ -118,7 +156,18 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               {g.troubleshooting.map((t) => (
                 <div key={t.q} className="rounded-2xl border border-border bg-card p-5">
                   <dt className="font-medium">{t.q}</dt>
-                  <dd className="mt-1 text-muted-foreground">{t.a}</dd>
+                  <dd className="mt-1 text-muted-foreground">
+                    {t.a}
+                    {t.link && (
+                      <>
+                        {" "}
+                        <Link href={t.link.href} className="inline-link">
+                          {t.link.label}
+                        </Link>
+                        .
+                      </>
+                    )}
+                  </dd>
                 </div>
               ))}
             </dl>

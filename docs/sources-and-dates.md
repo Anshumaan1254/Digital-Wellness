@@ -98,6 +98,7 @@ Checked: 2026-11-11 · Official site: https://freedom.to/
 - The annual total for the web yearly plan (only '$3.33 / month' is shown)
 - Which browsers other than Chrome the main Freedom extension supports ('Also available for other browsers', not named)
 - No official accessibility information
+- Freedom's price on Google Play (the official pages checked list web and iOS App Store prices only)
 
 ## Cold Turkey Blocker
 
@@ -219,6 +220,8 @@ Checked: 2026-11-11 · Official site: https://bitwarden.com/
 
 - **Plans and prices, free plan features** — https://bitwarden.com/pricing/
   > Premium $ 1.65 per month Billed annually at $19.80 ... Families $ 3.99 per month Up to 6 users Billed annually at $47.88 ... Pricing shown in USD and based on an annual subscription. Taxes not included. Just getting started? Get basic password management today. Always free.
+- **Zero-knowledge encryption (listed under Security and protection; re-checked 2026-11-11)** — https://bitwarden.com/pricing/
+  > Open source security Zero-knowledge encryption Advanced two-step login
 - **Official announcement of current Premium price (published January 21, 2026)** — https://bitwarden.com/blog/bitwarden-launches-enhanced-premium-plan/
   > Premium for individuals is now available at $1.65 per month, billed annually at $19.80 a year.
 - **Platforms and browsers** — https://bitwarden.com/download/

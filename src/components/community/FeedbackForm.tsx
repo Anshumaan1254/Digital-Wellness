@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import PeekRating from "@/components/reactbits/PeekRating";
 import { RESOURCES } from "@/data/resources";
@@ -26,15 +27,28 @@ export function FeedbackForm() {
   const [found, setFound] = useState<string>();
   const [completed, setCompleted] = useState<string>();
   const [status, setStatus] = useState<{ type: "idle" | "sending" | "ok" | "error"; message?: string }>({ type: "idle" });
+  const [ratingError, setRatingError] = useState(false);
+  const doneRef = useRef<HTMLDivElement>(null);
+
+  // bring the thank-you message into view and give it keyboard focus
+  useEffect(() => {
+    if (status.type !== "ok" || !doneRef.current) return;
+    doneRef.current.focus({ preventScroll: true });
+    const top = doneRef.current.getBoundingClientRect().top + window.scrollY - 110;
+    window.scrollTo({ top, behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth" });
+  }, [status.type]);
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const f = new FormData(form);
     if (!rating) {
+      setRatingError(true);
       setStatus({ type: "error", message: "Please choose a star rating." });
+      document.getElementById("fb-rating-label")?.scrollIntoView({ block: "center" });
       return;
     }
+    setRatingError(false);
     setStatus({ type: "sending" });
     const minutes = Number(f.get("minutes"));
     const body = {
@@ -57,6 +71,7 @@ export function FeedbackForm() {
       const json = await res.json().catch(() => ({}));
       if (!res.ok) throw new Error(json.error || "Something went wrong.");
       setStatus({ type: "ok" });
+      window.dispatchEvent(new Event("dw:feedback-sent"));
       form.reset();
       setRating(0);
     } catch (err) {
@@ -66,9 +81,15 @@ export function FeedbackForm() {
 
   if (status.type === "ok") {
     return (
-      <div role="status" className="rounded-3xl border border-lake/40 bg-lake/10 p-8">
+      <div ref={doneRef} tabIndex={-1} role="status" className="rounded-3xl border border-lake/40 bg-lake/10 p-8 outline-none">
         <p className="font-serif text-2xl">Thank you — your feedback was saved anonymously.</p>
-        <p className="mt-2 text-muted-foreground">We read every response and list the changes we make on the Revisions page.</p>
+        <p className="mt-2 text-muted-foreground">
+          We read every response and list the changes we make on the{" "}
+          <Link href="/evidence/revisions" className="inline-link">
+            revisions page
+          </Link>
+          .
+        </p>
         <button type="button" onClick={() => setStatus({ type: "idle" })} className="mt-5 rounded-full border border-border px-4 py-2 text-sm hover:bg-white/5">
           Send another response
         </button>
@@ -161,7 +182,10 @@ export function FeedbackForm() {
         </p>
         <PeekRating
           value={rating}
-          onChange={setRating}
+          onChange={(v) => {
+            setRating(v);
+            if (v) setRatingError(false);
+          }}
           labels={["Not useful", "A little useful", "Useful", "Very useful", "Extremely useful"]}
           activeColor="#f1c9a5"
           idleColor="#3a4a5c"
@@ -170,6 +194,11 @@ export function FeedbackForm() {
           size={30}
           ariaLabel="Overall usefulness rating, 1 to 5 stars"
         />
+        {ratingError && (
+          <p role="alert" className="mt-2 text-sm text-destructive">
+            Please choose a star rating.
+          </p>
+        )}
       </div>
 
       <div>

@@ -6,7 +6,7 @@ import { PageHeader, Section } from "@/components/site/PageHeader";
 import { CostBadge } from "@/components/site/CostBadge";
 import { HelpfulVote } from "@/components/site/HelpfulVote";
 import { CATEGORIES, RESOURCES, STRICTNESS_LABEL, getResource } from "@/data/resources";
-import { getGuide } from "@/data/content";
+import { guideFor } from "@/data/content";
 
 export function generateStaticParams() {
   return RESOURCES.map((r) => ({ id: r.id }));
@@ -30,7 +30,7 @@ export default async function ResourcePage({ params }: { params: Promise<{ id: s
   const r = getResource((await params).id);
   if (!r) notFound();
   const category = CATEGORIES.find((c) => c.id === r.category)!;
-  const guide = r.guide ? getGuide(r.guide) : null;
+  const { guide, exact } = guideFor(r);
 
   return (
     <>
@@ -95,7 +95,9 @@ export default async function ResourcePage({ params }: { params: Promise<{ id: s
             </div>
             {guide && (
               <Link href={`/guides/${guide.slug}`} className="block rounded-3xl border border-lake/30 bg-lake/10 p-6 hover:bg-lake/15">
-                <p className="text-xs uppercase tracking-[0.16em] text-dawn">Step-by-step guide</p>
+                <p className="text-xs uppercase tracking-[0.16em] text-dawn">
+                  {exact ? "Step-by-step guide" : `No ${r.shortName} guide yet — closest guide`}
+                </p>
                 <p className="mt-2 font-serif text-xl">{guide.title}</p>
                 <span className="mt-3 inline-flex items-center gap-1.5 text-sm text-lake">
                   Follow the guide <ArrowRight aria-hidden className="h-4 w-4" />

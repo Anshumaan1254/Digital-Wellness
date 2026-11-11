@@ -240,6 +240,15 @@ const BlurText = ({
 }: BlurTextProps) => {
   const ref = useRef<HTMLParagraphElement>(null);
   const Tag = tag as "p";
+  // read after mount so the server and first client render match
+  const [prefersReduced, setPrefersReduced] = useState(false);
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    setPrefersReduced(mq.matches);
+    const on = () => setPrefersReduced(mq.matches);
+    mq.addEventListener('change', on);
+    return () => mq.removeEventListener('change', on);
+  }, []);
   const [phase, setPhase] = useState<Phase>(() => startPhase(trigger));
   const firstPhase = useRef(phase).current;
   const [focusWord, setFocusWord] = useState(-1);
@@ -412,6 +421,15 @@ const BlurText = ({
       transition: `filter 0.45s ${CSS_EASE}, opacity 0.45s ${CSS_EASE}`
     };
   };
+
+  // with "reduce motion" on, show the words straight away (no blur-in)
+  if (prefersReduced) {
+    return (
+      <Tag className={`blur-text ${className}`} style={{ color }}>
+        {text}
+      </Tag>
+    );
+  }
 
   return (
     <MotionConfig reducedMotion="user">

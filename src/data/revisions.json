@@ -84,10 +84,17 @@
     "type": "content"
   },
   {
+    "date": "2026-11-11",
+    "title": "Simulated usability test with 5 AI test agents",
+    "trigger": "The brief asks for 3–5 students to find a resource and follow a guide. We ran this first with five AI agents, each playing a student persona from our audience research (Android teen, Windows undergraduate, privacy-minded Mac user, keyboard-only Chromebook user at 200% zoom, and an exam-stressed student who wants strict blocking).",
+    "change": "All five found a suitable tool and rated the hub 4/5. Between them they reported 49 problems, which we grouped into 34 and fixed 31 — including the tool finder losing keyboard focus and forgetting answers, hidden matches, missing Safari and iPhone steps, and mouse-only instructions. Three were left unchanged, with reasons, on the feedback evidence page.",
+    "type": "testing"
+  },
+  {
     "date": "pending",
-    "title": "Changes from student testing",
-    "trigger": "Waiting for 3–5 students to complete the usability test on the Share & feedback page.",
-    "change": "Problems they report, and what we change in response, will be added here.",
+    "title": "Testing with real classmates",
+    "trigger": "The simulated test used AI agents, not people.",
+    "change": "The same two tasks and the anonymous form are ready for real students; anything they find will be added here.",
     "type": "pending"
   }
 ]
