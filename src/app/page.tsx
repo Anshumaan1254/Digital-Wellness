@@ -118,7 +118,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/resources"
-                className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/5 px-6 py-3 font-medium text-white backdrop-blur-sm transition hover:bg-white/10"
+                className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-[#0b1622]/55 px-6 py-3 font-medium text-white transition hover:bg-[#0b1622]/80"
               >
                 Compare all {RESOURCES.length} tools
                 <ArrowRight aria-hidden className="h-4 w-4" />
@@ -262,7 +262,7 @@ export default function Home() {
               </Link>
               <Link
                 href="/community#share"
-                className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-[#0b1622]/60 px-7 py-3.5 font-medium text-foreground backdrop-blur-sm hover:bg-white/10"
+                className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-[#0b1622]/60 px-7 py-3.5 font-medium text-foreground hover:bg-[#0b1622]/85"
               >
                 Share a video, tip or app screen
               </Link>

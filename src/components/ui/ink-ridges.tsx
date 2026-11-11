@@ -22,6 +22,9 @@
  *   with drift and parallax at 0 it draws nothing. prefers-reduced-motion shows
  *   the finished landscape as one static frame, without birds or scroll depth.
  *
+ * Local change (Digital Wellness Hub): pointer parallax listens on the window,
+ *   so text and buttons layered over the painting don't block or reset it.
+ *
  * Frameworks
  *   Next.js App Router: a Client Component ('use client' above). Vite: nothing extra.
  *
@@ -861,21 +864,30 @@ export default function InkRidges({
     })
     io.observe(root)
 
+    // Listen on the window, not the painting: headlines and buttons layered over
+    // it would otherwise swallow the pointer (and fire a "leave" that snaps the
+    // view back to centre each time the cursor crosses them).
     const onPointer = (e: PointerEvent) => {
       const o = opts.current
-      if (reducedMq.matches || o.parallax <= 0 || e.pointerType === 'touch') return
+      if (!visible || reducedMq.matches || o.parallax <= 0 || e.pointerType === 'touch') return
       const r = root.getBoundingClientRect()
-      ptr.tx = ((e.clientX - r.left) / r.width - 0.5) * o.parallax
-      ptr.ty = -((e.clientY - r.top) / r.height - 0.5) * o.parallax
+      const inside = e.clientX >= r.left && e.clientX <= r.right && e.clientY >= r.top && e.clientY <= r.bottom
+      const tx = inside ? ((e.clientX - r.left) / r.width - 0.5) * o.parallax : 0
+      const ty = inside ? -((e.clientY - r.top) / r.height - 0.5) * o.parallax : 0
+      if (tx === ptr.tx && ty === ptr.ty) return
+      ptr.tx = tx
+      ptr.ty = ty
       kick()
     }
-    const onLeave = () => {
+    // the cursor left the browser window
+    const onLeave = (e: PointerEvent) => {
+      if (e.relatedTarget) return
       ptr.tx = 0
       ptr.ty = 0
       kick()
     }
-    root.addEventListener('pointermove', onPointer)
-    root.addEventListener('pointerleave', onLeave)
+    window.addEventListener('pointermove', onPointer, { passive: true })
+    document.addEventListener('pointerout', onLeave)
 
     // scroll depth: redraw on scroll while the frame is on screen
     const onScroll = () => {
@@ -915,8 +927,8 @@ export default function InkRidges({
       resize.disconnect()
       io.disconnect()
       mo.disconnect()
-      root.removeEventListener('pointermove', onPointer)
-      root.removeEventListener('pointerleave', onLeave)
+      window.removeEventListener('pointermove', onPointer)
+      document.removeEventListener('pointerout', onLeave)
       window.removeEventListener('scroll', onScroll)
       document.removeEventListener('visibilitychange', onVisibility)
       reducedMq.removeEventListener('change', onVisibility)

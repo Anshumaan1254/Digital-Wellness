@@ -18,6 +18,10 @@ declare global {
 export function InkHero() {
   const [narrow, setNarrow] = useState(false);
   const [ready, setReady] = useState(false);
+  // Render the painting at a resolution sized to the screen (about 0.8 megapixels).
+  // The shader is costly per pixel and the ink and mist are soft, so this keeps it
+  // smooth on laptop GPUs with no visible loss.
+  const [dpr, setDpr] = useState(1);
 
   useEffect(() => {
     const mq = window.matchMedia("(max-width: 640px)");
@@ -28,6 +32,8 @@ export function InkHero() {
   }, []);
 
   useEffect(() => {
+    const pixels = window.innerWidth * window.innerHeight;
+    setDpr(Math.max(0.5, Math.min(1.25, Math.sqrt(800_000 / pixels))));
     if (window.__dwLoaderDone || document.documentElement.classList.contains("dw-loader-seen")) {
       setReady(true);
       return;
@@ -48,7 +54,7 @@ export function InkHero() {
       className="h-full w-full bg-background"
       inkColor="#a3b0cf"
       seed={7}
-      layers={5}
+      layers={4}
       horizon={0.5}
       mist={0.65}
       drift={0.04}
@@ -62,6 +68,7 @@ export function InkHero() {
       birdsEvery={16}
       grain={0.22}
       scrollDepth={0.35}
+      dprCap={dpr}
     />
   );
 }
