@@ -1,7 +1,7 @@
 # Digital Wellness Resource Hub — Project Report
 
 **Project 3 · Digital Wellness Resource Hub**
-Website: deployed on Vercel (link in the README) · Source code: github.com/Anshumaan1254/Digital-Wellness
+Website: **add your Vercel URL here after deploying** · Source code: github.com/Anshumaan1254/Digital-Wellness
 Information checked: 11 November 2026
 
 ## 1. Summary
@@ -10,7 +10,7 @@ We built a website that helps students choose and set up practical digital welln
 
 | What the brief asked for | Where it is |
 | --- | --- |
-| Website link | The deployed hub (see README) |
+| Website link | The deployed hub (add the Vercel URL after deploying) |
 | Resource comparison | Compare page (cards and full table) and `docs/resource-comparison.md` |
 | Source links and dates checked | Evidence › Sources & dates, every tool page, `docs/sources-and-dates.md` |
 | Three setup guides | Setup guides section and `docs/setup-guides.md` |
@@ -62,7 +62,7 @@ Checking official sources changed several things we thought we knew: Bitwarden P
 
 ## 4. Setup guides
 
-We wrote three short guides, each tested against the official help pages:
+We wrote three short guides, each checked against the official help pages (they have not yet been followed by student testers — see section 7):
 
 1. **Block distracting websites during study hours** — LeechBlock NG (5 minutes).
 2. **A 15-minute privacy and account check-up** — Have I Been Pwned, Bitwarden and Privacy Badger.

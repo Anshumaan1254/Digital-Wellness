@@ -226,7 +226,7 @@ export default function Home() {
             </h2>
           </div>
           <p className="max-w-md text-muted-foreground">
-            Short, step-by-step and tested — with real screenshots, or clearly labelled illustrations where a screenshot would
+            Short and step-by-step, checked against official help pages — with real screenshots, or clearly labelled illustrations where a screenshot would
             have shown personal information.
           </p>
         </div>

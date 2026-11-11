@@ -10,7 +10,7 @@ const TONE: Record<CostTone, string> = {
 export function CostBadge({ tone, className }: { tone: CostTone; className?: string }) {
   return (
     <span
-      className={cn("inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium ring-1 ring-inset", TONE[tone], className)}
+      className={cn("inline-flex items-center whitespace-nowrap rounded-full px-2.5 py-1 text-xs font-medium ring-1 ring-inset", TONE[tone], className)}
       title={COST_LABEL[tone].hint}
     >
       {COST_LABEL[tone].label}
