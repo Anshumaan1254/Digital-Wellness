@@ -80,6 +80,12 @@
 
 **What changed:** All five found a suitable tool and rated the hub 4/5. Between them they reported 49 problems, which we grouped into 34 and fixed 31 — including the tool finder losing keyboard focus and forgetting answers, hidden matches, missing Safari and iPhone steps, and mouse-only instructions. Three were left unchanged, with reasons, on the feedback evidence page.
 
+### 2026-11-11 — Ink-painted hero and a mountain loading screen
+
+**Why:** Design review: the opening scene should feel more like a calm painting, and first-time visitors saw the page assemble while it loaded.
+
+**What changed:** The home page now opens with Ink Ridges from 21st.dev — a mountain range that paints itself in moonlit ink, timed to start as the loading screen lifts — and closes with the Three.js lake. First-time visitors see a short Three.js mountain loading screen once per session; with reduce motion it is brief and still.
+
 ### Pending — Testing with real classmates
 
 **Why:** The simulated test used AI agents, not people.
@@ -97,3 +103,4 @@
 - 2026-11-11 — Add report, generated evidence documents and README
 - 2026-11-11 — Add presentation, fix cost badge wrapping and refresh lake image
 - 2026-11-11 — Ignore simulated user-test working files
+- 2026-11-11 — Run a simulated usability test with 5 AI test agents and fix what they found

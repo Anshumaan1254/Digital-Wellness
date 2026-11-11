@@ -259,3 +259,16 @@ a.inline-link:hover {
   padding-left: 1rem;
   color: var(--muted-foreground);
 }
+
+/* Site intro loader */
+.dw-loader-seen [data-site-loader] {
+  display: none;
+}
+@keyframes dw-load {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}

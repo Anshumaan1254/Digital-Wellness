@@ -1,6 +1,6 @@
 # Accessibility checklist
 
-Target: WCAG 2.2 level AA. Automated checks by `scripts/a11y-audit.mjs` (axe-core via @axe-core/playwright, Chromium, reduced motion on) on 2026-11-11 15:22 UTC.
+Target: WCAG 2.2 level AA. Automated checks by `scripts/a11y-audit.mjs` (axe-core via @axe-core/playwright, Chromium, reduced motion on) on 2026-11-11 15:47 UTC.
 
 ## Checklist
 

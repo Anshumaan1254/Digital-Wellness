@@ -4,6 +4,7 @@ import BlurText from "@/components/reactbits/BlurText";
 import ScrollReveal from "@/components/reactbits/ScrollReveal";
 import ScrollExpand from "@/components/reactbits/ScrollExpand";
 import BackgroundPaths from "@/components/kokonutui/background-paths";
+import { InkHero } from "@/components/story/InkHero";
 import { HeroScene } from "@/components/three/HeroScene";
 import { HeroParallax } from "@/components/story/HeroParallax";
 import { StatStory } from "@/components/story/StatStory";
@@ -83,7 +84,7 @@ const WALK = [
 export default function Home() {
   return (
     <>
-      <HeroParallax scene={<HeroScene />}>
+      <HeroParallax scene={<InkHero />}>
         {/* soft scrim so the copy keeps its contrast over the lighter ridges */}
         <div
           aria-hidden="true"
@@ -235,22 +236,38 @@ export default function Home() {
         </div>
       </section>
 
-      <section aria-labelledby="share-title" className="relative overflow-hidden px-4 py-36 text-center sm:px-6">
-        <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_50%_100%,rgba(241,201,165,0.14),transparent_70%)]" />
-        <h2 id="share-title" className="mx-auto max-w-4xl font-serif text-[clamp(2.4rem,6vw,5rem)] leading-[1.02]">
-          Tried one? Tell the next student how it went.
-        </h2>
-        <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
-          Leave anonymous feedback, or share a tip, a short video, an animation or an app screenshot. We never ask for your
-          name or email.
-        </p>
-        <div className="mt-10 flex flex-wrap justify-center gap-3">
-          <Link href="/community#feedback" className="inline-flex items-center gap-2 rounded-full bg-dawn px-7 py-3.5 font-medium text-[#1b1410] hover:bg-[#f6d7b9]">
-            Give feedback
-          </Link>
-          <Link href="/community#share" className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-3.5 font-medium hover:bg-white/5">
-            Share a video, tip or app screen
-          </Link>
+      {/* Closing scene: the Three.js mountain lake at night */}
+      <section aria-labelledby="share-title" className="relative isolate min-h-[92svh] overflow-hidden">
+        <HeroScene />
+        {/* same soft scrim as the hero, so the copy never sits on the moon */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-[5] bg-[linear-gradient(90deg,rgba(8,16,30,0.8)_0%,rgba(8,16,30,0.5)_40%,rgba(8,16,30,0)_70%)] max-sm:bg-[linear-gradient(180deg,rgba(8,16,30,0.6)_0%,rgba(8,16,30,0.75)_55%,rgba(8,16,30,0.2)_100%)]"
+        />
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6">
+          <div className="flex max-w-2xl flex-col items-start pb-[40svh] pt-28">
+            <h2 id="share-title" className="font-serif text-[clamp(2.4rem,5.5vw,4.6rem)] leading-[1.04] text-foreground">
+              Tried one? Tell the next student how it went.
+            </h2>
+            <p className="mt-6 max-w-xl text-lg text-[#d6e1ea]">
+              Leave anonymous feedback, or share a tip, a short video, an animation or an app screenshot. We never ask for
+              your name or email.
+            </p>
+            <div className="mt-10 flex flex-wrap gap-3">
+              <Link
+                href="/community#feedback"
+                className="inline-flex items-center gap-2 rounded-full bg-dawn px-7 py-3.5 font-medium text-[#1b1410] hover:bg-[#f6d7b9]"
+              >
+                Give feedback
+              </Link>
+              <Link
+                href="/community#share"
+                className="inline-flex items-center gap-2 rounded-full border border-white/25 bg-[#0b1622]/60 px-7 py-3.5 font-medium text-foreground backdrop-blur-sm hover:bg-white/10"
+              >
+                Share a video, tip or app screen
+              </Link>
+            </div>
+          </div>
         </div>
       </section>
     </>

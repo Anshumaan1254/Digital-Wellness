@@ -91,6 +91,13 @@
     "type": "testing"
   },
   {
+    "date": "2026-11-11",
+    "title": "Ink-painted hero and a mountain loading screen",
+    "trigger": "Design review: the opening scene should feel more like a calm painting, and first-time visitors saw the page assemble while it loaded.",
+    "change": "The home page now opens with Ink Ridges from 21st.dev — a mountain range that paints itself in moonlit ink, timed to start as the loading screen lifts — and closes with the Three.js lake. First-time visitors see a short Three.js mountain loading screen once per session; with reduce motion it is brief and still.",
+    "type": "content"
+  },
+  {
     "date": "pending",
     "title": "Testing with real classmates",
     "trigger": "The simulated test used AI agents, not people.",
