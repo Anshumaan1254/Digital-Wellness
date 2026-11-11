@@ -35,38 +35,45 @@ export default function ResearchPage() {
       </div>
 
       <Section>
-        <div className="grid gap-5 md:grid-cols-3">
-          {AUDIENCE.map((a) => (
-            <div key={a.title} className="rounded-3xl border border-border bg-card p-6">
-              <h2 className="font-serif text-xl">{a.title}</h2>
-              <p className="mt-2 text-muted-foreground">{a.body}</p>
+        <div className="grid gap-12 md:grid-cols-3 md:gap-10">
+          {AUDIENCE.map((a, i) => (
+            <div key={a.title} className="border-t border-white/15 pt-6">
+              <p className="font-serif text-5xl text-lake/50">{i + 1}</p>
+              <h2 className="mt-4 font-serif text-2xl">{a.title}</h2>
+              <p className="mt-3 text-lg leading-relaxed text-muted-foreground">{a.body}</p>
             </div>
           ))}
         </div>
       </Section>
 
       <Section id="needs" title="Ten sources, ten needs" intro="Paraphrased findings, with a short word-for-word quote from each source so you can check our reading.">
-        <ol className="grid gap-5 lg:grid-cols-2">
+        <ol className="border-t border-white/10">
           {NEEDS.map((n, i) => (
-            <li key={n.id}>
-              <Reveal delay={(i % 2) * 0.06} className="flex h-full flex-col rounded-3xl border border-border bg-card p-6">
-                <p className="text-xs uppercase tracking-[0.16em] text-dawn">
-                  {n.type === "peer-reviewed" ? "Peer-reviewed study" : n.type === "survey" ? "Survey" : "Report"} · {n.year}
+            <li key={n.id} className="border-b border-white/10">
+              <Reveal className="grid gap-x-12 gap-y-5 py-14 lg:grid-cols-[6rem_1.2fr_1fr]">
+                <p aria-hidden className="font-serif text-5xl text-dawn/70">
+                  {String(i + 1).padStart(2, "0")}
                 </p>
-                <h3 className="mt-2 font-serif text-xl leading-snug">{n.title}</h3>
-                <p className="mt-1 text-sm text-mist">{n.publisher_or_authors}</p>
-                <p className="mt-4 leading-relaxed">{n.keyFinding}</p>
-                <blockquote className="mt-4 border-l-2 border-lake/50 pl-4 text-sm italic text-muted-foreground">&ldquo;{n.quote}&rdquo;</blockquote>
-                <p className="mt-3 text-sm text-muted-foreground">
-                  <span className="text-foreground">Who was studied:</span> {n.population}
-                </p>
-                <p className="mt-4 flex-1 rounded-2xl bg-lake/10 p-4 text-sm">
-                  <span className="font-medium text-lake">Student need: </span>
-                  {n.need}
-                </p>
-                <a href={n.url} rel="noopener" className="mt-4 text-sm text-lake underline underline-offset-4 hover:text-dawn">
-                  Read the source: {n.title}
-                </a>
+                <div>
+                  <p className="text-xs uppercase tracking-[0.18em] text-mist">
+                    {n.type === "peer-reviewed" ? "Peer-reviewed study" : n.type === "survey" ? "Survey" : "Report"} · {n.year} ·{" "}
+                    {n.publisher_or_authors.split(" (")[0].split(",")[0]}
+                  </p>
+                  <h3 className="mt-3 font-serif text-[clamp(1.5rem,2.6vw,2.2rem)] leading-[1.15]">{n.keyFinding}</h3>
+                  <p className="mt-4 text-sm text-muted-foreground">
+                    <span className="text-foreground">Who was studied:</span> {n.population}
+                  </p>
+                </div>
+                <div className="lg:pt-8">
+                  <blockquote className="border-l-2 border-lake/50 pl-5 text-lg italic leading-relaxed text-[#cfdbe5]">&ldquo;{n.quote}&rdquo;</blockquote>
+                  <p className="mt-6 text-sm">
+                    <span className="font-medium text-lake">What students need: </span>
+                    {n.need}
+                  </p>
+                  <a href={n.url} rel="noopener" className="mt-4 inline-block text-sm text-lake underline underline-offset-4 hover:text-dawn">
+                    Source: {n.title}
+                  </a>
+                </div>
               </Reveal>
             </li>
           ))}

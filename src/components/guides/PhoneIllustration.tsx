@@ -120,11 +120,15 @@ const VARIANTS: Record<string, () => ReactNode> = {
   ),
 };
 
-export function PhoneIllustration({ variant, alt }: { variant: string; alt: string }) {
+export function PhoneIllustration({ variant, alt, bare = false }: { variant: string; alt: string; bare?: boolean }) {
   const draw = VARIANTS[variant];
   if (!draw) return null;
   return (
-    <div role="img" aria-label={alt} className="rounded-3xl bg-gradient-to-b from-[#1a2c3f] to-[#0f1c2a] px-4 py-8">
+    <div
+      role="img"
+      aria-label={alt}
+      className={bare ? "flex h-full items-center justify-center [&>div>div]:scale-[1.15]" : "rounded-3xl bg-gradient-to-b from-[#1a2c3f] to-[#0f1c2a] px-4 py-8"}
+    >
       <div aria-hidden="true">{draw()}</div>
     </div>
   );

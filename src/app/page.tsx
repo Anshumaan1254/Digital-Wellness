@@ -1,29 +1,89 @@
 import Link from "next/link";
-import { ArrowRight, BedDouble, Compass, Puzzle, ShieldCheck, Timer } from "lucide-react";
+import { ArrowRight, Compass } from "lucide-react";
 import BlurText from "@/components/reactbits/BlurText";
+import ScrollReveal from "@/components/reactbits/ScrollReveal";
+import ScrollExpand from "@/components/reactbits/ScrollExpand";
 import BackgroundPaths from "@/components/kokonutui/background-paths";
 import { HeroScene } from "@/components/three/HeroScene";
-import { CalmCard } from "@/components/site/CalmCard";
-import { Reveal } from "@/components/site/Reveal";
-import { Stat } from "@/components/site/Stat";
-import { Section } from "@/components/site/PageHeader";
-import { YouTubeFacade } from "@/components/media/YouTubeFacade";
+import { HeroParallax } from "@/components/story/HeroParallax";
+import { StatStory } from "@/components/story/StatStory";
+import { CategorySweep } from "@/components/story/CategorySweep";
+import { PhoneWalkthrough } from "@/components/story/PhoneWalkthrough";
+import { GuideRows } from "@/components/story/GuideRows";
 import { CATEGORIES, RESOURCES } from "@/data/resources";
 import { GUIDES, VIDEOS } from "@/data/content";
 import { SITE } from "@/data/site";
 
-const CATEGORY_ICON = {
-  "phone-bedtime": BedDouble,
-  focus: Timer,
-  browser: Puzzle,
-  privacy: ShieldCheck,
-} as const;
+const STATS = [
+  {
+    value: "45%",
+    lead: "Too much time",
+    label: "of US teens say they spend too much time on social media — up from 36% in 2022.",
+    source: "Pew Research Center, 2025",
+    href: "https://www.pewresearch.org/internet/2025/04/22/teens-social-media-and-mental-health/",
+    tint: "#f1c9a5",
+  },
+  {
+    value: "237",
+    lead: "Constant interruptions",
+    label: "notifications a day was the median for 11–17-year-olds tracked in one study. A quarter arrived during school.",
+    source: "Common Sense Media, 2023",
+    href: "https://www.commonsensemedia.org/sites/default/files/research/report/2023-cs-smartphone-research-report_final-for-web.pdf",
+    tint: "#8fd3c8",
+  },
+  {
+    value: "20 min",
+    lead: "The cost of a distraction",
+    label: "is how long it can take a student to refocus on learning after being distracted.",
+    source: "UNESCO GEM Report, 2023",
+    href: "https://www.unesco.org/en/articles/smartphones-school-only-when-they-clearly-support-learning",
+    tint: "#c3bdf0",
+  },
+  {
+    value: "90%",
+    lead: "Lost sleep",
+    label: "of 67 studies linked screen time with shorter or later sleep in school-aged children and teens.",
+    source: "Hale & Guan, Sleep Medicine Reviews, 2015",
+    href: "https://doi.org/10.1016/j.smrv.2014.07.007",
+    tint: "#9fd0a6",
+  },
+];
+
+const WALK = [
+  {
+    variant: "android-app-timer",
+    platform: "Android",
+    title: "Give your most-used app a daily budget.",
+    body: "Settings › Digital Wellbeing › App timers. When time runs out, the app closes and its icon dims until midnight.",
+    alt: "Illustration of Android's App timers screen with a 30-minute timer on a video app.",
+  },
+  {
+    variant: "android-bedtime",
+    platform: "Android",
+    title: "Let bedtime turn the colour off.",
+    body: "Bedtime mode can switch your screen to grayscale and keep it dark on a schedule, so late scrolling feels less tempting.",
+    alt: "Illustration of Android's Bedtime mode with a 22:30 to 07:00 schedule and Grayscale on.",
+  },
+  {
+    variant: "iphone-allowance",
+    platform: "iPhone",
+    title: "Set an allowance for social media.",
+    body: "Settings › Screen Time › Time Allowances (App Limits on iOS 26 and earlier). Add a passcode if you want it to stick.",
+    alt: "Illustration of iPhone Time Allowances with Social Media set to 45 minutes a day.",
+  },
+  {
+    variant: "iphone-sleep",
+    platform: "iPhone",
+    title: "Wind down before you sleep.",
+    body: "A sleep schedule in the Health app starts Sleep Focus up to three hours before bed, holding back everything except the people you choose.",
+    alt: "Illustration of iPhone Sleep settings with a 45-minute wind down and only family allowed through.",
+  },
+];
 
 export default function Home() {
   return (
     <>
-      <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden pt-16">
-        <HeroScene />
+      <HeroParallax scene={<HeroScene />}>
         {/* soft scrim so the copy keeps its contrast over the lighter ridges */}
         <div
           aria-hidden="true"
@@ -43,7 +103,7 @@ export default function Home() {
                 className="drop-shadow-[0_2px_18px_rgba(6,12,24,0.6)]"
               />
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#dbe5ee] drop-shadow-[0_1px_8px_rgba(6,12,24,0.8)]">
+            <p className="mt-6 max-w-xl text-lg leading-relaxed text-[#dbe5ee]">
               Compare {RESOURCES.length} checked tools for screen time, focus, sleep and privacy — with honest prices, the
               devices they run on, and step-by-step setup guides written for students.
             </p>
@@ -66,109 +126,47 @@ export default function Home() {
             <p className="mt-6 text-sm text-[#c6d3de]">Prices and platforms checked against official pages on {SITE.checkedLabel}.</p>
           </div>
         </div>
+      </HeroParallax>
+
+      <section aria-label="Why this hub exists" className="mx-auto max-w-5xl px-4 pb-10 pt-32 sm:px-6">
+        <ScrollReveal
+          mode="scrub"
+          splitBy="words"
+          effect="fade"
+          enableBlur
+          baseOpacity={0.12}
+          blurStrength={6}
+          containerClassName="text-center"
+          textClassName="!font-serif !font-normal !text-[clamp(2rem,5.2vw,4.4rem)] !leading-[1.12] text-foreground"
+        >
+          Most of us don&apos;t need less technology. We need it to be quieter, kinder to our sleep, and safer with what we share.
+        </ScrollReveal>
+        <p className="mx-auto mt-10 max-w-2xl text-center text-lg text-muted-foreground">
+          We read ten published studies of teenagers and university students before choosing a single tool. Four findings
+          shaped everything on this site. <Link className="inline-link" href="/research">Read the research</Link>.
+        </p>
       </section>
 
-      <Section
-        id="why"
-        title="What the research says students need"
-        intro={
-          <>
-            We could not run our own large survey, so we started from published studies of teenagers and university
-            students. Four needs came up again and again. <Link className="inline-link" href="/research">Read all ten sources</Link>.
-          </>
-        }
-      >
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <Reveal>
-            <Stat
-              value={45}
-              suffix="%"
-              label="of US teens say they spend too much time on social media — up from 36% in 2022."
-              source="Pew Research Center, 2025"
-              href="https://www.pewresearch.org/internet/2025/04/22/teens-social-media-and-mental-health/"
-            />
-          </Reveal>
-          <Reveal delay={0.1}>
-            <Stat
-              value={237}
-              label="notifications a day was the median for 11–17-year-olds tracked in one study; a quarter arrived during school."
-              source="Common Sense Media, 2023"
-              href="https://www.commonsensemedia.org/sites/default/files/research/report/2023-cs-smartphone-research-report_final-for-web.pdf"
-            />
-          </Reveal>
-          <Reveal delay={0.2}>
-            <Stat
-              value={20}
-              suffix=" min"
-              label="is how long it can take students to refocus on learning after being distracted."
-              source="UNESCO GEM Report, 2023"
-              href="https://www.unesco.org/en/articles/smartphones-school-only-when-they-clearly-support-learning"
-            />
-          </Reveal>
-          <Reveal delay={0.3}>
-            <Stat
-              value={90}
-              suffix="%"
-              label="of 67 studies linked screen time with shorter or later sleep in school-aged children and teens."
-              source="Hale & Guan, Sleep Medicine Reviews, 2015"
-              href="https://doi.org/10.1016/j.smrv.2014.07.007"
-            />
-          </Reveal>
-        </div>
-      </Section>
+      <StatStory stats={STATS} />
 
-      <Section
-        id="categories"
-        title="Start with what you need"
-        intro="Every tool is grouped by the problem it solves, then compared on the same criteria: purpose, devices, cost, privacy, accessibility and limitations."
-      >
-        <div className="grid gap-5 md:grid-cols-2">
-          {CATEGORIES.map((c, i) => {
-            const Icon = CATEGORY_ICON[c.id];
-            const tools = RESOURCES.filter((r) => r.category === c.id);
-            return (
-              <Reveal key={c.id} delay={i * 0.08}>
-                <CalmCard className="h-full">
-                  <div className="flex h-full flex-col">
-                    <span className="mb-5 inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-lake/15 text-lake">
-                      <Icon aria-hidden className="h-5 w-5" />
-                    </span>
-                    <h3 className="font-serif text-2xl">{c.name}</h3>
-                    <p className="mt-2 text-muted-foreground">{c.description}</p>
-                    <p className="mt-4 text-sm text-mist">{tools.map((t) => t.shortName).join(" · ")}</p>
-                    <Link
-                      href={`/resources?category=${c.id}`}
-                      className="relative z-[2] mt-6 inline-flex items-center gap-1.5 self-start text-sm font-medium text-lake hover:text-dawn"
-                    >
-                      Compare {c.short.toLowerCase()} <ArrowRight aria-hidden className="h-4 w-4" />
-                    </Link>
-                  </div>
-                </CalmCard>
-              </Reveal>
-            );
-          })}
-        </div>
-      </Section>
+      <CategorySweep categories={CATEGORIES} resources={RESOURCES} />
 
-      <section aria-labelledby="finder-cta-title" className="mx-auto max-w-7xl px-4 py-10 sm:px-6">
-        <BackgroundPaths
-          className="min-h-[380px] rounded-[2.5rem] border border-border bg-[#0d1d2b] text-[#8fd3c8]"
-          count={42}
-          speed={0.35}
-          spread={0.5}
-          angle={-6}
-        >
-          <div className="relative z-10 flex max-w-xl flex-col items-center gap-5 px-6 py-16 text-center">
-            <h2 id="finder-cta-title" className="font-serif text-3xl text-foreground sm:text-4xl">
+      <PhoneWalkthrough steps={WALK} />
+
+      <section aria-labelledby="finder-cta-title" className="py-10">
+        <BackgroundPaths className="min-h-[85vh] bg-transparent text-[#8fd3c8]" count={48} speed={0.3} spread={0.55} angle={-6}>
+          <div className="relative z-10 flex max-w-3xl flex-col items-center gap-6 px-6 py-24 text-center">
+            <p className="text-sm uppercase tracking-[0.22em] text-dawn">Tool finder</p>
+            <h2 id="finder-cta-title" className="font-serif text-[clamp(2.4rem,6vw,5rem)] leading-[1.02] text-foreground">
               Not sure where to start?
             </h2>
-            <p className="text-lg text-muted-foreground">
-              Answer five quick questions about your devices, goals and budget. You will get a short list with the reasons
-              each tool fits — and what to watch out for.
+            <p className="max-w-xl text-lg text-muted-foreground">
+              Four quick questions about your goals, devices and budget. Every match comes with its reasons — and what to
+              watch out for.
             </p>
             <Link
               href="/find"
-              className="inline-flex items-center gap-2 rounded-full bg-lake px-6 py-3 font-medium text-[#08202a] transition hover:bg-[#a9e2d9]"
+              className="inline-flex items-center gap-2 rounded-full bg-lake px-7 py-3.5 font-medium text-[#08202a] transition hover:bg-[#a9e2d9]"
             >
               Take the 1-minute tool finder <ArrowRight aria-hidden className="h-4 w-4" />
             </Link>
@@ -176,80 +174,85 @@ export default function Home() {
         </BackgroundPaths>
       </section>
 
-      <Section
-        id="guides"
-        title="Set it up in minutes"
-        intro="Three short, tested walkthroughs with screenshots or clearly labelled illustrations — and no personal information in any image."
-      >
-        <div className="grid gap-5 lg:grid-cols-3">
-          {GUIDES.map((g, i) => (
-            <Reveal key={g.slug} delay={i * 0.08}>
-              <Link
-                href={`/guides/${g.slug}`}
-                className="group flex h-full flex-col rounded-3xl border border-border bg-card p-6 transition hover:border-lake/40 hover:bg-[#132739]"
-              >
-                <p className="text-xs uppercase tracking-[0.16em] text-dawn">
-                  {g.minutes} minutes · {g.difficulty}
-                </p>
-                <h3 className="mt-3 font-serif text-2xl leading-snug">{g.title}</h3>
-                <p className="mt-3 flex-1 text-muted-foreground">{g.summary}</p>
-                <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-lake group-hover:text-dawn">
-                  Start the {g.minutes}-minute guide <ArrowRight aria-hidden className="h-4 w-4" />
-                </span>
-              </Link>
-            </Reveal>
-          ))}
-        </div>
-      </Section>
-
-      <Section
-        id="watch"
-        title="Watch and learn"
-        intro={
-          <>
-            Short, reputable videos. They only load when you press play, using YouTube&apos;s privacy-enhanced mode.{" "}
-            <Link className="inline-link" href="/videos">
-              See all {VIDEOS.length} videos
-            </Link>
-            .
-          </>
-        }
-      >
-        <div className="grid gap-6 md:grid-cols-2">
-          {VIDEOS.slice(0, 2).map((v) => (
-            <Reveal key={v.id}>
-              <YouTubeFacade id={v.id} title={v.title} channel={v.channel} />
-              <p className="mt-3 text-sm text-muted-foreground">{v.whyUseful}</p>
-            </Reveal>
-          ))}
-        </div>
-      </Section>
-
-      <Section id="share">
-        <div className="grid items-center gap-8 rounded-[2.5rem] border border-border bg-gradient-to-br from-[#14283a] to-[#0e1c2a] p-8 sm:p-12 md:grid-cols-[1.4fr_1fr]">
-          <div>
-            <h2 className="font-serif text-3xl sm:text-4xl">Tried one of these? Tell us how it went.</h2>
-            <p className="mt-4 max-w-xl text-lg text-muted-foreground">
-              Leave anonymous feedback, or share a tip, a short video, an animation or an app screenshot with other
-              students. We never ask for your name or email.
+      <section aria-labelledby="watch-title">
+        <h2 id="watch-title" className="sr-only">
+          Watch and learn
+        </h2>
+        <ScrollExpand
+          src="/media/lake-still.jpg"
+          alt=""
+          title="Watch, then try one thing."
+          scrollHint="Keep scrolling"
+          useWindowScroll
+          startWidth={46}
+          startHeight={52}
+          startRadius={32}
+          scrollDistance={1}
+          holdDistance={0.3}
+          overlayScrim={0.55}
+        >
+          {/* decorative overlay; the same information is repeated in plain text just below */}
+          <div aria-hidden="true" className="max-w-2xl text-white">
+            <p className="text-sm uppercase tracking-[0.22em] text-dawn">Videos</p>
+            <p className="mt-3 font-serif text-[clamp(2rem,4.5vw,3.6rem)] leading-[1.05]">{VIDEOS.length} short talks and how-tos, chosen for students.</p>
+            <p className="mt-4 text-lg text-[#dbe5ee]">
+              From Adam Alter&apos;s TED talk on why screens make us less happy to Apple&apos;s own guide to Focus. Nothing
+              loads from YouTube until you press play.
             </p>
-          </div>
-          <div className="flex flex-col gap-3 sm:flex-row md:flex-col">
             <Link
-              href="/community#feedback"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-dawn px-6 py-3 font-medium text-[#1b1410] hover:bg-[#f6d7b9]"
+              href="/videos"
+              tabIndex={-1}
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 font-medium text-[#0b1622] hover:bg-[#e9eff4]"
             >
-              Give feedback
-            </Link>
-            <Link
-              href="/community#share"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/20 px-6 py-3 font-medium hover:bg-white/5"
-            >
-              Share a video, tip or app screen
+              Watch the videos <ArrowRight aria-hidden className="h-4 w-4" />
             </Link>
           </div>
+        </ScrollExpand>
+        <p className="mx-auto max-w-3xl px-4 pt-12 text-center text-lg text-muted-foreground sm:px-6">
+          {VIDEOS.length} short talks and how-tos, from TED, Apple Support, Google, CISA and Common Sense Media.{" "}
+          <Link href="/videos" className="inline-link">
+            Watch the videos
+          </Link>
+          .
+        </p>
+      </section>
+
+      <section aria-labelledby="guides-title" className="mx-auto max-w-7xl px-4 py-32 sm:px-6">
+        <div className="flex flex-wrap items-end justify-between gap-6">
+          <div>
+            <p className="text-sm uppercase tracking-[0.22em] text-dawn">Setup guides</p>
+            <h2 id="guides-title" className="mt-3 font-serif text-[clamp(2.2rem,5vw,4rem)] leading-[1.05]">
+              Set it up in one sitting.
+            </h2>
+          </div>
+          <p className="max-w-md text-muted-foreground">
+            Short, step-by-step and tested — with real screenshots, or clearly labelled illustrations where a screenshot would
+            have shown personal information.
+          </p>
         </div>
-      </Section>
+        <div className="mt-14">
+          <GuideRows guides={GUIDES} />
+        </div>
+      </section>
+
+      <section aria-labelledby="share-title" className="relative overflow-hidden px-4 py-36 text-center sm:px-6">
+        <div aria-hidden className="absolute inset-0 -z-10 bg-[radial-gradient(60%_60%_at_50%_100%,rgba(241,201,165,0.14),transparent_70%)]" />
+        <h2 id="share-title" className="mx-auto max-w-4xl font-serif text-[clamp(2.4rem,6vw,5rem)] leading-[1.02]">
+          Tried one? Tell the next student how it went.
+        </h2>
+        <p className="mx-auto mt-6 max-w-xl text-lg text-muted-foreground">
+          Leave anonymous feedback, or share a tip, a short video, an animation or an app screenshot. We never ask for your
+          name or email.
+        </p>
+        <div className="mt-10 flex flex-wrap justify-center gap-3">
+          <Link href="/community#feedback" className="inline-flex items-center gap-2 rounded-full bg-dawn px-7 py-3.5 font-medium text-[#1b1410] hover:bg-[#f6d7b9]">
+            Give feedback
+          </Link>
+          <Link href="/community#share" className="inline-flex items-center gap-2 rounded-full border border-white/20 px-7 py-3.5 font-medium hover:bg-white/5">
+            Share a video, tip or app screen
+          </Link>
+        </div>
+      </section>
     </>
   );
 }

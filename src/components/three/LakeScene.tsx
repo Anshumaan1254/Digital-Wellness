@@ -209,7 +209,8 @@ function Moon() {
   }, []);
   return (
     <group position={MOON.toArray()}>
-      <sprite scale={[16, 16, 1]} renderOrder={-1}>
+      {/* glow sits just behind the disc so the two never z-fight */}
+      <sprite scale={[16, 16, 1]} position={[0, 0, -0.6]} renderOrder={-1}>
         <spriteMaterial map={glow} transparent depthWrite={false} blending={THREE.AdditiveBlending} />
       </sprite>
       <mesh renderOrder={-1}>
@@ -383,6 +384,8 @@ function CameraRig({ still }: { still: boolean }) {
 export default function LakeScene({ className }: { className?: string }) {
   const [still, setStill] = useState(false);
   const [ready, setReady] = useState(false);
+  const [onScreen, setOnScreen] = useState(true);
+  const wrapRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
     setStill(mq.matches);
@@ -391,8 +394,17 @@ export default function LakeScene({ className }: { className?: string }) {
     return () => mq.removeEventListener("change", on);
   }, []);
 
+  // stop drawing once the hero has scrolled away — saves battery and keeps scrolling smooth
+  useEffect(() => {
+    if (!wrapRef.current) return;
+    const io = new IntersectionObserver(([e]) => setOnScreen(e.isIntersecting), { rootMargin: "100px" });
+    io.observe(wrapRef.current);
+    return () => io.disconnect();
+  }, []);
+
   return (
     <div
+      ref={wrapRef}
       className={className}
       aria-hidden="true"
       style={{ opacity: ready ? 1 : 0, transition: "opacity 1.6s ease" }}
@@ -400,7 +412,7 @@ export default function LakeScene({ className }: { className?: string }) {
       <Canvas
         camera={{ position: [0, 0, CAMERA_Z], fov: 40, near: 0.1, far: 200 }}
         dpr={[1, 1.75]}
-        frameloop={still ? "demand" : "always"}
+        frameloop={still ? "demand" : onScreen ? "always" : "never"}
         gl={{ antialias: true, powerPreference: "low-power" }}
         onCreated={() => setReady(true)}
       >
