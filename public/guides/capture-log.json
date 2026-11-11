@@ -1,0 +1,42 @@
+[
+  {
+    "name": "leechblock-what-to-block.png",
+    "ok": false,
+    "error": "TimeoutError: page.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#setName1')\u001b[22m\n\u001b[2m    - locator resolved to <input size=\"60\" type=\"text\" id=\"setName1\"/>\u001b[22m\n\u001b[2m    - fil"
+  },
+  {
+    "name": "leechblock-when-to-block.png",
+    "ok": false,
+    "error": "TimeoutError: page.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#times1')\u001b[22m\n\u001b[2m    - locator resolved to <input size=\"60\" id=\"times1\" type=\"text\" title=\"Leave blank for n"
+  },
+  {
+    "name": "leechblock-save.png",
+    "ok": false,
+    "error": "TimeoutError: locator.scrollIntoViewIfNeeded: Timeout 29959.463999999993ms exceeded.\nCall log:\n\u001b[2m  - attempting scroll into view action\u001b[22m\n\u001b[2m    2 × waiting for element to be stable\u001b[22m\n\u001b[2m   "
+  },
+  {
+    "name": "leechblock-firefox-listing.png",
+    "ok": true,
+    "at": "2026-11-11T12:50:34.775Z"
+  },
+  {
+    "name": "privacy-badger-listing.png",
+    "ok": true,
+    "at": "2026-11-11T12:50:38.977Z"
+  },
+  {
+    "name": "hibp-home.png",
+    "ok": true,
+    "at": "2026-11-11T12:50:43.551Z"
+  },
+  {
+    "name": "bitwarden-generator.png",
+    "ok": true,
+    "at": "2026-11-11T12:50:49.053Z"
+  },
+  {
+    "name": "hibp-example-result.png",
+    "ok": true,
+    "at": "2026-11-11T12:50:57.957Z"
+  }
+]

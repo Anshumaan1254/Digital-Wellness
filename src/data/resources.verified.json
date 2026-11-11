@@ -1,0 +1,837 @@
+[
+  {
+    "id": "apple-screen-time",
+    "name": "Apple Screen Time (with Focus, Sleep Focus and Notification Summary)",
+    "maker": "Apple",
+    "purpose": "A tool built into iPhone, iPad and Mac that shows how much time you spend on apps and lets you set when apps are available, daily time allowances and who can contact you.",
+    "keyFeatures": [
+      "Usage reports: daily and weekly screen time, most-used apps, pickups and notifications",
+      "Screen Time Schedules (called Downtime on iOS 26 and earlier): choose when apps are available, e.g. bedtime",
+      "Time Allowances (called App Limits on iOS 26 and earlier): daily time for categories such as Games or Social Media",
+      "Communication Limits and Always Allowed: choose who can call or message you and which apps and contacts always work",
+      "Focus modes, including Sleep Focus, plus Scheduled Summary to bundle notifications at set times"
+    ],
+    "platforms": ["iOS", "iPadOS", "macOS"],
+    "costModel": "built-in",
+    "costDetail": "No separate price. It is part of iOS, iPadOS and macOS on Apple devices, and the Apple pages checked list no cost. The newest Screen Time features (Screen Time Schedules, Time Allowances, Share Across Devices) need iOS 27, iPadOS 27 or macOS 27 or later on all your devices. The basic Scheduled Summary for notifications is described with no device restriction. Apple Intelligence notification summaries and Priority Notifications need an Apple Intelligence-capable iPhone (iPhone 15 Pro or iPhone 16 or later) and are not available in all languages and regions.",
+    "openSource": false,
+    "licence": null,
+    "accountRequired": "Optional. An Apple Account is needed to sync Screen Time across iPhone, iPad and Mac (Share Across Devices), and Family Sharing with a Child Account is needed to manage a child's device. Apple's guide does not say an account is needed for basic use on one device.",
+    "privacyNotes": "Reports cover which apps and websites you use, for how long, pickups and notifications. In Apple's iCloud data security overview, Screen Time data is listed as end-to-end encrypted under both Standard and Advanced Data Protection.",
+    "accessibilityNotes": "No accessibility statement specific to Screen Time was found. It lives in Settings and System Settings, and iPhone, iPad and Mac include Apple's built-in VoiceOver screen reader.",
+    "limitations": [
+      "Apple's iOS 26 guide says that by default Screen Time limits can be ignored once reached. Blocking them properly needs a Screen Time passcode and the Block at Downtime setting.",
+      "Only works on Apple devices. The latest Schedules and Time Allowances features need version 27 software on every device.",
+      "Feature names changed in iOS 27 (Downtime became Screen Time Schedules, App Limits became Time Allowances), so older tutorials may not match newer devices."
+    ],
+    "officialUrl": "https://support.apple.com/guide/iphone/set-up-screen-time-for-yourself-iphbfa595995/ios",
+    "sources": [
+      {
+        "url": "https://support.apple.com/en-us/guide/iphone/iphbfa595995/ios",
+        "what": "Screen Time for yourself on iPhone: features, version requirement, sync across iPhone/iPad/Mac with the same Apple Account",
+        "quote": "To use all the latest Screen Time features, you need iOS 27, iPadOS 27, macOS 27, watchOS 27, visionOS 27, or later on all your Apple devices. ... You can sync your Screen Time settings and reports across your iPhone, iPad, and Mac where you’re signed in to the same Apple Account."
+      },
+      {
+        "url": "https://support.apple.com/en-us/guide/iphone/iphb0c7313c9/ios",
+        "what": "iOS 27 naming: Screen Time Schedules and Time Allowances",
+        "quote": "With Screen Time, you can use Time Allowances to set how long you use your apps each day, and Schedules to set when during the day you can use them."
+      },
+      {
+        "url": "https://support.apple.com/en-us/guide/iphone/iphb0c7313c9/26/ios/26",
+        "what": "iOS 26 guide still uses Downtime and App Limits naming; limits can be ignored by default",
+        "quote": "Schedule downtime: Take regular breaks from your screen by setting specific times when most apps are unavailable ... Note: By default, Screen Time limits can be ignored once reached."
+      },
+      {
+        "url": "https://support.apple.com/en-us/guide/iphone/iph4df1c0dad/ios",
+        "what": "Communication Limits",
+        "quote": "You can allow or block communication—including incoming and outgoing phone calls, FaceTime calls, and messages—from certain contacts in iCloud, either at all times or during certain periods"
+      },
+      {
+        "url": "https://support.apple.com/en-us/guide/mac-help/mchle4e2edfe/mac",
+        "what": "Screen Time on Mac",
+        "quote": "On your Mac, turn on Screen Time to learn how you spend time on your Mac and other devices."
+      },
+      {
+        "url": "https://support.apple.com/en-us/108806",
+        "what": "Built into iPhone, iPad and Mac; Family Sharing for children",
+        "quote": "with the parental controls built directly into iPhone, iPad, and Mac, you can manage the apps and content your child can access, who they communicate with, when they use their devices, and more."
+      },
+      {
+        "url": "https://support.apple.com/en-us/guide/iphone/iphd6288a67f/ios",
+        "what": "Focus modes",
+        "quote": "Focus is a feature that helps you concentrate on a task by minimizing distractions."
+      },
+      {
+        "url": "https://support.apple.com/en-us/guide/iphone/iphaf56dceb4/ios",
+        "what": "Sleep Focus",
+        "quote": "For the sleep schedules you set, a Sleep Focus helps reduce distractions before and during bedtime."
+      },
+      {
+        "url": "https://support.apple.com/en-us/guide/iphone/iph7c3d96bab/ios",
+        "what": "Scheduled notification summary (still present on iOS 27 guide)",
+        "quote": "To minimize interruptions from notifications throughout the day, you can schedule a notification summary that includes notifications for several apps at once."
+      },
+      {
+        "url": "https://support.apple.com/en-us/guide/iphone/iph1fbe7d2b9/ios",
+        "what": "Apple Intelligence notification summaries are device-limited",
+        "quote": "Apple Intelligence on iOS 27 or later is available on an Apple Intelligence-enabled iPhone 15 Pro, iPhone 15 Pro Max, or iPhone 16 model or later."
+      },
+      {
+        "url": "https://support.apple.com/en-us/102651",
+        "what": "Screen Time data protection in iCloud",
+        "quote": "Screen Time End-to-end Trusted devices End-to-end Trusted devices"
+      },
+      {
+        "url": "https://www.apple.com/accessibility/vision/",
+        "what": "VoiceOver screen reader on Apple devices",
+        "quote": "VoiceOver is an industry‑leading screen reader that tells you exactly what’s happening on your screen audibly, in braille, or both."
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "Whether an Apple Account is required for basic Screen Time use on a single device (not stated on the pages checked)",
+      "No accessibility statement specific to Screen Time (only general VoiceOver information)",
+      "Screen Time on iPad was confirmed through the iPhone and Mac guides (sync across iPhone, iPad and Mac) and Apple's parental-controls page. The iPad User Guide itself was not fetched."
+    ]
+  },
+  {
+    "id": "google-digital-wellbeing",
+    "name": "Google Digital Wellbeing",
+    "maker": "Google",
+    "purpose": "A section in the Settings of many Android phones that shows your phone habits and lets you set app timers, a Bedtime mode and a Focus mode.",
+    "keyFeatures": [
+      "Dashboard of screen time per app, unlocks and notifications received",
+      "App timers: daily limits per app (the app closes and its icon dims when time runs out)",
+      "Bedtime mode: schedule or turn on while charging, with grayscale, dark screen, dimmed wallpaper and Do Not Disturb",
+      "Focus mode: pause chosen apps and their notifications, on a schedule or on demand",
+      "Website time limits for sites visited in Chrome, and an optional App limits PIN"
+    ],
+    "platforms": ["Android"],
+    "costModel": "built-in",
+    "costDetail": "No price. It is reached from the phone's Settings app. Its Google Play listing (developer Google LLC) shows Install with no in-app purchases or ads listed. Google says it is available 'on some phones' and steps vary by device.",
+    "openSource": false,
+    "licence": null,
+    "accountRequired": "No account is mentioned for personal use. Google's help page describes it as part of Settings, where you set up a profile the first time. Parents can manage a child's device through Family Link.",
+    "privacyNotes": "The Google Play Data safety section says 'No data shared with third parties' and that the app may collect 'Personal info, App activity and 3 others'. Data is encrypted in transit, and the listing says 'Data can’t be deleted'.",
+    "accessibilityNotes": "No accessibility statement specific to Digital Wellbeing was found. Android includes Google's TalkBack screen reader, and Bedtime mode offers grayscale and dark theme options.",
+    "limitations": [
+      "Only available 'on some phones', and steps vary by device maker",
+      "App timers reset at midnight and you can delete them yourself unless an App limits PIN is set. Some work and school accounts might not work with app timers.",
+      "Website time limits only cover browsing in Chrome"
+    ],
+    "officialUrl": "https://support.google.com/android/answer/9346420",
+    "sources": [
+      {
+        "url": "https://support.google.com/android/answer/9346420?hl=en",
+        "what": "Official help: dashboard, app timers, Bedtime mode, Focus mode, device availability",
+        "quote": "On some phones, you can get info about how you spend time on your phone ... When you run out of time, the app closes and its icon dims. ... When Focus mode is on, you can't use these apps and won't get notifications from them."
+      },
+      {
+        "url": "https://support.google.com/android/answer/9346420?hl=en",
+        "what": "Bedtime mode screen options",
+        "quote": "Grayscale: Changes your screen to black and white. Keep the screen dark: Turns off the always-on display at bedtime."
+      },
+      {
+        "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&hl=en_US&gl=US",
+        "what": "Official Play listing: developer, description, Data safety",
+        "quote": "Digital Wellbeing Google LLC ... Look for Digital Wellbeing in your phone’s Settings menu ... No data shared with third parties ... Data is encrypted in transit Data can’t be deleted"
+      },
+      {
+        "url": "https://support.google.com/accessibility/android/answer/6283677?hl=en",
+        "what": "TalkBack screen reader on Android",
+        "quote": "TalkBack is the Google screen reader included on Android devices."
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "Minimum Android version for Digital Wellbeing (only the screen time widget states 'Android 9 and later')",
+      "Which phone brands include it (Google only says 'some phones')",
+      "No accessibility statement specific to Digital Wellbeing"
+    ]
+  },
+  {
+    "id": "forest",
+    "name": "Forest: Focus for Productivity",
+    "maker": "Seekrtech Co., Ltd.",
+    "purpose": "A focus timer that grows a virtual tree while you stay off your phone. If you leave to use other apps, the tree dies.",
+    "keyFeatures": [
+      "Focus timer (countdown and stopwatch) that grows a tree",
+      "Deep Focus app blocking during sessions (free on every tier)",
+      "Time Guard scheduled app and site blocks (1 app or site free, several with Plus)",
+      "Plant Together group focus rooms with friends",
+      "Real trees planted with partner Trees for the Future (planting with coins is a Plus feature, up to 5 trees)"
+    ],
+    "platforms": ["iOS", "iPadOS", "Android", "Chrome", "Firefox"],
+    "costModel": "freemium",
+    "costDetail": "Free to download on iOS ('Free · In-App Purchases') and Android ('Contains ads · In-app purchases'). The free tier includes the focus timer, Deep Focus app blocking, Time Guard for 1 app or site, focus tracking and Plant Together, and shows occasional ads (never during active focus sessions). The optional Forest Plus subscription (free trial available) adds a custom app allowlist, multi-app Time Guard, Focus Analytics, pausing sessions, all soundscapes, real-tree planting and no ads. Forest says 'Plus pricing varies by region and platform.' The US App Store lists 'Annual (Early Bird) $35.99' and 'Monthly (Early Bird) $5.99' (USD). Google Play shows in-app items at '$0.99 - $59.99 per item'. The old one-time Forest Pro purchase is no longer sold. The Chrome and Firefox extensions install at no cost. Core blocking is free, so essential features do not require payment.",
+    "openSource": false,
+    "licence": null,
+    "accountRequired": "Optional or unclear. An account syncs your forest and focus history across iPhone, iPad, Android and browser. Plant Together, Focus Challenge, the shop and real-tree planting need internet. Forest does not say whether sign-in is required for basic use.",
+    "privacyNotes": "Forest says session data is stored with your account and not sold to third parties. The App Store privacy label lists Contact Info and Usage Data as 'Data Used to Track You'. Google Play says the app may share Personal info with third parties. The Chrome Web Store listing says the developer will not collect or use your data.",
+    "accessibilityNotes": "The App Store listing says: 'The developer has not yet indicated which accessibility features this app supports.' No official accessibility statement was found.",
+    "limitations": [
+      "The free tier shows ads (not during focus sessions). Pausing a session, Focus Analytics and multi-app Time Guard need Plus.",
+      "It is mainly a phone app. The browser extension only brings Deep Focus and the timer to desktop browsing, and no desktop app was found.",
+      "Plus prices vary by store and region, and the US App Store prices are labelled 'Early Bird', so the standard price is unclear."
+    ],
+    "officialUrl": "https://www.forestapp.cc/",
+    "sources": [
+      {
+        "url": "https://www.forestapp.cc/",
+        "what": "Free vs Plus features, Pro discontinued, platforms, pricing statement",
+        "quote": "Plus pricing varies by region and platform. Please check the App Store or Google Play for your current local price. ... Forest Pro is no longer available for purchase on any platform. ... Forest works across iPhone, iPad, Android, and as a browser extension (Chrome and Firefox)."
+      },
+      {
+        "url": "https://www.forestapp.cc/",
+        "what": "Free tier contents and ads",
+        "quote": "Yes — the core focus experience is free — no credit card, no expiration — including the Focus Timer, tree growth, Plant Together (group focus), Deep Focus mode (app blocker), and Mindful Space. The free tier shows occasional ads (never during active focus sessions)"
+      },
+      {
+        "url": "https://apps.apple.com/us/app/forest-focus-for-productivity/id866450515",
+        "what": "iOS/iPadOS listing: free download, US in-app prices, privacy label, accessibility",
+        "quote": "Free · In‑App Purchases ... Annual (Early Bird) $35.99 ... Monthly (Early Bird) $5.99 ... Requires iPadOS 16.0 or later."
+      },
+      {
+        "url": "https://play.google.com/store/apps/details?id=cc.forestapp&hl=en_US&gl=US",
+        "what": "Android listing: free with ads and in-app purchases",
+        "quote": "Forest: Stay Focused Seekrtech Contains ads In-app purchases ... $0.99 - $59.99 per item"
+      },
+      {
+        "url": "https://chromewebstore.google.com/detail/kjacjjdnoddnpbbcjilcajfhhbdhkpgk?hl=en",
+        "what": "Chrome extension listing (install link) and privacy disclosure",
+        "quote": "Add to Chrome ... The developer has disclosed that it will not collect or use your data."
+      },
+      {
+        "url": "https://addons.mozilla.org/api/v5/addons/addon/forest-stay-focused-be-present/?lang=en-US",
+        "what": "Firefox add-on (install page https://addons.mozilla.org/en-US/firefox/addon/forest-stay-focused-be-present/): no payment required, by Forest Developer",
+        "quote": "\"name\": \"Forest: stay focused, be present\" ... \"requires_payment\": false"
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "Forest Plus price on Google Play (only the in-app range '$0.99 - $59.99 per item' is shown)",
+      "Standard (non-'Early Bird') Plus price on the App Store, and prices outside the US",
+      "Whether an account or sign-in is required for basic use",
+      "Licence of the apps (Mozilla Add-ons lists the Firefox extension as MPL-2.0, but no source repository was checked)",
+      "No official accessibility information"
+    ]
+  },
+  {
+    "id": "freedom",
+    "name": "Freedom",
+    "maker": "Freedom (Eighty Percent Solutions Corporation)",
+    "purpose": "Blocks distracting apps and websites, or the whole internet, on your phone and computer at the same time.",
+    "keyFeatures": [
+      "Block apps, websites or the entire internet",
+      "One block session synced across unlimited devices",
+      "Custom blocklists and focus sounds",
+      "Premium: scheduled and recurring sessions, and sessions planned for later in the day",
+      "Premium: Locked Mode (can't quit a session) and sessions longer than 2 hours"
+    ],
+    "platforms": ["macOS", "Windows", "iOS", "iPadOS", "Android", "ChromeOS", "Linux", "Chrome"],
+    "costModel": "freemium",
+    "costDetail": "The Free plan (US$0) lets you block apps, websites or the whole internet on unlimited devices. Free accounts are limited to 'Start Now' sessions and cannot run sessions longer than 2 hours, recurring sessions, Start Later sessions or Locked Mode. Premium costs US$8.99/month billed monthly, or US$3.33/month on the yearly plan ('Yearly - Save 40%'; the page does not print the annual total), with 'Try It Free For 7 Days'. A one-time 'Forever' plan is US$99.50, shown as 50% off US$199. Prices are 'plus tax where applicable'. In-app prices on the iOS App Store differ: 'Freedom Yearly Subscription $39.99', 'Freedom Yearly $59.99', 'Freedom Monthly $12.99', 'Freedom Forever $199.00'. Scheduling and Locked Mode, which help you stick to limits, require payment.",
+    "openSource": false,
+    "licence": null,
+    "accountRequired": "Yes. The install steps say to 'Launch and log in', and you sign up with your name, email and password.",
+    "privacyNotes": "Freedom's FAQ says: 'Freedom doesn’t track your browsing, app usage, or personal activity.' However, the iOS App Store privacy label lists Identifiers under 'Data Used to Track You', and email address and user content as linked to you.",
+    "accessibilityNotes": "The App Store listing says: 'The developer has not yet indicated which accessibility features this app supports.' No official accessibility statement was found.",
+    "limitations": [
+      "Free sessions are 'Start Now' only and capped at 2 hours. There is no scheduling or Locked Mode without Premium.",
+      "Website exceptions are not available on iOS or Android. On Chromebook and Linux, Freedom only blocks websites through a browser extension (no app blocking).",
+      "Requires an account, and prices differ between the website and the App Store."
+    ],
+    "officialUrl": "https://freedom.to/",
+    "sources": [
+      {
+        "url": "https://freedom.to/pricing",
+        "what": "Plans, prices, trial, platform table",
+        "quote": "Free Give it a try $ 0 ... Mac, Windows, iOS, Android, Chromebook Unlimited Devices ... Premium Unblock your life $ 3.33 / month plus tax where applicable. Try It Free For 7 Days ... $ 8.99 / month ... $199 $ 99.50 for life"
+      },
+      {
+        "url": "https://support.freedom.to/en/articles/13764747-what-s-included-in-free-and-premium-plans",
+        "what": "Free plan limits (official help centre, Feb 23 2026)",
+        "quote": "A free account does not include the following: Block sessions longer than 2 hours Recurring sessions Start Later sessions Locked Mode features Free accounts are limited to Start Now sessions only."
+      },
+      {
+        "url": "https://freedom.to/downloads",
+        "what": "Platforms incl. Linux/ChromeOS via browser extension",
+        "quote": "We support ChromeOS via our browser extension, which enables you to block websites. ... We support Linux via our browser extension, which enables you to block websites."
+      },
+      {
+        "url": "https://apps.apple.com/us/app/freedom-screen-time-control/id1269788228",
+        "what": "iOS in-app prices, iPadOS support, privacy label, accessibility",
+        "quote": "Requires iPadOS 16.1 or later. ... In-App Purchases Yes Freedom Yearly Subscription $39.99 ... Freedom Monthly $12.99 Freedom Forever $199.00"
+      },
+      {
+        "url": "https://chrome.google.com/webstore/detail/abdkjmofmjelgafcdffaimhgdgpagmop",
+        "what": "Freedom browser extension link as given on freedom.to/downloads (link found on the official page; the store page itself was not fetched)",
+        "quote": "INSTALL BROWSER EXTENSION ... Our browser extension requires the Freedom Desktop app to work onMac. Also available for other browsers."
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "The annual total for the web yearly plan (only '$3.33 / month' is shown)",
+      "Which browsers other than Chrome the main Freedom extension supports ('Also available for other browsers', not named)",
+      "No official accessibility information"
+    ]
+  },
+  {
+    "id": "cold-turkey-blocker",
+    "name": "Cold Turkey Blocker",
+    "maker": "Cold Turkey Software, Inc. (Canada)",
+    "purpose": "A strict blocker for Windows and Mac computers that blocks distracting websites (and, with Pro, apps) and is very hard to switch off once a block is locked.",
+    "keyFeatures": [
+      "Block websites, with exceptions (free)",
+      "Timed blocks and usage statistics (free)",
+      "Pro: block apps and games, scheduled weekly blocks, and breaks and allowances",
+      "Pro: application password and 'All locking features', which make blocks hard to stop",
+      "Can block YouTube channels, keyword searches or the entire internet (the pricing page doesn't say whether these are Free or Pro)"
+    ],
+    "platforms": ["Windows", "macOS"],
+    "costModel": "freemium",
+    "costDetail": "Blocker Free covers blocking websites, website exceptions, timed blocks and statistics, and includes a 7-day free trial of Pro. Blocker Pro is a one-time purchase ('Pay once, own forever') that covers all computers you personally use, with free lifetime updates, a 30-day money-back guarantee and 20% off for students on request. The price is not in the pricing page's HTML. The page loads it from Paddle (its merchant of record), which returned US$45.00 one-time (US) and ₹2,499 (India) on 2026-11-11. Blocking apps, scheduled blocks, breaks and allowances, application passwords and 'All locking features' require Pro.",
+    "openSource": false,
+    "licence": null,
+    "accountRequired": "No account is mentioned for the free download. Pro is unlocked with a product key bought through Paddle, and Cold Turkey keeps your email and purchase details.",
+    "privacyNotes": "The privacy policy says: 'We do not collect your app settings, web history, search history or which websites and apps were blocked.' The browser extension needs permission to read and change all web pages in order to enforce blocks. Usage data used to calculate breaks 'is never sent off your device'.",
+    "accessibilityNotes": "No official accessibility statement found.",
+    "limitations": [
+      "Windows and macOS only: 'Linux, ChromeOS, Android, iOS or other operating systems are not supported.'",
+      "The most useful features (scheduled blocks, app blocking, locking) require the paid Pro version",
+      "Deliberately hard to undo. The site says it 'makes it almost impossible to stop the block once you lock it. No, you can't just uninstall it.' This can backfire if you set it up wrongly."
+    ],
+    "officialUrl": "https://getcoldturkey.com/",
+    "sources": [
+      {
+        "url": "https://getcoldturkey.com/pricing/",
+        "what": "Free vs Pro feature lists, one-time purchase, platforms, trial, guarantee",
+        "quote": "Blocker Pro - Lifetime Access ... All Free Features Plus Block applications Scheduled blocks Application password All locking features Custom user selection Breaks and allowances Pay once, own forever ... Blocker Free ... Free Features Block websites Website Exceptions Timed blocks Statistics"
+      },
+      {
+        "url": "https://getcoldturkey.com/pricing/",
+        "what": "Supported operating systems",
+        "quote": "Yes, your product key will work for both macOS and Windows you own. Linux, ChromeOS, Android, iOS or other operating systems are not supported."
+      },
+      {
+        "url": "https://checkout.paddle.com/api/2.0/prices?product_ids=598305&customer_country=US",
+        "what": "Price of Blocker Pro from the Paddle price feed used by the official pricing page (Paddle product 598305 is referenced in the page HTML)",
+        "quote": "\"product_title\":\"Blocker Pro\",\"currency\":\"USD\",\"vendor_set_prices_included_tax\":true,\"price\":{\"gross\":45.0"
+      },
+      {
+        "url": "https://getcoldturkey.com/download/",
+        "what": "Desktop only; browser extensions installed by the app",
+        "quote": "Mobile devices are not supported because of OS limitations."
+      },
+      {
+        "url": "https://getcoldturkey.com/privacy/",
+        "what": "Data collected",
+        "quote": "We do not collect your app settings, web history, search history or which websites and apps were blocked."
+      },
+      {
+        "url": "https://getcoldturkey.com/",
+        "what": "Strict locking behaviour and feature list",
+        "quote": "Cold Turkey Blocker makes it almost impossible to stop the block once you lock it. No, you can't just uninstall it."
+      },
+      {
+        "url": "https://getcoldturkey.com/compare/",
+        "what": "Subscription-free model",
+        "quote": "Blocker Subscription free, one time payment. Free version and Pro trial available."
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "The Pro price is not visible in the pricing page's static content. It was taken from the Paddle price feed that the page calls (US$45 in the US). Local prices and taxes vary.",
+      "Whether any locking is available in the Free version (the page only says 'All locking features' is Pro)",
+      "Exact list of browsers supported by the companion extensions",
+      "No official accessibility information"
+    ]
+  },
+  {
+    "id": "super-productivity",
+    "name": "Super Productivity",
+    "maker": "Johannes Millan and open-source contributors (super-productivity on GitHub)",
+    "purpose": "A free, open-source to-do list with built-in time tracking, a Pomodoro timer and a focus mode that keeps your data on your own device.",
+    "keyFeatures": [
+      "Tasks, subtasks, projects and repeating tasks in lists, Kanban or an Eisenhower Matrix",
+      "Built-in time tracking with history and exportable work logs",
+      "Focus mode, Pomodoro timer and breaks",
+      "Calendar timeboxing and GitHub, GitLab and Jira integrations",
+      "Optional sync through SuperSync, WebDAV or Dropbox"
+    ],
+    "platforms": ["Windows", "macOS", "Linux", "Android", "iOS", "iPadOS", "Web"],
+    "costModel": "free-open-source",
+    "costDetail": "100% free under the MIT licence. The pricing page says 'There are no premium app tiers, hidden app costs, or paid app features.' Development is supported by optional GitHub Sponsors donations. The optional SuperSync cloud sync service 'is currently provided free of charge', but its terms reserve the right to introduce fees in the future and require an account. WebDAV and Dropbox sync are alternatives.",
+    "openSource": true,
+    "licence": "MIT",
+    "accountRequired": "No ('No account needed · Works offline'). An account is only needed if you choose the SuperSync sync service.",
+    "privacyNotes": "'Your tasks stay on your device by default.' The pricing FAQ says: 'We do not run analytics inside the app, require logins, or sell usage data.' The iOS App Store privacy label says 'Data Not Collected'.",
+    "accessibilityNotes": "Keyboard shortcuts for capturing ideas, switching tasks and navigating, and selectable themes. Recent App Store release notes mention 'Improved accessible names, keyboard controls, and task focus behavior', but the App Store accessibility section says the developer has not indicated supported features. No formal accessibility statement was found.",
+    "limitations": [
+      "It is a task and time-tracking tool. The official site does not describe any app or website blocking.",
+      "Syncing between devices needs setup (a SuperSync account, WebDAV or Dropbox), and SuperSync may start charging in future",
+      "Volunteer-maintained, with community support (GitHub, Reddit) rather than a support team"
+    ],
+    "officialUrl": "https://super-productivity.com/",
+    "sources": [
+      {
+        "url": "https://super-productivity.com/pricing/",
+        "what": "Cost and licence",
+        "quote": "Super Productivity is 100% free and open source. There are no premium app tiers, hidden app costs, or paid app features. ... Super Productivity is released under the MIT License, which allows commercial use."
+      },
+      {
+        "url": "https://super-productivity.com/",
+        "what": "Platforms, no account, local-first",
+        "quote": "No account needed · Works offline ... Available for Windows, macOS, Linux, Android, iOS, and web."
+      },
+      {
+        "url": "https://super-productivity.com/download/",
+        "what": "Download options incl. iPhone/iPad, Microsoft Store, Flathub, Snap, Google Play",
+        "quote": "iOS Native app for iPhone and iPad with full offline support. ... Super Productivity is an open-source MIT-licensed app. You can download, self-host, and customize it without subscriptions or upsells."
+      },
+      {
+        "url": "https://api.github.com/repositories/78243781",
+        "what": "Official GitHub repo (now github.com/super-productivity/super-productivity) and licence",
+        "quote": "\"full_name\": \"super-productivity/super-productivity\" ... \"license\": {\"key\": \"mit\", \"name\": \"MIT License\"}"
+      },
+      {
+        "url": "https://sync.super-productivity.com/terms.html",
+        "what": "SuperSync terms (last updated April 25, 2026)",
+        "quote": "The Service is currently provided free of charge. However, we reserve the right to introduce fees for the Service in the future. ... To use the Service, you must register for an account."
+      },
+      {
+        "url": "https://apps.apple.com/us/app/super-productivity/id1482572463",
+        "what": "App Store: free, privacy label, iPad/Mac requirements",
+        "quote": "Free ... Data Not Collected The developer does not collect any data from this app. ... Requires iPadOS 16.0 or later."
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "Dark mode specifically (the site says 'Choose your theme' but does not name a dark mode)",
+      "Whether SuperSync is labelled beta (not stated in the terms checked)",
+      "No formal accessibility statement"
+    ]
+  },
+  {
+    "id": "leechblock-ng",
+    "name": "LeechBlock NG",
+    "maker": "James N. Anderson (Proginosko)",
+    "purpose": "A free browser extension that blocks time-wasting websites during times you choose or after you've used up a time limit.",
+    "keyFeatures": [
+      "Up to 30 sets of sites, each with its own times and days",
+      "Block in fixed time periods, after a time limit (e.g. 10 minutes per hour), or both",
+      "Wildcards and exceptions for fine-grained blocking",
+      "Lockdown to block sites immediately for a set duration",
+      "Optional password or random access code to protect the options page"
+    ],
+    "platforms": ["Firefox", "Chrome", "Edge", "Android"],
+    "costModel": "free-open-source",
+    "costDetail": "Free ('A Simple Free Productivity Tool'). Mozilla Add-ons lists no payment required and an optional PayPal contribution link. There is no paid tier. The source code is on GitHub under MPL-2.0. On Android it works through Firefox for Android (Mozilla Add-ons lists it as compatible).",
+    "openSource": true,
+    "licence": "MPL-2.0",
+    "accountRequired": "No",
+    "privacyNotes": "Official FAQ: 'LeechBlock does not collect, store, or transmit any personal information (other than the settings entered by the user...)'. It may read page content if you choose to block by keywords, but does not store it.",
+    "accessibilityNotes": "No official accessibility statement found.",
+    "limitations": [
+      "Browser-only. It does not block phone or computer apps, and there is no Safari version (the site points macOS and iOS users to ivBlock, a separate product).",
+      "The developer says it is not designed for parental control or for blocking offensive content",
+      "Your browser may still briefly connect to blocked sites, so they may still log your IP address"
+    ],
+    "officialUrl": "https://www.proginosko.com/leechblock/",
+    "sources": [
+      {
+        "url": "https://www.proginosko.com/leechblock/",
+        "what": "Supported browsers, features, limitations",
+        "quote": "LeechBlock is available for Mozilla Firefox , Google Chrome , Microsoft Edge , and other Chromium-based browsers such as Brave, Opera, and Vivaldi. ... You can specify up to 30 sets of sites to block"
+      },
+      {
+        "url": "https://www.proginosko.com/leechblock/install/",
+        "what": "Official install page linking the three store listings",
+        "quote": "Install the LeechBlock extension: Firefox version Chrome version (also works with some other Chromium-based browsers ) Edge version"
+      },
+      {
+        "url": "https://www.proginosko.com/leechblock/faq/privacy/",
+        "what": "Privacy",
+        "quote": "LeechBlock does not collect, store, or transmit any personal information (other than the settings entered by the user, e.g., which sites to block)."
+      },
+      {
+        "url": "https://api.github.com/repos/proginosko/LeechBlockNG",
+        "what": "Official GitHub repo (https://github.com/proginosko/LeechBlockNG) licence",
+        "quote": "\"license\": {\"key\": \"mpl-2.0\", \"name\": \"Mozilla Public License 2.0\"}"
+      },
+      {
+        "url": "https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/",
+        "what": "Firefox Add-ons install link (data read via https://addons.mozilla.org/api/v5/addons/addon/leechblock-ng/): licence, Firefox for Android compatibility, no payment",
+        "quote": "\"license\": \"Mozilla Public License 2.0\" ... compatibility: firefox, android ... \"requires_payment\": false"
+      },
+      {
+        "url": "https://chromewebstore.google.com/detail/leechblock-ng/blaaajhemilngeeffpbfkdjjoefldkok",
+        "what": "Chrome Web Store install link",
+        "quote": "LeechBlock NG (Next Generation) is a simple free productivity tool designed to block those time-wasting sites ... The developer has disclosed that it will not collect or use your data."
+      },
+      {
+        "url": "https://microsoftedge.microsoft.com/addons/detail/leechblock-ng/hnncfhodpmpjchmmcnimoimkcojdmfhl",
+        "what": "Edge Add-ons install link (details read via https://microsoftedge.microsoft.com/addons/getproductdetailsbycrxid/hnncfhodpmpjchmmcnimoimkcojdmfhl)",
+        "quote": "\"name\": \"LeechBlock NG\", \"developer\": \"James Anderson\", \"version\": \"1.8\""
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "Compatibility with Brave, Opera and Vivaldi (stated by the developer but not tested here)",
+      "No official accessibility information"
+    ]
+  },
+  {
+    "id": "unhook",
+    "name": "Unhook – Remove YouTube Recommended Videos",
+    "maker": "Unhook (unhook.app)",
+    "purpose": "A browser extension that hides YouTube's recommendations, Shorts, comments and other distractions so you only watch what you came for.",
+    "keyFeatures": [
+      "Hide the homepage feed, sidebar recommendations and end-screen video wall",
+      "Hide YouTube Shorts, comments and live chat",
+      "Turn off autoplay and hide other page elements one by one",
+      "Toggle each option from the extension popup",
+      "Works on mobile YouTube (m.youtube.com) through Firefox for Android"
+    ],
+    "platforms": ["Chrome", "Firefox", "Edge", "Android"],
+    "costModel": "free",
+    "costDetail": "Free. No paid tier or premium version was found on unhook.app or the Chrome, Firefox or Edge listings. Donations are invited via PayPal ('If you find Unhook useful, please consider making a donation'). Mozilla Add-ons lists no payment required. It is free to use but not open source (Mozilla Add-ons licence: 'All Rights Reserved').",
+    "openSource": false,
+    "licence": null,
+    "accountRequired": "No",
+    "privacyNotes": "Official privacy policy: 'Your data stays in your browser's local storage and does not leave your computer. No data is transmitted or collected.' The unhook.app website itself uses Google Analytics.",
+    "accessibilityNotes": "No official accessibility statement found.",
+    "limitations": [
+      "Only affects YouTube in a web browser. It does not change the YouTube phone app.",
+      "No Safari version is linked from the official site",
+      "It only hides distractions and you can switch options back on any time, so it is not a strict blocker"
+    ],
+    "officialUrl": "https://unhook.app/",
+    "sources": [
+      {
+        "url": "https://unhook.app/",
+        "what": "Official site linking Chrome, Firefox and Edge listings",
+        "quote": "Watch YouTube free of distractions. Block suggestion feeds, comments, and more."
+      },
+      {
+        "url": "https://unhook.app/privacy-policy",
+        "what": "Privacy",
+        "quote": "Your data stays in your browser's local storage and does not leave your computer. No data is transmitted or collected."
+      },
+      {
+        "url": "https://chromewebstore.google.com/detail/khncfooichmfjbepaaaebmommgaepoid?hl=en",
+        "what": "Chrome Web Store install link (official site links https://chrome.google.com/webstore/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid). Listing is now titled 'Unhook - Remove YouTube Recommended & Shorts'.",
+        "quote": "Compatible with mobile YouTube, m.youtube.com, through Firefox on Android. ... If you find Unhook useful, please consider making a donation: PayPal.me/unhook"
+      },
+      {
+        "url": "https://addons.mozilla.org/firefox/addon/youtube-recommended-videos/",
+        "what": "Firefox Add-ons install link (data read via https://addons.mozilla.org/api/v5/addons/addon/youtube-recommended-videos/): licence and payment",
+        "quote": "\"name\": \"Unhook: Remove YouTube Recommended Videos Comments\" ... \"license\": \"All Rights Reserved\" ... \"requires_payment\": false"
+      },
+      {
+        "url": "https://microsoftedge.microsoft.com/addons/detail/unhook-remove-youtube-r/hebpjnnclppdnfghdnmhgdljmjpfhggk",
+        "what": "Edge Add-ons install link (details read via https://microsoftedge.microsoft.com/addons/getproductdetailsbycrxid/hebpjnnclppdnfghdnmhgdljmjpfhggk)",
+        "quote": "\"name\": \"Unhook - Remove YouTube Recommended & Shorts\", \"developer\": \"Unhook\", \"privacyUrl\": \"https://unhook.app/privacy-policy\""
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "The developer's real name or company (listings only say 'Unhook')",
+      "Whether a Safari version exists (none is linked from the official site)",
+      "No official accessibility information"
+    ]
+  },
+  {
+    "id": "f-lux",
+    "name": "f.lux",
+    "maker": "f.lux Software LLC",
+    "purpose": "Makes your computer screen warmer at night and like daylight during the day, to cut late-night blue glare.",
+    "keyFeatures": [
+      "Automatically shifts screen colour with the time of day, based on your location",
+      "Bedtime timing with a wake-time setting",
+      "Settings for the type of lighting in your room",
+      "Optional control of compatible home lighting (personal edition)"
+    ],
+    "platforms": ["Windows", "macOS", "Linux"],
+    "costModel": "free",
+    "costDetail": "Free for personal use ('Download f.lux Free on Windows, for personal use'; also offered free for macOS and Linux) under a proprietary EULA. It may be used on a work computer if your employer allows it. A paid Corporate Edition for Windows costs 'First 10 devices: $24 / Additional 11+ devices: $12' (USD). Optional PayPal donations. There is no official App Store or Google Play app (see limitations).",
+    "openSource": false,
+    "licence": null,
+    "accountRequired": "No account mentioned",
+    "privacyNotes": "Uses online mapping services, including Google Maps, to find your location 'usually just once when you set things up' so it can work out sunrise and sunset. Daily automatic update checks send some information about your computer configuration, and it collects which versions and features are used.",
+    "accessibilityNotes": "No official accessibility statement found.",
+    "limitations": [
+      "No official iPhone, iPad or regular Android app. iOS needs a jailbroken device, and the Android build was a 2016 'preview for rooted devices'.",
+      "Company or managed use needs the paid Corporate Edition or your employer's permission",
+      "The FAQ lists display-driver conflicts, e.g. 'My Windows 10 computer flickers at sunset. Disable Windows Night Light.'"
+    ],
+    "officialUrl": "https://justgetflux.com/",
+    "sources": [
+      {
+        "url": "https://justgetflux.com/",
+        "what": "Free for personal use; platforms",
+        "quote": "Download f.lux Free for macOS ... Download f.lux Free on Windows, for personal use for Corporate Edition and site licenses, click here ... Free for Linux"
+      },
+      {
+        "url": "https://justgetflux.com/eula/",
+        "what": "Licence terms (proprietary, royalty-free personal licence)",
+        "quote": "a limited, personal, non-sublicensable, non-transferable, royalty-free, nonexclusive license to use internally the software"
+      },
+      {
+        "url": "https://justgetflux.com/corp/",
+        "what": "Paid Corporate Edition pricing",
+        "quote": "f.lux is available for volume licensing and corporate use on Windows (English only). ... Pricing (USD) First 10 devices: $24 Additional 11+ devices: $12"
+      },
+      {
+        "url": "https://justgetflux.com/privacy/",
+        "what": "Data collected",
+        "quote": "Our Software uses online mapping services (including Google Maps) to find your location, usually just once when you set things up."
+      },
+      {
+        "url": "https://justgetflux.com/ios.html",
+        "what": "iOS only via jailbreak",
+        "quote": "To install f.lux on your iPhone, iPad, or iPod touch, you'll need to jailbreak your device."
+      },
+      {
+        "url": "https://justgetflux.com/android/",
+        "what": "Android only for rooted devices (2016 preview)",
+        "quote": "f.lux for some Android phones (preview for rooted devices) March 2016"
+      },
+      {
+        "url": "https://justgetflux.com/faq.html",
+        "what": "Use on a work computer",
+        "quote": "Can I use the free version of f.lux on my work computer? Yes, with the knowledge and permission of your employer."
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "Minimum supported Windows, macOS and Linux versions",
+      "Whether the Corporate Edition price is per device (the page lists '$24' and '$12' by device tier but does not say 'per device')",
+      "No official accessibility information"
+    ]
+  },
+  {
+    "id": "bitwarden",
+    "name": "Bitwarden Password Manager",
+    "maker": "Bitwarden Inc.",
+    "purpose": "A password manager that creates and stores strong, unique passwords and fills them in for you on all your devices.",
+    "keyFeatures": [
+      "Unlimited passwords on unlimited devices, free",
+      "Password, username and passkey management, with a built-in generator",
+      "End-to-end encrypted vault, plus Bitwarden Send and sharing with one other user",
+      "Two-step login options for your Bitwarden account",
+      "Premium: built-in authenticator codes (TOTP), vault health reports and alerts, file attachments, emergency access"
+    ],
+    "platforms": ["iOS", "iPadOS", "Android", "Windows", "macOS", "Linux", "Web", "Chrome", "Firefox", "Edge", "Safari", "Opera", "Brave", "Vivaldi"],
+    "costModel": "freemium",
+    "costDetail": "The Free plan ('Always free') covers unlimited passwords on unlimited devices, passkeys, the generator, encrypted export, Bitwarden Send and sharing with one other user. Premium costs US$19.80 per year (shown as US$1.65/month billed annually; taxes not included) and adds an integrated authenticator (TOTP), 5 GB of file attachments, emergency access and vault health reports and alerts. Families costs US$47.88 per year (US$3.99/month) for up to 6 users. The current Premium price was announced on 21 January 2026. Core password management is free, so essential features do not need payment.",
+    "openSource": true,
+    "licence": "GPL-3.0 (apps/clients) and AGPL-3.0 (server); some code under the separate Bitwarden License v1.0",
+    "accountRequired": "Yes. You create a free Bitwarden account to hold your encrypted vault. You can also run the Bitwarden server yourself (self-hosting).",
+    "privacyNotes": "The App Store listing describes 'an end-to-end encrypted password vault that only you can access', and the pricing page lists 'Zero-knowledge encryption'. The Chrome Web Store disclosure says it handles personally identifiable and authentication information and does not sell data to third parties.",
+    "accessibilityNotes": "Bitwarden's contributor documentation says 'Bitwarden strives to comply with WCAG AA requirements' and covers keyboard navigation and screen-reader support. The App Store accessibility section says the developer has not indicated supported features, and no formal accessibility conformance report (VPAT) was found.",
+    "limitations": [
+      "Premium extras such as built-in 2FA codes and vault health reports now cost US$19.80 per year",
+      "Free sharing is limited to one other Bitwarden user",
+      "The F-Droid Android build has no push notifications, so vault sync is manual"
+    ],
+    "officialUrl": "https://bitwarden.com/",
+    "sources": [
+      {
+        "url": "https://bitwarden.com/pricing/",
+        "what": "Plans and prices, free plan features",
+        "quote": "Premium $ 1.65 per month Billed annually at $19.80 ... Families $ 3.99 per month Up to 6 users Billed annually at $47.88 ... Pricing shown in USD and based on an annual subscription. Taxes not included. Just getting started? Get basic password management today. Always free."
+      },
+      {
+        "url": "https://bitwarden.com/blog/bitwarden-launches-enhanced-premium-plan/",
+        "what": "Official announcement of current Premium price (published January 21, 2026)",
+        "quote": "Premium for individuals is now available at $1.65 per month, billed annually at $19.80 a year."
+      },
+      {
+        "url": "https://bitwarden.com/download/",
+        "what": "Platforms and browsers",
+        "quote": "Edge Chrome Safari Firefox Opera DuckDuckGo Vivaldi Brave Tor ... Install Bitwarden on macOS, Windows, and Linux desktops with native applications."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/bitwarden/clients/main/LICENSE.txt",
+        "what": "Open-source licence of apps (repo https://github.com/bitwarden/clients); server repo https://github.com/bitwarden/server is AGPL-3.0",
+        "quote": "Source code in this repository is covered by one of two licenses: (i) the GNU General Public License (GPL) v3.0 (ii) the Bitwarden License v1.0. The default license throughout the repository is GPL v3.0"
+      },
+      {
+        "url": "https://chromewebstore.google.com/detail/nngceckbapebfimnlniiiahkandclblb",
+        "what": "Chrome Web Store install link and data disclosure",
+        "quote": "Bitwarden Password Manager handles the following: Personally identifiable information Authentication information"
+      },
+      {
+        "url": "https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/",
+        "what": "Firefox Add-ons install link (data read via https://addons.mozilla.org/api/v5/addons/addon/bitwarden-password-manager/)",
+        "quote": "\"name\": \"Bitwarden Password Manager\" ... authors: Bitwarden Inc. ... \"requires_payment\": false"
+      },
+      {
+        "url": "https://microsoftedge.microsoft.com/addons/detail/jbkfoedolllekgbhcbcoahefnbanhhlh",
+        "what": "Edge Add-ons install link (linked from bitwarden.com/download; details via getproductdetailsbycrxid)",
+        "quote": "\"name\": \"Bitwarden Password Manager\", \"developer\": \"Bitwarden Inc\", \"version\": \"2026.10.2\""
+      },
+      {
+        "url": "https://apps.apple.com/us/app/id1137397744",
+        "what": "iPhone/iPad app listing (free)",
+        "quote": "Bitwarden Password Manager ... Free ... Maintain everything in an end-to-end encrypted password vault that only you can access. ... Requires iPadOS 15.0 or later."
+      },
+      {
+        "url": "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden",
+        "what": "Android install link as given on bitwarden.com/download (link found on the official page; the store page itself was not fetched)",
+        "quote": "Bitwarden Password Manager for Android Get It On Google Play"
+      },
+      {
+        "url": "https://contributing.bitwarden.com/contributing/accessibility/",
+        "what": "Accessibility goal",
+        "quote": "Bitwarden strives to comply with WCAG AA requirements."
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "Safari extension store URL (the download page lists Safari but its link was not extracted)",
+      "The previous Premium price (commonly cited as US$10/year, but not confirmed on an official page during this check)",
+      "No formal accessibility conformance report (VPAT) found"
+    ]
+  },
+  {
+    "id": "privacy-badger",
+    "name": "Privacy Badger",
+    "maker": "Electronic Frontier Foundation (EFF)",
+    "purpose": "A free browser extension from the digital-rights nonprofit EFF that automatically learns to block hidden trackers that follow you across websites.",
+    "keyFeatures": [
+      "Learns to block third-party trackers by their behaviour, not from a fixed blocklist",
+      "Sends Global Privacy Control and Do Not Track signals",
+      "Can replace tracking social media widgets (e.g. Like buttons) with click-to-activate placeholders",
+      "Red, yellow and green sliders to adjust blocking per domain"
+    ],
+    "platforms": ["Chrome", "Firefox", "Edge", "Safari", "Opera", "Brave", "Android"],
+    "costModel": "free-open-source",
+    "costDetail": "Free: 'a free browser extension made by the leading digital rights nonprofit EFF'. The Safari version is listed as Free on the Mac App Store. Optional donations support EFF. The source code is under GPLv3+.",
+    "openSource": true,
+    "licence": "GPL-3.0-or-later",
+    "accountRequired": "No",
+    "privacyNotes": "'Privacy Badger will never share data about your browsing unless you choose to share it (by filing a broken site report).' It needs access to all sites to detect trackers, and it checks EFF's CDN for updates ('EFF does not set cookies or retain IP addresses for these queries'). The Mac App Store label says 'Data Not Collected'.",
+    "accessibilityNotes": "The Mac App Store listing says the developer has not indicated supported accessibility features. No official accessibility statement was found.",
+    "limitations": [
+      "It is not a full ad blocker. It doesn't block all ads, for example ads on YouTube itself, which uses no third-party trackers.",
+      "Safari support is Mac-only (Safari 26.5+, macOS 15.7.7 or later). EFF says 'We are working towards Safari on iOS support.'",
+      "On Android it only works in Firefox for Android or Edge for Android, because Chrome on Android does not support extensions"
+    ],
+    "officialUrl": "https://privacybadger.org/",
+    "sources": [
+      {
+        "url": "https://privacybadger.org/",
+        "what": "Supported browsers, licence, privacy, compatibility FAQ",
+        "quote": "Add to Chrome Add to Firefox Add to Firefox for Android Add to Safari (version 26.5+) Add to Edge Add to Edge for Android Add to Opera Add to Brave ... Privacy Badger’s source code is licensed under GPLv3+ ."
+      },
+      {
+        "url": "https://privacybadger.org/",
+        "what": "Data sharing statement and iOS status",
+        "quote": "Privacy Badger will never share data about your browsing unless you choose to share it (by filing a broken site report). ... We are working towards Safari on iOS support. Chrome on Android does not support extensions."
+      },
+      {
+        "url": "https://raw.githubusercontent.com/EFForg/privacybadger/master/LICENSE",
+        "what": "Licence in official repo https://github.com/EFForg/privacybadger (note: Mozilla Add-ons lists 'GNU General Public License v3.0 only'; the repo and FAQ say v3 or later)",
+        "quote": "Privacy Badger as a whole is presently Licensed GPL v3 or later"
+      },
+      {
+        "url": "https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp",
+        "what": "Chrome Web Store install link",
+        "quote": "Automatically learns to block hidden trackers. Made by leading digital rights nonprofit EFF to stop companies from spying on you. ... The developer has disclosed that it will not collect or use your data."
+      },
+      {
+        "url": "https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/",
+        "what": "Firefox Add-ons install link, also for Firefox for Android at https://addons.mozilla.org/android/addon/privacy-badger17/ (data read via https://addons.mozilla.org/api/v5/addons/addon/privacy-badger17/)",
+        "quote": "\"name\": \"Privacy Badger\" ... authors: EFF Technologists ... compatibility: firefox, android ... \"requires_payment\": false"
+      },
+      {
+        "url": "https://microsoftedge.microsoft.com/addons/detail/mkejgcgkdlddbggjhhflekkondicpnop",
+        "what": "Edge Add-ons install link (linked from privacybadger.org; details via getproductdetailsbycrxid)",
+        "quote": "\"name\": \"Privacy Badger\", \"developer\": \"Electronic Frontier Foundation\", \"version\": \"2026.9.15\""
+      },
+      {
+        "url": "https://apps.apple.com/app/privacy-badger/id6761143693",
+        "what": "Safari (Mac App Store) listing",
+        "quote": "Privacy Badger Fight hidden tracking with EFF Only for Mac Free ... Requires Safari 26.5+ ... Requires macOS 15.7.7 or later."
+      },
+      {
+        "url": "https://addons.opera.com/en/extensions/details/privacy-badger/",
+        "what": "Opera add-ons install link (linked from privacybadger.org)",
+        "quote": "Privacy Badger extension - Opera add-ons"
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "Licence wording differs: Mozilla Add-ons says 'GPL v3.0 only', while the official repo and FAQ say GPL v3 or later (the repo version is used here)",
+      "Edge for Android and Brave install routes (listed on privacybadger.org, but no separate store page was fetched)",
+      "No official accessibility information"
+    ]
+  },
+  {
+    "id": "have-i-been-pwned",
+    "name": "Have I Been Pwned",
+    "maker": "Superlative Enterprises Pty Ltd (Australia)",
+    "purpose": "A website where you can check for free whether your email address has appeared in known data breaches, and sign up for alerts about future breaches.",
+    "keyFeatures": [
+      "Free email address breach search in your browser",
+      "Free Notify Me email alerts when your address appears in new breaches",
+      "Pwned Passwords: check whether a password has appeared in breaches, using k-anonymity",
+      "Domain monitoring (free up to 10 breached addresses; larger domains need a subscription)",
+      "Paid API plans for apps and organisations"
+    ],
+    "platforms": ["Web"],
+    "costModel": "freemium",
+    "costDetail": "Free for individuals. The Free tier lists 'Browser email search, Email notifications, Pwned Passwords, Breach monitoring API, Monitor domains with up to 10 breached addresses'. Paid subscriptions are for API email search and larger domains: Core from US$4.39/month paid annually (Core 1: 'billed as $52.68/y'), Pro from US$379/month paid annually, High RPM from US$1,150/month paid annually. Amounts are in US dollars per the Terms of Use. The essential personal check (search your email, get alerts) is free.",
+    "openSource": false,
+    "licence": null,
+    "accountRequired": "No for a one-off email or password check. Notify Me requires verifying your email address. Domain search requires signing in to the dashboard and proving you own or control the domain.",
+    "privacyNotes": "Privacy policy: 'We do not collect or store your personal information when you conduct a search in the HIBP database.' Web server logs are kept for up to 31 days and may include your IP address. Pwned Passwords sends only the first 5 characters of the password's SHA-1 hash (k-anonymity).",
+    "accessibilityNotes": "No official accessibility statement found.",
+    "limitations": [
+      "It only knows about breaches loaded into HIBP. A 'not found' result doesn't prove an account or password is safe.",
+      "It won't tell you which password was leaked for your email address",
+      "API email search and monitoring of larger domains require a paid subscription"
+    ],
+    "officialUrl": "https://haveibeenpwned.com/",
+    "sources": [
+      {
+        "url": "https://haveibeenpwned.com/Subscription",
+        "what": "Free tier contents and paid plan prices",
+        "quote": "Free: Browser email search Email notifications Pwned Passwords Breach monitoring API Monitor domains with up to 10 breached addresses Core ... From $4.39 Per month, paid annually ... Core 1 10 25 breached addresses 1 domain $4.39 per month billed as $52.68/y"
+      },
+      {
+        "url": "https://haveibeenpwned.com/TermsOfUse",
+        "what": "Currency and operating company",
+        "quote": "Unless specified, money amounts are in US dollars. ... HIBP's services are provided by Superlative Enterprises Pty Ltd (ABN 62 085 442 020)."
+      },
+      {
+        "url": "https://haveibeenpwned.com/NotifyMe",
+        "what": "Free breach notifications",
+        "quote": "Get Free Breach Notifications We'll notify you when your email address appears in new data breaches"
+      },
+      {
+        "url": "https://haveibeenpwned.com/Privacy",
+        "what": "Search privacy and logging",
+        "quote": "We do not collect or store your personal information when you conduct a search in the HIBP database. ... web server logs, retained for up to 31 days"
+      },
+      {
+        "url": "https://haveibeenpwned.com/Passwords",
+        "what": "Pwned Passwords free, open source, k-anonymity",
+        "quote": "Pwned Passwords is free and open source for everyone to use. ... only the first 5 characters of the SHA-1 hash are sent to the API."
+      },
+      {
+        "url": "https://haveibeenpwned.com/FAQs",
+        "what": "Free service for individuals; domain search needs verification",
+        "quote": "The site is simply intended to be a free service for people to assess risk in relation to their account being caught up in a breach."
+      }
+    ],
+    "dateChecked": "2026-11-11",
+    "unverified": [
+      "Whether the main HIBP website code is open source (only Pwned Passwords is stated to be 'free and open source'), so openSource is set to false",
+      "Exactly what the free 'Breach monitoring API' item covers (listed on the pricing page without detail)",
+      "No official accessibility information"
+    ]
+  }
+]

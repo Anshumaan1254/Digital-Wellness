@@ -1,0 +1,324 @@
+{
+  "needs": [
+    {
+      "id": "pew-2025-teens-social-media-mental-health",
+      "title": "Teens, Social Media and Mental Health",
+      "publisher_or_authors": "Pew Research Center",
+      "year": 2025,
+      "url": "https://www.pewresearch.org/internet/2025/04/22/teens-social-media-and-mental-health/",
+      "type": "survey",
+      "population": "1,391 U.S. teens ages 13-17 and their parents, surveyed online via Ipsos KnowledgePanel, Sept. 18 - Oct. 10, 2024",
+      "keyFinding": "45% of U.S. teens say they spend too much time on social media (up from 27% in 2023 and 36% in 2022), and 44% say they have cut back on social media (the same share for their smartphone). Teens are far more likely to say social media hurts than helps their sleep (45% say it hurts the amount of sleep they get) and their productivity (40%).",
+      "quote": "More than four-in-ten teens (45%) say they spend too much time on social media. This is up from 27% in 2023 and 36% in 2022. ... Four-in-ten or more teens say social media platforms hurt the amount of sleep they get (45%), as well as their productivity (40%).",
+      "need": "Track and cut back social media time (usage dashboards, app timers) to protect sleep and study productivity"
+    },
+    {
+      "id": "common-sense-2023-constant-companion",
+      "title": "Constant Companion: A Week in the Life of a Young Person's Smartphone Use",
+      "publisher_or_authors": "Common Sense Media (Radesky, J., Weeks, H.M., Schaller, A., Robb, M., Mann, S., & Lenhart, A.)",
+      "year": 2023,
+      "url": "https://www.commonsensemedia.org/sites/default/files/research/report/2023-cs-smartphone-research-report_final-for-web.pdf",
+      "type": "report",
+      "population": "203 U.S. 11- to 17-year-olds with their own Android smartphones, recruited Aug-Nov 2022; phone use logged by a study app",
+      "keyFinding": "Participants received a median of 237 notifications a day, about a quarter of them during the school day, and almost all used their phones during school hours (median 43 minutes). 59% used their phones between midnight and 5 a.m. on school nights (median about 20 minutes per night).",
+      "quote": "On a typical day, participants received a median of 237 notifications. Of those, about a quarter arrived during the school day, and 5% at night.",
+      "need": "Cut notification interruptions during school and homework (notification schedules, Focus/Do Not Disturb, turning off non-essential app alerts)"
+    },
+    {
+      "id": "oecd-2024-pisa-in-focus-124",
+      "title": "Managing screen time: How to protect and equip students against distraction (PISA in Focus No. 124)",
+      "publisher_or_authors": "OECD",
+      "year": 2024,
+      "url": "https://www.oecd.org/en/publications/managing-screen-time_7c225af4-en.html",
+      "type": "report",
+      "population": "Students in OECD countries, using PISA 2022 data (PISA assesses 15-year-olds)",
+      "keyFinding": "Drawing on PISA 2022, the OECD reports that nearly one in three students gets distracted by using digital devices in class. It also reports that three-quarters of students in OECD countries spend more than one hour per weekday browsing social networks.",
+      "quote": "nearly one in three students gets distracted by using digital devices in class.",
+      "need": "Block distracting apps and websites during class and study sessions"
+    },
+    {
+      "id": "unesco-2023-gem-smartphones",
+      "title": "To ban or not to ban? Monitoring countries' regulations on smartphone use in school (on the 2023 Global Education Monitoring Report, 'Technology in education: A tool on whose terms?')",
+      "publisher_or_authors": "UNESCO Global Education Monitoring (GEM) Report team",
+      "year": 2023,
+      "url": "https://www.unesco.org/en/articles/smartphones-school-only-when-they-clearly-support-learning",
+      "type": "report",
+      "population": "Students from pre-primary to higher education (studies reviewed in the 2023 GEM Report, including one covering 14 countries)",
+      "keyFinding": "The 2023 GEM Report found that just having a phone nearby with notifications coming in is enough to pull students' attention away from their task, and that students can need up to 20 minutes to refocus after being distracted.",
+      "quote": "Even just having a mobile phone nearby with notifications coming through is enough to result in students losing their attention from the task at hand. Another study found that it can take students up to 20 minutes to refocus on what they were learning once distracted.",
+      "need": "Keep focus blocks free of phone alerts so one interruption doesn't cost 20 minutes of study time"
+    },
+    {
+      "id": "stothart-2015-notification-cost",
+      "title": "The attentional cost of receiving a cell phone notification",
+      "publisher_or_authors": "Stothart, C., Mitchum, A., & Yehnert, C. (Florida State University), Journal of Experimental Psychology: Human Perception and Performance, 41(4), 893-897",
+      "year": 2015,
+      "url": "https://doi.org/10.1037/xhp0000100",
+      "type": "peer-reviewed",
+      "population": "Laboratory experiment participants doing an attention-demanding task (the abstract does not give sample details)",
+      "keyFinding": "Just receiving phone notifications, without touching the phone, significantly disrupted performance on an attention-demanding task. The distraction was about as large as when people actively used a phone for calls or texts.",
+      "quote": "We found that cellular phone notifications alone significantly disrupted performance on an attention-demanding task, even when participants did not directly interact with a mobile device during the task.",
+      "need": "Silence notifications completely (not just ignore them) while studying"
+    },
+    {
+      "id": "ward-2017-brain-drain",
+      "title": "Brain Drain: The Mere Presence of One's Own Smartphone Reduces Available Cognitive Capacity",
+      "publisher_or_authors": "Ward, A. F., Duke, K., Gneezy, A., & Bos, M. W., Journal of the Association for Consumer Research, 2(2), 140-154",
+      "year": 2017,
+      "url": "https://doi.org/10.1086/691462",
+      "type": "peer-reviewed",
+      "population": "Nearly 800 smartphone users across two experiments (participant count from the University of Texas McCombs School of Business summary of the study)",
+      "keyFinding": "Having your own smartphone nearby reduced available cognitive capacity even when people resisted checking it, and the cost was highest for the most phone-dependent. Participants whose phones were in another room significantly outperformed those whose phones were on the desk.",
+      "quote": "the mere presence of these devices reduces available cognitive capacity. ... these cognitive costs are highest for those highest in smartphone dependence.",
+      "need": "Phone-out-of-sight study routines (phone in another room or a locked focus mode), not just a face-down phone"
+    },
+    {
+      "id": "hale-guan-2015-screen-time-sleep",
+      "title": "Screen time and sleep among school-aged children and adolescents: a systematic literature review",
+      "publisher_or_authors": "Hale, L., & Guan, S. (Stony Brook University), Sleep Medicine Reviews, 21, 50-58",
+      "year": 2015,
+      "url": "https://doi.org/10.1016/j.smrv.2014.07.007",
+      "type": "peer-reviewed",
+      "population": "Systematic review of 67 studies (1999 to early 2014) of school-aged children and adolescents",
+      "keyFinding": "90% of the 67 studies reviewed linked screen time to worse sleep, mainly shorter sleep and later bedtimes, although the review could not confirm cause and effect. The authors advise young people to limit screens, especially before or during bedtime.",
+      "quote": "We found that screen time is adversely associated with sleep outcomes (primarily shortened duration and delayed timing) in 90% of studies.",
+      "need": "Bedtime and wind-down routines that limit screens before sleep (Bedtime mode, Downtime, charging the phone outside the bedroom)"
+    },
+    {
+      "id": "hunt-2018-no-more-fomo",
+      "title": "No More FOMO: Limiting Social Media Decreases Loneliness and Depression",
+      "publisher_or_authors": "Hunt, M. G., Marx, R., Lipson, C., & Young, J. (University of Pennsylvania), Journal of Social and Clinical Psychology, 37(10)",
+      "year": 2018,
+      "url": "https://doi.org/10.1521/jscp.2018.37.10.751",
+      "type": "peer-reviewed",
+      "population": "143 undergraduates at the University of Pennsylvania (randomised experiment, 3 weeks after 1 week of baseline monitoring)",
+      "keyFinding": "Students limited to 10 minutes per platform per day on Facebook, Instagram and Snapchat for three weeks showed significant drops in loneliness and depression compared with a control group. Both groups' anxiety and FOMO fell, which suggests that simply monitoring your own use also helps.",
+      "quote": "The limited use group showed significant reductions in loneliness and depression over three weeks compared to the control group.",
+      "need": "Per-app daily time limits for social media, plus self-monitoring of usage"
+    },
+    {
+      "id": "ofcom-2025-children-parents-media-use",
+      "title": "Children and Parents: Media Use and Attitudes Report 2025",
+      "publisher_or_authors": "Ofcom (UK communications regulator)",
+      "year": 2025,
+      "url": "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/media-literacy-research/children/childrens-media-use-and-attitudes-report-2025/childrens-media-literacy-report-2025.pdf",
+      "type": "survey",
+      "population": "UK children aged 3-17 and their parents (Ofcom Children's and Parents' Media Literacy Tracker surveys); figures cited here are for 13-17-year-olds",
+      "keyFinding": "UK teens are wary of sharing personal data but often do it anyway: 52% of 13-17s sometimes decided not to use apps or sites that asked for personal information, yet 12% always share it despite feeling uncomfortable. The most common safety action was blocking people on social media (66%).",
+      "quote": "Over half (52%) said that they sometimes decided not to use apps or sites which asked them to share personal information, if they didn't feel comfortable about it.",
+      "need": "Clear, teen-friendly guidance on privacy settings, what personal data to share, and how to block or report people"
+    },
+    {
+      "id": "pew-2022-teens-cyberbullying",
+      "title": "Teens and Cyberbullying 2022",
+      "publisher_or_authors": "Pew Research Center (Emily A. Vogels)",
+      "year": 2022,
+      "url": "https://www.pewresearch.org/internet/2022/12/15/teens-and-cyberbullying-2022/",
+      "type": "survey",
+      "population": "1,316 U.S. teens ages 13-17, surveyed online by Ipsos, April 14 - May 4, 2022",
+      "keyFinding": "46% of U.S. teens have experienced at least one of six cyberbullying behaviours. The most common was being called an offensive name (32%), followed by false rumours (22%) and being sent explicit images they didn't ask for (17%).",
+      "quote": "Nearly half of U.S. teens ages 13 to 17 (46%) report ever experiencing at least one of six cyberbullying behaviors",
+      "need": "Know how to block, mute, restrict and report accounts and control who can contact you"
+    }
+  ],
+  "userFeedbackResearch": [
+    {
+      "id": "monge-roffarello-2019-race-digital-wellbeing",
+      "title": "The Race Towards Digital Wellbeing: Issues and Opportunities",
+      "authors": "Alberto Monge Roffarello, Luigi De Russis",
+      "year": 2019,
+      "venue": "CHI '19: Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (ACM)",
+      "url": "https://doi.org/10.1145/3290605.3300616",
+      "method": "Reviewed the features of 42 digital wellbeing apps, ran a thematic analysis of 1,128 user reviews of those apps, and ran a 3-week in-the-wild study of the Socialize app with 38 participants (themes below are from the published abstract)",
+      "themes": [
+        {
+          "theme": "Liked, but for specific situations",
+          "detail": "Users valued digital wellbeing apps, but mostly for particular use cases rather than as a complete fix.",
+          "quoteOrFigure": "digital wellbeing apps are appreciated and useful for some specific situations"
+        },
+        {
+          "theme": "Not restrictive enough",
+          "detail": "Users felt the limits were too soft to actually change how they used their phones.",
+          "quoteOrFigure": "they are perceived as not restrictive enough, thus not effectively helping users to change their behavior with smartphones"
+        },
+        {
+          "theme": "No lasting habit change",
+          "detail": "The apps did not help users build new long-term habits.",
+          "quoteOrFigure": "they do not promote the formation of new habits"
+        }
+      ]
+    },
+    {
+      "id": "lyngs-2019-self-control-in-cyberspace",
+      "title": "Self-Control in Cyberspace: Applying Dual Systems Theory to a Review of Digital Self-Control Tools",
+      "authors": "Ulrik Lyngs, Kai Lukoff, Petr Slovak, Reuben Binns, Adam Slack, Michael Inzlicht, Max Van Kleek, Nigel Shadbolt",
+      "year": 2019,
+      "venue": "CHI '19: Proceedings of the 2019 CHI Conference on Human Factors in Computing Systems (ACM); open-access version arXiv:1902.00157",
+      "url": "https://doi.org/10.1145/3290605.3300361",
+      "method": "Systematic review of 367 digital self-control apps and browser extensions from the Google Play, Chrome Web and Apple App stores, coding their design features against a dual-systems model of self-regulation",
+      "themes": [
+        {
+          "theme": "Blocking dominates",
+          "detail": "Most tools rely on blocking or removing distractions.",
+          "quoteOrFigure": "The most frequent feature cluster related to blocking or removing distractions, some variation of which was present in 74% of tools."
+        },
+        {
+          "theme": "Blocks are easy to switch off",
+          "detail": "Only a small share of tools make it harder to override a block, for example by refusing to stop a session, asking for a password, or adding a delay.",
+          "quoteOrFigure": "14% of tools (50) also added friction if the user attempted to remove the blocking"
+        },
+        {
+          "theme": "One-strategy tools",
+          "detail": "Most tools use a single approach instead of combining blocking, tracking, goals and rewards.",
+          "quoteOrFigure": "65% of tools had only one feature cluster at the core of their design"
+        },
+        {
+          "theme": "Users want to change their habits (cited survey)",
+          "detail": "The paper cites a survey by Ko et al. in which most smartphone users felt they overused their devices; this is Ko et al.'s figure, not a finding of Lyngs et al.",
+          "quoteOrFigure": "a majority of smartphone users felt they were overusing their devices (64%) and wanted to change their usage habits (60%)"
+        }
+      ]
+    },
+    {
+      "id": "lyngs-2020-hack-myself",
+      "title": "'I Just Want to Hack Myself to Not Get Distracted': Evaluating Design Interventions for Self-Control on Facebook",
+      "authors": "Ulrik Lyngs, Kai Lukoff, Petr Slovak, William Seymour, Helena Webb, Marina Jirotka, Jun Zhao, Max Van Kleek, Nigel Shadbolt",
+      "year": 2020,
+      "venue": "CHI '20: Proceedings of the 2020 CHI Conference on Human Factors in Computing Systems (ACM); open-access version arXiv:2001.04180",
+      "url": "https://doi.org/10.1145/3313831.3376672",
+      "method": "6-week field experiment with 58 university students, each assigned to goal reminders, a removed newsfeed, or a control condition on Facebook. Researchers logged use and ran fortnightly surveys and post-study interviews.",
+      "themes": [
+        {
+          "theme": "Interventions helped students focus",
+          "detail": "Both goal reminders and hiding the newsfeed helped students use Facebook more in line with their intentions.",
+          "quoteOrFigure": "Both goal reminders and removed newsfeed helped participants stay on task and avoid distraction."
+        },
+        {
+          "theme": "Reminders feel annoying",
+          "detail": "Students often found pop-up goal prompts irritating.",
+          "quoteOrFigure": "goal reminders were often annoying"
+        },
+        {
+          "theme": "Fear of missing out",
+          "detail": "Hiding content made some students worry they were missing information.",
+          "quoteOrFigure": "removing the newsfeed made some fear missing out on information"
+        },
+        {
+          "theme": "Blanket blocking is too rigid",
+          "detail": "Students wanted flexible blocking, such as blocking only some features or only during lectures.",
+          "quoteOrFigure": "some said blocking access altogether was too inflexible to be useful"
+        },
+        {
+          "theme": "Few students had tried tools",
+          "detail": "Most participants had never used a digital self-control tool for Facebook before the study.",
+          "quoteOrFigure": "Most participants (71%) had never used digital self-control tools for Facebook."
+        }
+      ]
+    },
+    {
+      "id": "kim-2019-goalkeeper",
+      "title": "GoalKeeper: Exploring Interaction Lockout Mechanisms for Regulating Smartphone Use",
+      "authors": "Jaejeung Kim, Hayoung Jung, Minsam Ko, Uichin Lee",
+      "year": 2019,
+      "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)",
+      "url": "https://doi.org/10.1145/3314403",
+      "method": "Four-week field experiment with 36 participants comparing different strengths of restrictive lockout against non-restrictive warnings for self-set daily phone-use limits",
+      "themes": [
+        {
+          "theme": "Hard limits work better than warnings",
+          "detail": "Lockouts that actually stop use reduced phone use more than warnings that can be dismissed.",
+          "quoteOrFigure": "restrictive mechanisms are more effective than non-restrictive mechanisms such as warning"
+        },
+        {
+          "theme": "Hard limits are frustrating",
+          "detail": "Strict lockouts caused stress because users' needs change from situation to situation.",
+          "quoteOrFigure": "restrictive mechanisms caused more frustration and pressure to the users, mainly due to diversity of usage contexts and needs"
+        },
+        {
+          "theme": "Balance strictness with flexibility",
+          "detail": "Designers need to trade effectiveness against flexibility so that users keep using the tool.",
+          "quoteOrFigure": "balance the intervention effectiveness for behavioral changes and the flexibility for user acceptability"
+        }
+      ]
+    },
+    {
+      "id": "zimmermann-2021-screen-time-app",
+      "title": "“Your Screen-Time App Is Keeping Track”: Consumers Are Happy to Monitor but Unlikely to Reduce Smartphone Usage",
+      "authors": "Laura Zimmermann",
+      "year": 2021,
+      "venue": "Journal of the Association for Consumer Research (University of Chicago Press)",
+      "url": "https://doi.org/10.1086/714365",
+      "method": "Longitudinal field study (N=242) of screen-time tracking plus an online experiment (N=139) on preferences for tracking versus restrictive tools",
+      "themes": [
+        {
+          "theme": "Tracking raises awareness, not reduction",
+          "detail": "Screen-time dashboards made people more aware of their use but were unlikely to reduce it on their own.",
+          "quoteOrFigure": "screen-time tracking improves digital self-awareness but that it is less likely to lead to a reduction of mobile usage"
+        },
+        {
+          "theme": "People prefer monitoring over limits",
+          "detail": "Many users want to see their usage data but don't want tools that actively restrict them.",
+          "quoteOrFigure": "many people want to monitor their smartphone usage but not necessarily control it"
+        }
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "id": "0K5OO2ybueM",
+      "title": "Why our screens make us less happy | Adam Alter",
+      "channel": "TED",
+      "topic": "Screen time and wellbeing",
+      "whyUseful": "A TED talk by psychologist Adam Alter on why screen use can crowd out wellbeing, useful as an engaging introduction to the hub."
+    },
+    {
+      "id": "C74amJRp730",
+      "title": "How a handful of tech companies control billions of minds every day | Tristan Harris",
+      "channel": "TED",
+      "topic": "Attention and persuasive app design",
+      "whyUseful": "A former Google design ethicist explains how apps are designed to capture attention, which shows students why focus tools are needed."
+    },
+    {
+      "id": "D4VSG41nDOo",
+      "title": "How to use Focus on your iPhone | Apple Support",
+      "channel": "Apple Support",
+      "topic": "Notification control on iPhone (Focus modes)",
+      "whyUseful": "Apple's official walkthrough of Focus, the iPhone feature for silencing notifications during study or sleep."
+    },
+    {
+      "id": "N1SQR9sri5c",
+      "title": "Using Android’s Digital Wellbeing tools to spend less time on the phone",
+      "channel": "Google",
+      "topic": "Android Digital Wellbeing (app timers, bedtime, focus)",
+      "whyUseful": "Google's own video on Android's built-in Digital Wellbeing tools, the Android counterpart to the Apple Focus video."
+    },
+    {
+      "id": "L_2JaFnkZ4o",
+      "title": "Focus & Concentration: Crash Course Study Skills #5",
+      "channel": "CrashCourse",
+      "topic": "Study focus techniques",
+      "whyUseful": "A short, student-oriented episode from an established educational channel on staying focused while studying."
+    },
+    {
+      "id": "sQ5oFX8ZMNA",
+      "title": "How to Turn on MFA! (We Can Secure Our World)",
+      "channel": "CISA",
+      "topic": "Two-factor / multi-factor authentication",
+      "whyUseful": "A short official U.S. cybersecurity agency (CISA) video encouraging viewers to turn on multi-factor authentication."
+    },
+    {
+      "id": "w68BBPDAWr8",
+      "title": "How Password Managers Work - Computerphile",
+      "channel": "Computerphile",
+      "topic": "Password managers",
+      "whyUseful": "A well-regarded computer science channel explains how password managers work, which supports the hub's privacy and security section."
+    },
+    {
+      "id": "dYmb1qz2zmE",
+      "title": "Common Sense Online Privacy Tips",
+      "channel": "Common Sense Media",
+      "topic": "Online privacy basics",
+      "whyUseful": "Online privacy tips from Common Sense Media, a nonprofit focused on kids, teens and technology."
+    }
+  ]
+}
