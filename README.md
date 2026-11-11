@@ -1,5 +1,7 @@
 # Digital Wellness Hub
 
+**Live site:** https://digital-wellness-ivory.vercel.app
+
 A calm, student-made guide to choosing and setting up digital wellness tools — screen-time controls, focus apps,
 distraction-blocking browser extensions, notification and bedtime routines, and privacy tools.
 
