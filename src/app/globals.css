@@ -1,26 +1,197 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-inter);
+  --font-serif: var(--font-fraunces);
+  --font-heading: var(--font-fraunces);
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Mountain & lake palette */
+  --color-lake: var(--lake);
+  --color-lake-deep: var(--lake-deep);
+  --color-mist: var(--mist);
+  --color-dawn: var(--dawn);
+  --color-heather: var(--heather);
+  --color-pine: var(--pine);
+  --color-ridge: var(--ridge);
+
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(calc(-100% - var(--gap)));
+    }
   }
 }
 
-body {
-  background: var(--background);
+/*
+ * "Blue hour on the lake" — one calm dark theme.
+ * Every text colour below is checked against --background (#0b1622)
+ * and --card (#112131) for WCAG AA (4.5:1) in docs/accessibility-checklist.md.
+ */
+:root {
+  --background: #0b1622;
+  --foreground: #e9eff4;
+  --card: #112131;
+  --card-foreground: #e9eff4;
+  --popover: #132536;
+  --popover-foreground: #e9eff4;
+  --primary: #8fd3c8;
+  --primary-foreground: #08202a;
+  --secondary: #1a2f43;
+  --secondary-foreground: #e9eff4;
+  --muted: #16293b;
+  --muted-foreground: #a9bccb;
+  --accent: #1d3549;
+  --accent-foreground: #e9eff4;
+  --destructive: #f2a7a0;
+  --border: rgb(200 222 238 / 0.13);
+  --input: rgb(200 222 238 / 0.2);
+  --ring: #8fd3c8;
+  --radius: 0.9rem;
+
+  --lake: #8fd3c8;
+  --lake-deep: #0e2a36;
+  --mist: #c9d6e2;
+  --dawn: #f1c9a5;
+  --heather: #c3bdf0;
+  --pine: #9fd0a6;
+  --ridge: #2c3d55;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    @apply font-sans;
+    scroll-behavior: smooth;
+    color-scheme: dark;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-fraunces), Georgia, serif;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  :focus-visible {
+    outline: 3px solid var(--dawn);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  ::selection {
+    background: rgb(143 211 200 / 0.35);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Long-form reading (guides, report) */
+.prose-calm {
+  max-width: 68ch;
+  line-height: 1.75;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+.prose-calm p + p {
+  margin-top: 1rem;
+}
+.prose-calm a,
+a.inline-link {
+  color: var(--lake);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+}
+.prose-calm a:hover,
+a.inline-link:hover {
+  color: var(--dawn);
+}
+
+/* Soft drifting mist used under page headers */
+@keyframes mist-drift {
+  from {
+    transform: translateX(-4%);
+  }
+  to {
+    transform: translateX(4%);
+  }
+}
+.mist-layer {
+  animation: mist-drift 18s ease-in-out infinite alternate;
+}
+
+/* Gentle ripple for the lake line */
+@keyframes ripple {
+  0%,
+  100% {
+    transform: scaleX(1);
+    opacity: 0.35;
+  }
+  50% {
+    transform: scaleX(1.06);
+    opacity: 0.6;
+  }
+}
+.ripple-line {
+  animation: ripple 7s ease-in-out infinite;
+  transform-origin: center;
 }
