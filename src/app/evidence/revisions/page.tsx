@@ -37,7 +37,7 @@ export default function RevisionsPage() {
               {items.map((r) => (
                 <li key={r.title} className="rounded-3xl border border-border bg-card p-6">
                   <p className="text-xs uppercase tracking-[0.16em] text-dawn">{TYPE[r.type] ?? r.type}</p>
-                  <h2 className="mt-1 font-serif text-2xl">{r.title}</h2>
+                  <h3 className="mt-1 font-serif text-2xl">{r.title}</h3>
                   <p className="mt-3 text-sm text-muted-foreground">
                     <span className="text-foreground">Why: </span>
                     {r.trigger}

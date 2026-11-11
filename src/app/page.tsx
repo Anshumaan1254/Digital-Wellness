@@ -24,8 +24,13 @@ export default function Home() {
     <>
       <section className="relative isolate flex min-h-[100svh] items-center overflow-hidden pt-16">
         <HeroScene />
-        <div className="mx-auto w-full max-w-7xl px-4 pb-40 sm:px-6">
-          <div className="max-w-2xl rounded-[2rem] bg-[#0b1622]/35 p-1 backdrop-blur-[2px] sm:bg-transparent sm:backdrop-blur-0">
+        {/* soft scrim so the copy keeps its contrast over the lighter ridges */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0 -z-[5] bg-[linear-gradient(90deg,rgba(8,16,30,0.78)_0%,rgba(8,16,30,0.5)_38%,rgba(8,16,30,0)_68%)] max-sm:bg-[linear-gradient(180deg,rgba(8,16,30,0.55)_0%,rgba(8,16,30,0.75)_60%,rgba(8,16,30,0.3)_100%)]"
+        />
+        <div className="mx-auto w-full max-w-7xl px-4 pb-48 sm:px-6">
+          <div className="max-w-2xl">
             <p className="mb-5 text-sm font-medium uppercase tracking-[0.2em] text-dawn">A calm guide to better tech habits</p>
             <h1 className="font-serif text-[2.6rem] leading-[1.05] text-white sm:text-6xl md:text-7xl">
               <BlurText
@@ -189,7 +194,7 @@ export default function Home() {
                 <h3 className="mt-3 font-serif text-2xl leading-snug">{g.title}</h3>
                 <p className="mt-3 flex-1 text-muted-foreground">{g.summary}</p>
                 <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-lake group-hover:text-dawn">
-                  Open the {g.tool.split(" (")[0]} guide <ArrowRight aria-hidden className="h-4 w-4" />
+                  Start the {g.minutes}-minute guide <ArrowRight aria-hidden className="h-4 w-4" />
                 </span>
               </Link>
             </Reveal>

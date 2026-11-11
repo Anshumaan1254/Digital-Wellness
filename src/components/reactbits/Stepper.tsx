@@ -433,7 +433,7 @@ export default function Stepper({
                 type="button"
                 className={DOT_CLASS}
                 data-status={status}
-                aria-label={entry.props.title ? `Step ${number}: ${entry.props.title}` : `Step ${number}`}
+                aria-label={entry.props.title ? undefined : `Step ${number}`}
                 aria-current={number === current ? 'step' : undefined}
                 disabled={!reachable(number)}
                 onClick={() => go(number)}
@@ -457,7 +457,7 @@ export default function Stepper({
                 type="button"
                 className={BAR_CLASS}
                 data-status={completed || number < current ? 'complete' : number === current ? 'active' : 'upcoming'}
-                aria-label={entry.props.title ? `Step ${number}: ${entry.props.title}` : `Step ${number}`}
+                aria-label={entry.props.title ? undefined : `Step ${number}`}
                 aria-current={number === current ? 'step' : undefined}
                 disabled={!reachable(number)}
                 onClick={() => go(number)}
@@ -519,7 +519,7 @@ export default function Stepper({
               type="button"
               className={`${SEGMENT_CLASS} ${rail ? SEGMENT_RAIL : SEGMENT_ROW}`}
               data-status={status}
-              aria-label={typeof title === 'string' ? `Step ${number}: ${title}` : `Step ${number}`}
+              aria-label={title ? undefined : `Step ${number}`}
               aria-current={number === current ? 'step' : undefined}
               disabled={!reachable(number)}
               onClick={() => go(number)}

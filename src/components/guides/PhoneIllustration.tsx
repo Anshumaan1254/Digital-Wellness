@@ -73,7 +73,7 @@ const VARIANTS: Record<string, () => ReactNode> = {
     <Frame title="Bedtime mode">
       <div className="rounded-2xl bg-white">
         <Row right={<span className="text-[10px] text-[#1f5c52]">●</span>}>Use a schedule</Row>
-        <Row right={<span className="text-[10px] text-[#9aa3ad]">○</span>}>Turn on while charging</Row>
+        <Row right={<span className="text-[10px] text-[#6b7280]">○</span>}>Turn on while charging</Row>
         <Row right={<span className="text-[10px]">22:30 – 07:00</span>}>Sun – Thu</Row>
       </div>
       <p className="px-2 pb-1 pt-3 text-[10px] font-semibold text-[#374151]">Screen options at bedtime</p>
@@ -87,9 +87,9 @@ const VARIANTS: Record<string, () => ReactNode> = {
   "iphone-allowance": () => (
     <Frame ios title="Time Allowances">
       <div className="rounded-xl bg-white">
-        <Row right={<span className="text-[10px] text-[#6b7280]">45 min ›</span>}>Social Media</Row>
-        <Row right={<span className="text-[10px] text-[#6b7280]">1 hr ›</span>}>Entertainment</Row>
-        <Row right={<span className="text-[10px] text-[#6b7280]">30 min ›</span>}>Games</Row>
+        <Row right={<span className="text-[10px] text-[#4b5563]">45 min ›</span>}>Social Media</Row>
+        <Row right={<span className="text-[10px] text-[#4b5563]">1 hr ›</span>}>Entertainment</Row>
+        <Row right={<span className="text-[10px] text-[#4b5563]">30 min ›</span>}>Games</Row>
       </div>
       <div className="mt-3 rounded-xl bg-white px-3 py-3">
         <div className="text-[10px] text-[#374151]">Social Media · daily</div>
@@ -106,14 +106,14 @@ const VARIANTS: Record<string, () => ReactNode> = {
   "iphone-sleep": () => (
     <Frame ios title="Sleep">
       <div className="rounded-xl bg-white">
-        <Row right={<span className="text-[10px] text-[#6b7280]">22:30</span>}>Bedtime</Row>
-        <Row right={<span className="text-[10px] text-[#6b7280]">07:00</span>}>Wake up</Row>
-        <Row right={<span className="text-[10px] text-[#6b7280]">45 min</span>}>Wind Down</Row>
+        <Row right={<span className="text-[10px] text-[#4b5563]">22:30</span>}>Bedtime</Row>
+        <Row right={<span className="text-[10px] text-[#4b5563]">07:00</span>}>Wake up</Row>
+        <Row right={<span className="text-[10px] text-[#4b5563]">45 min</span>}>Wind Down</Row>
       </div>
-      <p className="px-2 pb-1 pt-3 text-[10px] font-semibold uppercase tracking-wide text-[#6b7280]">Sleep Focus</p>
+      <p className="px-2 pb-1 pt-3 text-[10px] font-semibold uppercase tracking-wide text-[#4b5563]">Sleep Focus</p>
       <div className="rounded-xl bg-white">
-        <Row right={<span className="text-[10px] text-[#6b7280]">Family ›</span>}>Allowed People</Row>
-        <Row right={<span className="text-[10px] text-[#6b7280]">Alarms ›</span>}>Allowed Apps</Row>
+        <Row right={<span className="text-[10px] text-[#4b5563]">Family ›</span>}>Allowed People</Row>
+        <Row right={<span className="text-[10px] text-[#4b5563]">Alarms ›</span>}>Allowed Apps</Row>
         <Row right={<Toggle on />}>Share Focus Status</Row>
       </div>
     </Frame>

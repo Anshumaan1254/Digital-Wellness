@@ -20,8 +20,8 @@ export default function GuidesPage() {
       <Section>
         <ol className="space-y-6">
           {GUIDES.map((g, i) => (
-            <Reveal key={g.slug} delay={i * 0.06}>
-              <li className="grid gap-6 rounded-[2rem] border border-border bg-card p-7 md:grid-cols-[auto_1fr_auto] md:items-center">
+            <li key={g.slug}>
+              <Reveal delay={i * 0.06} className="grid gap-6 rounded-[2rem] border border-border bg-card p-7 md:grid-cols-[auto_1fr_auto] md:items-center">
                 <span className="font-serif text-6xl leading-none text-lake/60">{String(i + 1).padStart(2, "0")}</span>
                 <div>
                   <h2 className="font-serif text-2xl sm:text-3xl">{g.title}</h2>
@@ -39,8 +39,8 @@ export default function GuidesPage() {
                 >
                   Start guide<span className="sr-only">: {g.title}</span> <ArrowRight aria-hidden className="h-4 w-4" />
                 </Link>
-              </li>
-            </Reveal>
+              </Reveal>
+            </li>
           ))}
         </ol>
       </Section>

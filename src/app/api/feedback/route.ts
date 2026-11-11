@@ -6,7 +6,7 @@ import { find, insertOne } from "@/lib/store";
 export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
-  if (rateLimited(clientKey(req))) {
+  if (rateLimited(clientKey(req) + ":feedback")) {
     return NextResponse.json({ error: "Too many messages in a short time. Please try again later." }, { status: 429 });
   }
   const parsed = feedbackSchema.safeParse(await req.json().catch(() => null));

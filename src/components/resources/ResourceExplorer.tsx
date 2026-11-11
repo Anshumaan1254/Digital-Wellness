@@ -153,7 +153,7 @@ export function ResourceExplorer() {
               <CalmCard className="h-full">
                 <article className="flex h-full flex-col">
                   <div className="flex items-start justify-between gap-3">
-                    <h3 className="font-serif text-2xl leading-tight">{r.shortName}</h3>
+                    <h2 className="font-serif text-2xl leading-tight">{r.shortName}</h2>
                     <CostBadge tone={r.costTone} />
                   </div>
                   <p className="mt-1 text-xs uppercase tracking-[0.14em] text-dawn">{CATEGORIES.find((c) => c.id === r.category)?.short}</p>

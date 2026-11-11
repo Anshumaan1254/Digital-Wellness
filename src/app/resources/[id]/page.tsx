@@ -114,7 +114,7 @@ export default async function ResourcePage({ params }: { params: Promise<{ id: s
       >
         <ol className="space-y-4">
           {r.sources.map((s, i) => (
-            <li key={i} className="rounded-2xl border border-border bg-card p-5">
+            <li key={i} className="rounded-2xl border border-border bg-card p-5 [overflow-wrap:anywhere]">
               <p className="text-sm font-medium">{s.what}</p>
               <blockquote className="mt-2 border-l-2 border-lake/50 pl-4 text-sm italic text-muted-foreground">{s.quote}</blockquote>
               <a href={s.url} className="mt-3 inline-block break-all text-sm text-lake underline underline-offset-4 hover:text-dawn" rel="noopener">

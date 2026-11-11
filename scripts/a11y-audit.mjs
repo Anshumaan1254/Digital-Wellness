@@ -5,7 +5,7 @@
  *
  * For every page: runs axe-core (WCAG 2.0/2.1/2.2 A and AA rules) and a few
  * checks axe cannot do on its own — skip link is the first Tab stop, focus is
- * visible, no horizontal scrolling at 375px, no vague link text. Also
+ * visible, no horizontal scrolling when opened on a 375px-wide phone, no vague link text. Also
  * computes WCAG contrast ratios for the theme's colour pairs.
  *
  * Writes src/data/a11y-results.json.
@@ -104,9 +104,13 @@ for (const p of PAGES) {
 
     row.imagesMissingAlt = await page.$$eval("img", (imgs) => imgs.filter((i) => !i.hasAttribute("alt")).length);
 
-    await page.setViewportSize({ width: 375, height: 800 });
-    await page.waitForTimeout(400);
-    row.horizontalScrollAt375 = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+    // load the page fresh at phone width, the way a phone would open it
+    const phone = await browser.newContext({ viewport: { width: 375, height: 800 }, isMobile: true, reducedMotion: "reduce" });
+    const mp = await phone.newPage();
+    await mp.goto(base + p, { waitUntil: "networkidle", timeout: 60000 });
+    await mp.waitForTimeout(800);
+    row.horizontalScrollAt375 = await mp.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 1);
+    await phone.close();
   } catch (err) {
     row.error = String(err).slice(0, 200);
   }

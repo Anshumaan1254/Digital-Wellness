@@ -16,7 +16,7 @@ import * as THREE from "three";
 
 const CAMERA_Z = 14;
 const WATER_Z = -2;
-const MOON = new THREE.Vector3(9, 13.5, -58);
+const MOON = new THREE.Vector3(9, 16.5, -58);
 
 type RidgeSpec = {
   z: number;

@@ -119,6 +119,22 @@ if (retry.length) {
   await browser.close();
 }
 
+/* ---------- DOI links: confirm with the DOI registry ---------- */
+// Publishers often block scripts; the doi.org handle API confirms the DOI is
+// registered and shows the publisher page it resolves to.
+for (const r of externalResults.filter((x) => x.result === "blocked-automated" && x.url.startsWith("https://doi.org/"))) {
+  try {
+    const res = await fetch(`https://doi.org/api/handles/${r.url.replace("https://doi.org/", "")}`, { signal: AbortSignal.timeout(20000) });
+    const j = await res.json();
+    const target = j.values?.find((v) => v.type === "URL")?.data?.value;
+    if (j.responseCode === 1 && target) {
+      r.doiResolvesTo = target;
+      r.result = "doi-registered";
+    }
+  } catch {}
+  console.log(r.result.padEnd(18), r.url, r.doiResolvesTo ?? "");
+}
+
 /* ---------- internal crawl ---------- */
 let internalResults = [];
 if (base) {
@@ -149,6 +165,7 @@ const summary = {
     total: externalResults.length,
     pass: externalResults.filter((r) => r.result === "pass").length,
     passInBrowser: externalResults.filter((r) => r.result === "pass-in-browser").length,
+    doiRegistered: externalResults.filter((r) => r.result === "doi-registered").length,
     blocked: externalResults.filter((r) => r.result === "blocked-automated").length,
     fail: externalResults.filter((r) => r.result === "fail").length,
   },

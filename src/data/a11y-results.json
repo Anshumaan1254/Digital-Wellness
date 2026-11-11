@@ -1,1 +1,320 @@
-{ "generatedAt": null, "tool": "", "pages": [], "contrast": [] }
+{
+  "generatedAt": "2026-11-11T13:41:52.359Z",
+  "tool": "axe-core via @axe-core/playwright, Chromium, reduced motion on",
+  "pages": [
+    {
+      "page": "/",
+      "status": 200,
+      "violations": [],
+      "passes": 45,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/find",
+      "status": 200,
+      "violations": [],
+      "passes": 44,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/resources",
+      "status": 200,
+      "violations": [],
+      "passes": 46,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/resources?view=table",
+      "status": 200,
+      "violations": [],
+      "passes": 48,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/resources/leechblock-ng",
+      "status": 200,
+      "violations": [],
+      "passes": 42,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/guides",
+      "status": 200,
+      "violations": [],
+      "passes": 39,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/guides/block-distracting-sites",
+      "status": 200,
+      "violations": [],
+      "passes": 44,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/guides/privacy-checkup",
+      "status": 200,
+      "violations": [],
+      "passes": 44,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/guides/phone-wind-down",
+      "status": 200,
+      "violations": [],
+      "passes": 43,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/videos",
+      "status": 200,
+      "violations": [],
+      "passes": 45,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/research",
+      "status": 200,
+      "violations": [],
+      "passes": 40,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/community",
+      "status": 200,
+      "violations": [],
+      "passes": 45,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/evidence",
+      "status": 200,
+      "violations": [],
+      "passes": 38,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/evidence/sources",
+      "status": 200,
+      "violations": [],
+      "passes": 44,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/evidence/link-test",
+      "status": 200,
+      "violations": [],
+      "passes": 45,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/evidence/accessibility",
+      "status": 200,
+      "violations": [],
+      "passes": 43,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/evidence/feedback",
+      "status": 200,
+      "violations": [],
+      "passes": 44,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/evidence/revisions",
+      "status": 200,
+      "violations": [],
+      "passes": 38,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    },
+    {
+      "page": "/evidence/report",
+      "status": 200,
+      "violations": [],
+      "passes": 38,
+      "firstTabStop": "Skip to main content",
+      "skipLinkFirst": true,
+      "focusVisible": true,
+      "vagueLinks": [],
+      "imagesMissingAlt": 0,
+      "horizontalScrollAt375": false
+    }
+  ],
+  "contrast": [
+    {
+      "text": "Body text #e9eff4",
+      "background": "page (#0b1622)",
+      "ratio": 15.73,
+      "aaNormal": true,
+      "aaLarge": true
+    },
+    {
+      "text": "Body text #e9eff4",
+      "background": "card (#112131)",
+      "ratio": 14.09,
+      "aaNormal": true,
+      "aaLarge": true
+    },
+    {
+      "text": "Muted text #a9bccb",
+      "background": "page (#0b1622)",
+      "ratio": 9.32,
+      "aaNormal": true,
+      "aaLarge": true
+    },
+    {
+      "text": "Muted text #a9bccb",
+      "background": "card (#112131)",
+      "ratio": 8.36,
+      "aaNormal": true,
+      "aaLarge": true
+    },
+    {
+      "text": "Lake accent / links #8fd3c8",
+      "background": "page (#0b1622)",
+      "ratio": 10.69,
+      "aaNormal": true,
+      "aaLarge": true
+    },
+    {
+      "text": "Lake accent / links #8fd3c8",
+      "background": "card (#112131)",
+      "ratio": 9.58,
+      "aaNormal": true,
+      "aaLarge": true
+    },
+    {
+      "text": "Dawn accent #f1c9a5",
+      "background": "page (#0b1622)",
+      "ratio": 11.84,
+      "aaNormal": true,
+      "aaLarge": true
+    },
+    {
+      "text": "Dawn accent #f1c9a5",
+      "background": "card (#112131)",
+      "ratio": 10.61,
+      "aaNormal": true,
+      "aaLarge": true
+    },
+    {
+      "text": "Mist labels #c9d6e2",
+      "background": "page (#0b1622)",
+      "ratio": 12.33,
+      "aaNormal": true,
+      "aaLarge": true
+    },
+    {
+      "text": "Mist labels #c9d6e2",
+      "background": "card (#112131)",
+      "ratio": 11.04,
+      "aaNormal": true,
+      "aaLarge": true
+    },
+    {
+      "text": "Button text #1b1410",
+      "background": "dawn button (#f1c9a5)",
+      "ratio": 11.82,
+      "aaNormal": true,
+      "aaLarge": true
+    },
+    {
+      "text": "Button text #08202a",
+      "background": "lake button (#8fd3c8)",
+      "ratio": 9.85,
+      "aaNormal": true,
+      "aaLarge": true
+    }
+  ]
+}

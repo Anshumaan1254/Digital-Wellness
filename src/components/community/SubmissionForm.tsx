@@ -106,7 +106,7 @@ export function SubmissionForm() {
           {KINDS.map((k) => (
             <label
               key={k.id}
-              className={cn("cursor-pointer rounded-2xl border px-4 py-3", kind === k.id ? "border-lake bg-lake/10" : "border-border hover:bg-white/5")}
+              className={cn("cursor-pointer rounded-2xl border px-4 py-3 has-[input:focus-visible]:outline-3 has-[input:focus-visible]:outline-offset-2 has-[input:focus-visible]:outline-dawn", kind === k.id ? "border-lake bg-lake/10" : "border-border hover:bg-white/5")}
             >
               <input type="radio" name="kind" value={k.id} checked={kind === k.id} onChange={() => setKind(k.id)} className="sr-only" />
               <span className="block font-medium">{k.title}</span>
@@ -144,7 +144,7 @@ export function SubmissionForm() {
             </label>
             <label
               htmlFor="sub-file"
-              className="flex cursor-pointer items-center gap-3 rounded-2xl border border-dashed border-border px-4 py-5 text-sm text-muted-foreground hover:bg-white/5"
+              className="flex cursor-pointer items-center gap-3 rounded-2xl border border-dashed border-border px-4 py-5 text-sm text-muted-foreground hover:bg-white/5 has-[+input:focus-visible]:outline-3 has-[+input:focus-visible]:outline-dawn"
             >
               <ImageUp aria-hidden className="h-5 w-5 text-lake" />
               {file ? `${file.name} (${Math.round(file.size / 1024)} KB, location data removed)` : "Choose a PNG, JPEG, WebP or GIF"}

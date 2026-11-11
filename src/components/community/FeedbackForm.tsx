@@ -12,7 +12,7 @@ const label = "mb-1.5 block text-sm font-medium";
 
 function Choice({ name, value, current, onChange, children }: { name: string; value: string; current?: string; onChange: (v: string) => void; children: React.ReactNode }) {
   return (
-    <label className={cn("cursor-pointer rounded-full border px-4 py-2 text-sm", current === value ? "border-lake bg-lake/15" : "border-border hover:bg-white/5")}>
+    <label className={cn("cursor-pointer rounded-full border px-4 py-2 text-sm has-[input:focus-visible]:outline-3 has-[input:focus-visible]:outline-offset-2 has-[input:focus-visible]:outline-dawn", current === value ? "border-lake bg-lake/15" : "border-border hover:bg-white/5")}>
       <input type="radio" name={name} value={value} checked={current === value} onChange={() => onChange(value)} className="sr-only" />
       {children}
     </label>

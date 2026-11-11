@@ -13,21 +13,23 @@ type Row = {
   result: string;
   checkedAt: string;
   browserStatus?: number;
+  doiResolvesTo?: string;
   error?: string;
 };
 
 const RESULT: Record<string, { label: string; cls: string }> = {
   pass: { label: "Pass", cls: "bg-[#173a36] text-[#a6e6da]" },
   "pass-in-browser": { label: "Pass (in browser)", cls: "bg-[#173a36] text-[#a6e6da]" },
+  "doi-registered": { label: "DOI confirmed", cls: "bg-[#2a2f45] text-[#cfc9f5]" },
   "blocked-automated": { label: "Blocked to scripts", cls: "bg-[#3e2f24] text-[#f6d3b3]" },
   fail: { label: "Fail", cls: "bg-[#4a2326] text-[#f2a7a0]" },
 };
 
 export default function LinkTestPage() {
-  const s = record.summary as typeof record.summary & { external: { passInBrowser?: number } };
+  const s = record.summary as typeof record.summary & { external: { passInBrowser?: number; doiRegistered?: number } };
   const rows = record.external as Row[];
   const internal = record.internal as { url: string; status: number; result: string }[];
-  const order = ["fail", "blocked-automated", "pass-in-browser", "pass"];
+  const order = ["fail", "blocked-automated", "doi-registered", "pass-in-browser", "pass"];
   const sorted = [...rows].sort((a, b) => order.indexOf(a.result) - order.indexOf(b.result));
 
   return (
@@ -39,11 +41,12 @@ export default function LinkTestPage() {
       </PageHeader>
       <EvidenceNav current="/evidence/link-test" />
       <Section>
-        <dl className="grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <dl className="grid gap-4 sm:grid-cols-3 lg:grid-cols-6">
           {[
             ["External links", s.external.total],
             ["Passed", s.external.pass],
             ["Passed in a browser", s.external.passInBrowser ?? 0],
+            ["DOI confirmed", s.external.doiRegistered ?? 0],
             ["Blocked to scripts", s.external.blocked],
             ["Failed", s.external.fail],
           ].map(([k, v]) => (
@@ -56,6 +59,8 @@ export default function LinkTestPage() {
         <p className="mt-5 max-w-3xl text-sm text-muted-foreground">
           &ldquo;Blocked to scripts&rdquo; means the website refused an automated request (often a bot check) even in a
           browser, so we could not prove the link from a script — these need a quick manual click before submission.
+          &ldquo;DOI confirmed&rdquo; means the publisher blocked our script, but the official DOI registry confirmed the
+          paper&apos;s DOI exists and points to the publisher&apos;s page.
         </p>
         {internal.length > 0 && (
           <p className="mt-3 text-sm">
@@ -92,6 +97,7 @@ export default function LinkTestPage() {
                   <td className="px-4 py-3">
                     {r.status || r.error}
                     {r.browserStatus ? ` → ${r.browserStatus} in browser` : ""}
+                    {r.doiResolvesTo ? <span className="block break-all text-xs text-muted-foreground">DOI → {r.doiResolvesTo}</span> : null}
                   </td>
                   <td className="whitespace-nowrap px-4 py-3">{r.checkedAt.slice(0, 16).replace("T", " ")}</td>
                 </tr>

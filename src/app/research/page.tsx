@@ -48,8 +48,8 @@ export default function ResearchPage() {
       <Section id="needs" title="Ten sources, ten needs" intro="Paraphrased findings, with a short word-for-word quote from each source so you can check our reading.">
         <ol className="grid gap-5 lg:grid-cols-2">
           {NEEDS.map((n, i) => (
-            <Reveal key={n.id} delay={(i % 2) * 0.06}>
-              <li className="flex h-full flex-col rounded-3xl border border-border bg-card p-6">
+            <li key={n.id}>
+              <Reveal delay={(i % 2) * 0.06} className="flex h-full flex-col rounded-3xl border border-border bg-card p-6">
                 <p className="text-xs uppercase tracking-[0.16em] text-dawn">
                   {n.type === "peer-reviewed" ? "Peer-reviewed study" : n.type === "survey" ? "Survey" : "Report"} · {n.year}
                 </p>
@@ -67,8 +67,8 @@ export default function ResearchPage() {
                 <a href={n.url} rel="noopener" className="mt-4 text-sm text-lake underline underline-offset-4 hover:text-dawn">
                   Read the source: {n.title}
                 </a>
-              </li>
-            </Reveal>
+              </Reveal>
+            </li>
           ))}
         </ol>
       </Section>

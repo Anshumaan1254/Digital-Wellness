@@ -72,7 +72,7 @@ export function ToolFinder() {
 
   return (
     <div className="grid gap-10 lg:grid-cols-[minmax(0,560px)_1fr]">
-      <div>
+      <div className="min-w-0">
         <Stepper
           step={step}
           onStepChange={setStep}
@@ -225,7 +225,7 @@ export function ToolFinder() {
                     </Link>
                     {m.resource.guide && (
                       <Link href={`/guides/${m.resource.guide}`} className="inline-flex items-center gap-1.5 text-lake hover:text-dawn">
-                        Setup guide <ArrowRight aria-hidden className="h-4 w-4" />
+                        Setup guide for {m.resource.shortName} <ArrowRight aria-hidden className="h-4 w-4" />
                       </Link>
                     )}
                   </div>

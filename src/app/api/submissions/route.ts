@@ -6,7 +6,7 @@ import { find, insertOne } from "@/lib/store";
 export const dynamic = "force-dynamic";
 
 export async function POST(req: Request) {
-  if (rateLimited(clientKey(req), 4)) {
+  if (rateLimited(clientKey(req) + ":submission", 4)) {
     return NextResponse.json({ error: "Too many uploads in a short time. Please try again later." }, { status: 429 });
   }
   const form = await req.formData().catch(() => null);
