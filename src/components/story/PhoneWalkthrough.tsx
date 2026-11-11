@@ -71,7 +71,7 @@ export function PhoneWalkthrough({ steps }: { steps: WalkStep[] }) {
                 refs.current[i] = el;
               }}
               data-index={i}
-              className={`transition-opacity duration-500 ${active === i || reduce ? "opacity-100" : "md:opacity-35"}`}
+              className={`transition-opacity duration-500 ${active === i || reduce ? "opacity-100" : "md:opacity-70"}`}
             >
               <p className="text-sm font-medium text-lake">
                 {String(i + 1).padStart(2, "0")} · {s.platform}

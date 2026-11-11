@@ -122,12 +122,30 @@ for (const p of PAGES) {
   if (row.violations?.length) for (const v of row.violations) console.log("   -", v.impact, v.id, v.nodes, v.example);
   await ctx.close();
 }
+/* The audit above runs with reduced motion on. Also check the animated home
+   page at several scroll positions, where text fades and moves. */
+const motionChecks = [];
+{
+  const ctx = await browser.newContext({ viewport: { width: 1440, height: 900 } });
+  const page = await ctx.newPage();
+  await page.goto(base + "/", { waitUntil: "networkidle", timeout: 60000 });
+  await page.waitForTimeout(2500);
+  for (const y of [0, 3000, 6000, 9000, 12000]) {
+    await page.evaluate((y) => window.scrollTo(0, y), y);
+    await page.waitForTimeout(900);
+    const axe = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa", "best-practice"]).analyze();
+    motionChecks.push({ scrollY: y, violations: axe.violations.map((v) => ({ id: v.id, impact: v.impact, help: v.help, nodes: v.nodes.length })) });
+    console.log("home with motion, y =", y, "violations:", axe.violations.map((v) => `${v.id}(${v.nodes.length})`).join(", ") || 0);
+  }
+  await ctx.close();
+}
 await browser.close();
 
 const out = {
   generatedAt: new Date().toISOString(),
   tool: "axe-core via @axe-core/playwright, Chromium, reduced motion on",
   pages: results,
+  motionChecks,
   contrast,
 };
 fs.writeFileSync(path.join(process.cwd(), "src/data/a11y-results.json"), JSON.stringify(out, null, 2));

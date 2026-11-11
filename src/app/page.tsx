@@ -134,8 +134,8 @@ export default function Home() {
           splitBy="words"
           effect="fade"
           enableBlur
-          baseOpacity={0.12}
-          blurStrength={6}
+          baseOpacity={0.55}
+          blurStrength={4}
           containerClassName="text-center"
           textClassName="!font-serif !font-normal !text-[clamp(2rem,5.2vw,4.4rem)] !leading-[1.12] text-foreground"
         >

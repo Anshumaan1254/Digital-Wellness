@@ -18,7 +18,8 @@ type PageResult = {
 };
 
 type Contrast = { text: string; background: string; ratio: number; aaNormal: boolean; aaLarge: boolean };
-const a11y = a11yJson as unknown as { generatedAt: string | null; tool: string; pages: PageResult[]; contrast: Contrast[] };
+type MotionCheck = { scrollY: number; violations: { id: string; nodes: number }[] };
+const a11y = a11yJson as unknown as { generatedAt: string | null; tool: string; pages: PageResult[]; contrast: Contrast[]; motionChecks?: MotionCheck[] };
 
 type Status = "pass" | "design" | "todo" | "fail" | "pending";
 
@@ -48,7 +49,12 @@ export default function AccessibilityPage() {
     { item: "Illustrations are labelled as illustrations", how: "Phone drawings carry an \"Illustration\" tag and caption so they are not mistaken for screenshots.", status: "design" },
     { item: "Form fields have labels; errors are announced", how: "Every input has a <label>; errors use role=\"alert\"; success messages use role=\"status\". axe label rules.", status: auto(noRule("label", "select-name", "aria-input-field-name")) },
     { item: "No sideways scrolling on a 375px phone screen", how: "Script resizes each page to 375px and compares page width with the screen.", status: auto(ok.every((p) => !p.horizontalScrollAt375)) },
-    { item: "Respects \"reduce motion\"", how: "With reduced motion on, the 3D lake renders one still frame, text animations finish instantly and CSS animations stop. The audit runs with reduced motion on.", status: "design" },
+    { item: "Respects \"reduce motion\"", how: "With reduced motion on, the 3D lake renders one still frame, scroll stories become plain layouts and CSS animations stop. The page audit runs with reduced motion on.", status: "design" },
+    {
+      item: "Animated home page stays accessible while scrolling",
+      how: "axe-core run on the home page with animations on, at five scroll positions, so faded or moving text is also checked.",
+      status: auto(Boolean(a11y.motionChecks?.length) && a11y.motionChecks!.every((m) => m.violations.length === 0)),
+    },
     { item: "Videos never autoplay and do not track visitors", how: "Videos load only after pressing play, from youtube-nocookie.com, and each player has a title.", status: "design" },
     { item: "Zoom is not blocked", how: "No maximum-scale or user-scalable=no in the viewport. axe meta-viewport.", status: auto(noRule("meta-viewport", "meta-viewport-large")) },
     { item: "Tables have captions and header cells", how: "Comparison, source and link tables use <caption>, <th scope> and a keyboard-scrollable region.", status: "design" },

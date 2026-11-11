@@ -70,6 +70,20 @@
     "type": "testing"
   },
   {
+    "date": "2026-11-11",
+    "title": "Fixed every automated accessibility issue",
+    "trigger": "Our first axe-core audit flagged invalid list markup on two pages, a skipped heading level, step buttons whose spoken names did not match their visible text, one low-contrast label in an illustration, and pages that scrolled sideways on a 375px phone.",
+    "change": "Fixed each one and re-ran the audit: all 19 tested pages now report no axe violations, and every page passes our skip-link, focus, link-text and phone-width checks.",
+    "type": "testing"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Home page rebuilt as a scroll story",
+    "trigger": "Design review: the first home page told everything through rows of rectangular cards, which felt like a list of links rather than a guide.",
+    "change": "Rebuilt it in the style of Apple's product pages: a pinned chapter where each research figure takes over the screen, a horizontal sweep through the four kinds of calm, a phone whose screen changes as you scroll through settings, and an expanding lake frame for the videos. The 3D lake now stops drawing when it is off-screen to save battery, and everything falls back to a simple layout with reduced motion.",
+    "type": "content"
+  },
+  {
     "date": "pending",
     "title": "Changes from student testing",
     "trigger": "Waiting for 3–5 students to complete the usability test on the Share & feedback page.",

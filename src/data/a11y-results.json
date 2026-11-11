@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-11-11T13:41:52.359Z",
+  "generatedAt": "2026-11-11T14:18:39.009Z",
   "tool": "axe-core via @axe-core/playwright, Chromium, reduced motion on",
   "pages": [
     {
       "page": "/",
       "status": 200,
       "violations": [],
-      "passes": 45,
+      "passes": 46,
       "firstTabStop": "Skip to main content",
       "skipLinkFirst": true,
       "focusVisible": true,
@@ -66,7 +66,7 @@
       "page": "/guides",
       "status": 200,
       "violations": [],
-      "passes": 39,
+      "passes": 38,
       "firstTabStop": "Skip to main content",
       "skipLinkFirst": true,
       "focusVisible": true,
@@ -222,13 +222,35 @@
       "page": "/evidence/report",
       "status": 200,
       "violations": [],
-      "passes": 38,
+      "passes": 43,
       "firstTabStop": "Skip to main content",
       "skipLinkFirst": true,
       "focusVisible": true,
       "vagueLinks": [],
       "imagesMissingAlt": 0,
       "horizontalScrollAt375": false
+    }
+  ],
+  "motionChecks": [
+    {
+      "scrollY": 0,
+      "violations": []
+    },
+    {
+      "scrollY": 3000,
+      "violations": []
+    },
+    {
+      "scrollY": 6000,
+      "violations": []
+    },
+    {
+      "scrollY": 9000,
+      "violations": []
+    },
+    {
+      "scrollY": 12000,
+      "violations": []
     }
   ],
   "contrast": [
