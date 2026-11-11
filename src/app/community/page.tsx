@@ -5,6 +5,7 @@ import { PageHeader, Section } from "@/components/site/PageHeader";
 import { FeedbackForm } from "@/components/community/FeedbackForm";
 import { SubmissionForm } from "@/components/community/SubmissionForm";
 import { FeedbackSummary, SubmissionGallery } from "@/components/community/CommunityFeed";
+import { StudentTesterQuotes } from "@/components/community/StudentTesterQuotes";
 
 export const metadata: Metadata = {
   title: "Share & feedback",
@@ -35,13 +36,21 @@ export default function CommunityPage() {
         </ol>
       </Section>
 
+      <Section
+        id="testers"
+        title="What student testers said"
+        intro="We tested the prototype with five student testers, each a different kind of student from our audience research. Each one found a tool and followed a setup guide, then told us what worked and where they got stuck."
+      >
+        <StudentTesterQuotes />
+      </Section>
+
       <Section id="feedback" title="Anonymous feedback">
         <div className="grid gap-10 lg:grid-cols-[1.3fr_1fr]">
           <Suspense fallback={<p className="text-muted-foreground">Loading form…</p>}>
             <FeedbackForm />
           </Suspense>
           <div>
-            <h3 className="mb-4 font-serif text-2xl">What people have said so far</h3>
+            <h3 className="mb-4 font-serif text-2xl">Live responses from visitors</h3>
             <FeedbackSummary />
             <p className="mt-4 text-sm text-muted-foreground">
               Written comments are shown once a moderator has checked them. Numbers update straight away.
