@@ -47,3 +47,6 @@ next-env.d.ts
 # test & audit artefacts
 /test-results/
 /playwright-report/
+
+# simulated user-test working files
+/.usertest/
