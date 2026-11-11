@@ -1,0 +1,79 @@
+[
+  {
+    "date": "2026-11-11",
+    "title": "Chose the audience and needs from published research",
+    "trigger": "No time or budget for our own survey before building.",
+    "change": "Reviewed 10 published sources (Pew, Common Sense Media, OECD, UNESCO, Ofcom and four peer-reviewed studies) and turned each finding into a student need. Each need became a tool category, a filter or a finder question.",
+    "type": "planning"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Corrected Bitwarden Premium price",
+    "trigger": "Our first draft used the widely quoted price of US$10 a year.",
+    "change": "Bitwarden's official pricing page shows Premium at US$19.80 a year (US$1.65/month, announced 21 January 2026). We updated the price and kept the label \"Free core · paid extras\" because unlimited passwords stay free.",
+    "type": "accuracy"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Forest is no longer a paid iPhone app",
+    "trigger": "We remembered Forest as a paid download on iOS.",
+    "change": "The App Store now lists Forest as \"Free · In-App Purchases\" and forestapp.cc says Forest Pro is no longer sold. Relabelled as free with ads plus an optional Forest Plus subscription, with US App Store prices marked \"Early Bird\".",
+    "type": "accuracy"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Freedom and Cold Turkey labelled \"Limited free · key features paid\"",
+    "trigger": "Both have a free version, but the assignment says not to call a tool free when essential features need payment.",
+    "change": "Freedom's free plan has no scheduling or Locked Mode and caps sessions at 2 hours; Cold Turkey's scheduled blocks, app blocking and locking need Pro (US$45 one-time). Both now carry the amber \"Limited free\" label, and the finder hides them for \"free only\" budgets.",
+    "type": "accuracy"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Updated iPhone steps for iOS 27 names",
+    "trigger": "Apple's iOS 27 guide renames Downtime and App Limits.",
+    "change": "The phone guide now uses Screen Time Schedules and Time Allowances, with the older names (Downtime, App Limits) given for iOS 26 and earlier so older tutorials still make sense.",
+    "type": "accuracy"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Removed Have I Been Pwned screenshots",
+    "trigger": "Our automated screenshot showed a Cloudflare \"verify you are human\" page instead of the real site.",
+    "change": "We deleted the image rather than publish a misleading screenshot, and described the steps in words instead.",
+    "type": "screenshots"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Re-captured the LeechBlock screenshots",
+    "trigger": "The first capture failed because the options form is hidden until the extension's own script runs.",
+    "change": "Re-captured the real LeechBlock NG 1.8 options page with all of its scripts blocked (so no downloaded code ran) and example settings typed in. No personal browsing data appears in any image.",
+    "type": "screenshots"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Phone guide uses labelled illustrations",
+    "trigger": "Real phone screenshots would show notifications, contacts and app lists.",
+    "change": "Drew simplified settings screens using the exact menu wording from Google's and Apple's help pages, and labelled every one \"Illustration, not a real screenshot\".",
+    "type": "screenshots"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Swapped the Apple video",
+    "trigger": "We could not find an official Apple Support overview of Screen Time (only one about passcodes).",
+    "change": "Used Apple Support's official \"How to use Focus on your iPhone\" video instead, which matches our notification-control need. Every video ID was confirmed with YouTube's oEmbed service.",
+    "type": "content"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Link checker made honest about blocked sites",
+    "trigger": "Many publisher and DOI links refuse automated requests, which looked like broken links.",
+    "change": "The link test now re-opens any failing link in a real browser and records \"blocked to scripts\" separately from genuinely broken links.",
+    "type": "testing"
+  },
+  {
+    "date": "pending",
+    "title": "Changes from student testing",
+    "trigger": "Waiting for 3–5 students to complete the usability test on the Share & feedback page.",
+    "change": "Problems they report, and what we change in response, will be added here.",
+    "type": "pending"
+  }
+]

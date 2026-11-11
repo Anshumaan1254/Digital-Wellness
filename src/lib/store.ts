@@ -22,7 +22,6 @@ type FindOptions = { sort?: Record<string, 1 | -1>; limit?: number; fields?: str
 export type Backend = "mongodb" | "json-file";
 
 declare global {
-  // eslint-disable-next-line no-var
   var __dwMongo: Promise<MongoClient> | undefined;
 }
 

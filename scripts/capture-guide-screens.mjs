@@ -5,8 +5,9 @@
  *
  * - Uses a fresh, signed-out browser profile, so no personal accounts,
  *   names, emails or history can appear in any image.
- * - The LeechBlock NG options page is opened as a static page with
- *   JavaScript turned off; the example values typed into it are made up.
+ * - The LeechBlock NG options page is opened as a static page: every
+ *   script file it references is blocked, so none of the extension's code
+ *   runs. The example values typed into it are made up.
  * - Web pages are captured exactly as served on the day.
  */
 import { chromium } from "playwright";
@@ -29,9 +30,10 @@ async function shot(name, fn, opts = {}) {
     deviceScaleFactor: 1.5,
     locale: "en-US",
     colorScheme: "light",
-    javaScriptEnabled: opts.js ?? true,
     userAgent: opts.ua,
   });
+  ctx.setDefaultTimeout(15000);
+  if (opts.blockScripts) await ctx.route("**/*.js", (route) => route.abort());
   const page = await ctx.newPage();
   try {
     await fn(page);
@@ -57,7 +59,7 @@ if (leechblockDir) {
       await page.fill("#sites1", "youtube.com\ninstagram.com\ntiktok.com\nreddit.com");
       await page.locator("fieldset").nth(0).screenshot({ path: path.join(OUT, "leechblock-what-to-block.png") });
     },
-    { js: false }
+    { blockScripts: true }
   );
   await shot(
     "leechblock-when-to-block.png",
@@ -70,7 +72,7 @@ if (leechblockDir) {
       for (const d of [1, 2, 3, 4, 5]) await page.check(`#day${d}1`);
       await page.locator("fieldset").nth(1).screenshot({ path: path.join(OUT, "leechblock-when-to-block.png") });
     },
-    { js: false }
+    { blockScripts: true }
   );
   await shot(
     "leechblock-save.png",
@@ -84,7 +86,7 @@ if (leechblockDir) {
         clip: { x: Math.max(0, box.x - 24), y: Math.max(0, box.y - 20), width: 420, height: box.height + 40 },
       });
     },
-    { js: false }
+    { blockScripts: true }
   );
 }
 

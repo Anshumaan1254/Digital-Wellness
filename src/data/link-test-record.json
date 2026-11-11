@@ -1,0 +1,1423 @@
+{
+  "summary": {
+    "generatedAt": "2026-11-11T13:23:22.364Z",
+    "external": {
+      "total": 114,
+      "pass": 98,
+      "blocked": 8,
+      "fail": 8
+    },
+    "internal": {
+      "total": 0,
+      "pass": 0
+    }
+  },
+  "external": [
+    {
+      "url": "https://support.apple.com/guide/iphone/set-up-screen-time-for-yourself-iphbfa595995/ios",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (official site)",
+        "Install link: apple-screen-time"
+      ],
+      "status": 404,
+      "finalUrl": "https://support.apple.com/guide/iphone/set-up-screen-time-for-yourself-iphbfa595995/ios",
+      "ms": 2198,
+      "method": "GET",
+      "result": "fail",
+      "checkedAt": "2026-11-11T13:23:01.324Z"
+    },
+    {
+      "url": "https://support.apple.com/en-us/guide/iphone/iphbfa595995/ios",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)"
+      ],
+      "status": 404,
+      "finalUrl": "https://support.apple.com/guide/iphone/set-up-screen-time-for-yourself-iphbfa595995/ios",
+      "ms": 4594,
+      "method": "GET",
+      "result": "fail",
+      "checkedAt": "2026-11-11T13:23:03.799Z"
+    },
+    {
+      "url": "https://support.apple.com/en-us/guide/iphone/iphb0c7313c9/ios",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)",
+        "Guide: Phone wind-down: app timers, bedtime mode and quieter notifications"
+      ],
+      "status": 404,
+      "finalUrl": "https://support.apple.com/guide/iphone/set-schedules-and-time-allowances-iphb0c7313c9/ios",
+      "ms": 5109,
+      "method": "GET",
+      "result": "fail",
+      "checkedAt": "2026-11-11T13:23:04.316Z"
+    },
+    {
+      "url": "https://support.apple.com/en-us/guide/iphone/iphb0c7313c9/26/ios/26",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)"
+      ],
+      "status": 404,
+      "finalUrl": "https://support.apple.com/guide/iphone/set-schedules-with-screen-time-iphb0c7313c9/26/ios/26",
+      "ms": 5081,
+      "method": "GET",
+      "result": "fail",
+      "checkedAt": "2026-11-11T13:23:04.289Z"
+    },
+    {
+      "url": "https://support.apple.com/en-us/guide/iphone/iph4df1c0dad/ios",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)"
+      ],
+      "status": 404,
+      "finalUrl": "https://support.apple.com/guide/iphone/choose-communicate-times-iph4df1c0dad/ios",
+      "ms": 3450,
+      "method": "GET",
+      "result": "fail",
+      "checkedAt": "2026-11-11T13:23:02.659Z"
+    },
+    {
+      "url": "https://support.apple.com/en-us/guide/mac-help/mchle4e2edfe/mac",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)"
+      ],
+      "status": 404,
+      "finalUrl": "https://support.apple.com/guide/mac-help/set-up-screen-time-for-yourself-mchle4e2edfe/mac",
+      "ms": 4618,
+      "method": "GET",
+      "result": "fail",
+      "checkedAt": "2026-11-11T13:23:03.828Z"
+    },
+    {
+      "url": "https://support.apple.com/en-us/108806",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://support.apple.com/en-us/108806",
+      "ms": 1270,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:02.595Z"
+    },
+    {
+      "url": "https://support.apple.com/en-us/guide/iphone/iphd6288a67f/ios",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)"
+      ],
+      "status": 404,
+      "finalUrl": "https://support.apple.com/guide/iphone/set-up-a-focus-iphd6288a67f/ios",
+      "ms": 4856,
+      "method": "GET",
+      "result": "fail",
+      "checkedAt": "2026-11-11T13:23:07.451Z"
+    },
+    {
+      "url": "https://support.apple.com/en-us/guide/iphone/iphaf56dceb4/ios",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)",
+        "Install link: apple-screen-time",
+        "Guide: Phone wind-down: app timers, bedtime mode and quieter notifications"
+      ],
+      "status": 404,
+      "finalUrl": "https://support.apple.com/guide/iphone/set-up-sleep-iphaf56dceb4/ios",
+      "ms": 5551,
+      "method": "GET",
+      "result": "fail",
+      "checkedAt": "2026-11-11T13:23:08.210Z"
+    },
+    {
+      "url": "https://support.apple.com/en-us/guide/iphone/iph7c3d96bab/ios",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)",
+        "Guide: Phone wind-down: app timers, bedtime mode and quieter notifications"
+      ],
+      "status": 200,
+      "finalUrl": "https://support.apple.com/guide/iphone/change-notification-settings-iph7c3d96bab/ios",
+      "ms": 3409,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:07.208Z"
+    },
+    {
+      "url": "https://support.apple.com/en-us/guide/iphone/iph1fbe7d2b9/ios",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://support.apple.com/guide/iphone/summarize-notifications-reduce-interruptions-iph1fbe7d2b9/ios",
+      "ms": 3189,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:07.017Z"
+    },
+    {
+      "url": "https://support.apple.com/en-us/102651",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://support.apple.com/en-us/102651",
+      "ms": 55,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:04.344Z"
+    },
+    {
+      "url": "https://www.apple.com/accessibility/vision/",
+      "usedIn": [
+        "Tool page: Apple Screen Time (with Focus, Sleep Focus and Notification Summary) (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.apple.com/accessibility/features/?vision",
+      "ms": 1302,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:05.618Z"
+    },
+    {
+      "url": "https://support.google.com/android/answer/9346420",
+      "usedIn": [
+        "Tool page: Google Digital Wellbeing (official site)",
+        "Install link: google-digital-wellbeing",
+        "Guide: Phone wind-down: app timers, bedtime mode and quieter notifications"
+      ],
+      "status": 200,
+      "finalUrl": "https://support.google.com/android/answer/9346420",
+      "ms": 825,
+      "method": "GET",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:05.169Z"
+    },
+    {
+      "url": "https://support.google.com/android/answer/9346420?hl=en",
+      "usedIn": [
+        "Tool page: Google Digital Wellbeing (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://support.google.com/android/answer/9346420?hl=en",
+      "ms": 1946,
+      "method": "GET",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:07.115Z"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&hl=en_US&gl=US",
+      "usedIn": [
+        "Tool page: Google Digital Wellbeing (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing&hl=en_US&gl=US",
+      "ms": 266,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:05.884Z"
+    },
+    {
+      "url": "https://support.google.com/accessibility/android/answer/6283677?hl=en",
+      "usedIn": [
+        "Tool page: Google Digital Wellbeing (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://support.google.com/accessibility/android/answer/6283677?hl=en",
+      "ms": 749,
+      "method": "GET",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:06.634Z"
+    },
+    {
+      "url": "https://www.forestapp.cc/",
+      "usedIn": [
+        "Tool page: Forest: Focus for Productivity (official site)",
+        "Tool page: Forest: Focus for Productivity (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.forestapp.cc/",
+      "ms": 84,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:06.718Z"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/forest-focus-for-productivity/id866450515",
+      "usedIn": [
+        "Tool page: Forest: Focus for Productivity (source)",
+        "Install link: forest"
+      ],
+      "status": 200,
+      "finalUrl": "https://apps.apple.com/us/app/forest-focus-for-productivity/id866450515",
+      "ms": 1074,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:07.792Z"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=cc.forestapp&hl=en_US&gl=US",
+      "usedIn": [
+        "Tool page: Forest: Focus for Productivity (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://play.google.com/store/apps/details?id=cc.forestapp&hl=en_US&gl=US",
+      "ms": 268,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:07.285Z"
+    },
+    {
+      "url": "https://chromewebstore.google.com/detail/kjacjjdnoddnpbbcjilcajfhhbdhkpgk?hl=en",
+      "usedIn": [
+        "Tool page: Forest: Focus for Productivity (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://chromewebstore.google.com/detail/forest-stay-focused-be-pr/kjacjjdnoddnpbbcjilcajfhhbdhkpgk?hl=en",
+      "ms": 1140,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:08.255Z"
+    },
+    {
+      "url": "https://addons.mozilla.org/api/v5/addons/addon/forest-stay-focused-be-present/?lang=en-US",
+      "usedIn": [
+        "Tool page: Forest: Focus for Productivity (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://addons.mozilla.org/api/v5/addons/addon/forest-stay-focused-be-present/?lang=en-US",
+      "ms": 441,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:07.649Z"
+    },
+    {
+      "url": "https://freedom.to/",
+      "usedIn": [
+        "Tool page: Freedom (official site)"
+      ],
+      "status": 200,
+      "finalUrl": "https://freedom.to/",
+      "ms": 241,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:07.526Z"
+    },
+    {
+      "url": "https://freedom.to/pricing",
+      "usedIn": [
+        "Tool page: Freedom (source)",
+        "Install link: freedom"
+      ],
+      "status": 200,
+      "finalUrl": "https://freedom.to/premium",
+      "ms": 10898,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.349Z"
+    },
+    {
+      "url": "https://support.freedom.to/en/articles/13764747-what-s-included-in-free-and-premium-plans",
+      "usedIn": [
+        "Tool page: Freedom (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://support.freedom.to/en/articles/13764747-what-s-included-in-free-and-premium-plans",
+      "ms": 1064,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:08.590Z"
+    },
+    {
+      "url": "https://freedom.to/downloads",
+      "usedIn": [
+        "Tool page: Freedom (source)",
+        "Install link: freedom"
+      ],
+      "status": 200,
+      "finalUrl": "https://freedom.to/downloads",
+      "ms": 69,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:07.719Z"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/freedom-screen-time-control/id1269788228",
+      "usedIn": [
+        "Tool page: Freedom (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://apps.apple.com/us/app/freedom-screen-time-control/id1269788228",
+      "ms": 542,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:08.261Z"
+    },
+    {
+      "url": "https://chrome.google.com/webstore/detail/abdkjmofmjelgafcdffaimhgdgpagmop",
+      "usedIn": [
+        "Tool page: Freedom (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://chromewebstore.google.com/detail/freedom-website-blocker-f/abdkjmofmjelgafcdffaimhgdgpagmop",
+      "ms": 983,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:08.775Z"
+    },
+    {
+      "url": "https://getcoldturkey.com/",
+      "usedIn": [
+        "Tool page: Cold Turkey Blocker (official site)",
+        "Tool page: Cold Turkey Blocker (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://getcoldturkey.com/",
+      "ms": 1176,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:09.387Z"
+    },
+    {
+      "url": "https://getcoldturkey.com/pricing/",
+      "usedIn": [
+        "Tool page: Cold Turkey Blocker (source)",
+        "Install link: cold-turkey-blocker"
+      ],
+      "status": 200,
+      "finalUrl": "https://getcoldturkey.com/pricing/",
+      "ms": 866,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:09.122Z"
+    },
+    {
+      "url": "https://checkout.paddle.com/api/2.0/prices?product_ids=598305&customer_country=US",
+      "usedIn": [
+        "Tool page: Cold Turkey Blocker (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://checkout.paddle.com/api/2.0/prices?product_ids=598305&customer_country=US",
+      "ms": 604,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:08.865Z"
+    },
+    {
+      "url": "https://getcoldturkey.com/download/",
+      "usedIn": [
+        "Tool page: Cold Turkey Blocker (source)",
+        "Install link: cold-turkey-blocker"
+      ],
+      "status": 200,
+      "finalUrl": "https://getcoldturkey.com/download/",
+      "ms": 863,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:09.453Z"
+    },
+    {
+      "url": "https://getcoldturkey.com/privacy/",
+      "usedIn": [
+        "Tool page: Cold Turkey Blocker (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://getcoldturkey.com/privacy/",
+      "ms": 915,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:09.690Z"
+    },
+    {
+      "url": "https://getcoldturkey.com/compare/",
+      "usedIn": [
+        "Tool page: Cold Turkey Blocker (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://getcoldturkey.com/compare/",
+      "ms": 796,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:09.661Z"
+    },
+    {
+      "url": "https://super-productivity.com/",
+      "usedIn": [
+        "Tool page: Super Productivity (official site)",
+        "Tool page: Super Productivity (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://super-productivity.com/",
+      "ms": 1074,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:10.196Z"
+    },
+    {
+      "url": "https://super-productivity.com/pricing/",
+      "usedIn": [
+        "Tool page: Super Productivity (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://super-productivity.com/pricing/",
+      "ms": 836,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:10.223Z"
+    },
+    {
+      "url": "https://super-productivity.com/download/",
+      "usedIn": [
+        "Tool page: Super Productivity (source)",
+        "Install link: super-productivity"
+      ],
+      "status": 200,
+      "finalUrl": "https://super-productivity.com/download/",
+      "ms": 604,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:10.057Z"
+    },
+    {
+      "url": "https://api.github.com/repositories/78243781",
+      "usedIn": [
+        "Tool page: Super Productivity (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://api.github.com/repositories/78243781",
+      "ms": 463,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:10.124Z"
+    },
+    {
+      "url": "https://sync.super-productivity.com/terms.html",
+      "usedIn": [
+        "Tool page: Super Productivity (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://sync.super-productivity.com/terms.html",
+      "ms": 1361,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:11.051Z"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/super-productivity/id1482572463",
+      "usedIn": [
+        "Tool page: Super Productivity (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://apps.apple.com/us/app/super-productivity/id1482572463",
+      "ms": 340,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:10.397Z"
+    },
+    {
+      "url": "https://www.proginosko.com/leechblock/",
+      "usedIn": [
+        "Tool page: LeechBlock NG (official site)",
+        "Tool page: LeechBlock NG (source)",
+        "Guide: Block distracting websites during study hours"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.proginosko.com/leechblock/",
+      "ms": 7247,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:17.372Z"
+    },
+    {
+      "url": "https://www.proginosko.com/leechblock/install/",
+      "usedIn": [
+        "Tool page: LeechBlock NG (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.proginosko.com/leechblock/install/",
+      "ms": 7120,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:17.316Z"
+    },
+    {
+      "url": "https://www.proginosko.com/leechblock/faq/privacy/",
+      "usedIn": [
+        "Tool page: LeechBlock NG (source)",
+        "Guide: Block distracting websites during study hours"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.proginosko.com/leechblock/faq/privacy/",
+      "ms": 7091,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:17.314Z"
+    },
+    {
+      "url": "https://api.github.com/repos/proginosko/LeechBlockNG",
+      "usedIn": [
+        "Tool page: LeechBlock NG (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://api.github.com/repos/proginosko/LeechBlockNG",
+      "ms": 905,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:11.302Z"
+    },
+    {
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/",
+      "usedIn": [
+        "Tool page: LeechBlock NG (source)",
+        "Install link: leechblock-ng"
+      ],
+      "status": 200,
+      "finalUrl": "https://addons.mozilla.org/en-US/firefox/addon/leechblock-ng/",
+      "ms": 371,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:11.422Z"
+    },
+    {
+      "url": "https://chromewebstore.google.com/detail/leechblock-ng/blaaajhemilngeeffpbfkdjjoefldkok",
+      "usedIn": [
+        "Tool page: LeechBlock NG (source)",
+        "Install link: leechblock-ng"
+      ],
+      "status": 200,
+      "finalUrl": "https://chromewebstore.google.com/detail/leechblock-ng/blaaajhemilngeeffpbfkdjjoefldkok",
+      "ms": 737,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:12.039Z"
+    },
+    {
+      "url": "https://microsoftedge.microsoft.com/addons/detail/leechblock-ng/hnncfhodpmpjchmmcnimoimkcojdmfhl",
+      "usedIn": [
+        "Tool page: LeechBlock NG (source)",
+        "Install link: leechblock-ng"
+      ],
+      "status": 200,
+      "finalUrl": "https://microsoftedge.microsoft.com/addons/detail/leechblock-ng/hnncfhodpmpjchmmcnimoimkcojdmfhl",
+      "ms": 301,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:11.723Z"
+    },
+    {
+      "url": "https://unhook.app/",
+      "usedIn": [
+        "Tool page: Unhook – Remove YouTube Recommended Videos (official site)",
+        "Tool page: Unhook – Remove YouTube Recommended Videos (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://unhook.app/",
+      "ms": 386,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:12.109Z"
+    },
+    {
+      "url": "https://unhook.app/privacy-policy",
+      "usedIn": [
+        "Tool page: Unhook – Remove YouTube Recommended Videos (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://unhook.app/privacy-policy",
+      "ms": 294,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:12.333Z"
+    },
+    {
+      "url": "https://chromewebstore.google.com/detail/khncfooichmfjbepaaaebmommgaepoid?hl=en",
+      "usedIn": [
+        "Tool page: Unhook – Remove YouTube Recommended Videos (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid?hl=en",
+      "ms": 1231,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:13.340Z"
+    },
+    {
+      "url": "https://addons.mozilla.org/firefox/addon/youtube-recommended-videos/",
+      "usedIn": [
+        "Tool page: Unhook – Remove YouTube Recommended Videos (source)",
+        "Install link: unhook"
+      ],
+      "status": 200,
+      "finalUrl": "https://addons.mozilla.org/en-US/firefox/addon/youtube-recommended-videos/",
+      "ms": 978,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:13.311Z"
+    },
+    {
+      "url": "https://microsoftedge.microsoft.com/addons/detail/unhook-remove-youtube-r/hebpjnnclppdnfghdnmhgdljmjpfhggk",
+      "usedIn": [
+        "Tool page: Unhook – Remove YouTube Recommended Videos (source)",
+        "Install link: unhook"
+      ],
+      "status": 200,
+      "finalUrl": "https://microsoftedge.microsoft.com/addons/detail/unhook-remove-youtube-r/hebpjnnclppdnfghdnmhgdljmjpfhggk",
+      "ms": 274,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:13.586Z"
+    },
+    {
+      "url": "https://justgetflux.com/",
+      "usedIn": [
+        "Tool page: f.lux (official site)",
+        "Tool page: f.lux (source)",
+        "Install link: f-lux"
+      ],
+      "status": 200,
+      "finalUrl": "https://justgetflux.com/",
+      "ms": 879,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:14.219Z"
+    },
+    {
+      "url": "https://justgetflux.com/eula/",
+      "usedIn": [
+        "Tool page: f.lux (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://justgetflux.com/eula/",
+      "ms": 846,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:14.432Z"
+    },
+    {
+      "url": "https://justgetflux.com/corp/",
+      "usedIn": [
+        "Tool page: f.lux (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://justgetflux.com/corp/",
+      "ms": 824,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:15.043Z"
+    },
+    {
+      "url": "https://justgetflux.com/privacy/",
+      "usedIn": [
+        "Tool page: f.lux (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://justgetflux.com/privacy/",
+      "ms": 832,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:15.264Z"
+    },
+    {
+      "url": "https://justgetflux.com/ios.html",
+      "usedIn": [
+        "Tool page: f.lux (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://justgetflux.com/ios.html",
+      "ms": 770,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:15.813Z"
+    },
+    {
+      "url": "https://justgetflux.com/android/",
+      "usedIn": [
+        "Tool page: f.lux (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://justgetflux.com/android/",
+      "ms": 854,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:16.118Z"
+    },
+    {
+      "url": "https://justgetflux.com/faq.html",
+      "usedIn": [
+        "Tool page: f.lux (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://justgetflux.com/faq.html",
+      "ms": 804,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:16.617Z"
+    },
+    {
+      "url": "https://bitwarden.com/",
+      "usedIn": [
+        "Tool page: Bitwarden Password Manager (official site)"
+      ],
+      "status": 200,
+      "finalUrl": "https://bitwarden.com/",
+      "ms": 178,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:16.296Z"
+    },
+    {
+      "url": "https://bitwarden.com/pricing/",
+      "usedIn": [
+        "Tool page: Bitwarden Password Manager (source)",
+        "Guide: A 15-minute privacy and account check-up"
+      ],
+      "status": 200,
+      "finalUrl": "https://bitwarden.com/pricing/",
+      "ms": 152,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:16.448Z"
+    },
+    {
+      "url": "https://bitwarden.com/blog/bitwarden-launches-enhanced-premium-plan/",
+      "usedIn": [
+        "Tool page: Bitwarden Password Manager (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://bitwarden.com/blog/bitwarden-launches-enhanced-premium-plan/",
+      "ms": 148,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:16.596Z"
+    },
+    {
+      "url": "https://bitwarden.com/download/",
+      "usedIn": [
+        "Tool page: Bitwarden Password Manager (source)",
+        "Install link: bitwarden"
+      ],
+      "status": 200,
+      "finalUrl": "https://bitwarden.com/download/",
+      "ms": 148,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:16.744Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/bitwarden/clients/main/LICENSE.txt",
+      "usedIn": [
+        "Tool page: Bitwarden Password Manager (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://raw.githubusercontent.com/bitwarden/clients/main/LICENSE.txt",
+      "ms": 453,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:17.070Z"
+    },
+    {
+      "url": "https://chromewebstore.google.com/detail/nngceckbapebfimnlniiiahkandclblb",
+      "usedIn": [
+        "Tool page: Bitwarden Password Manager (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://chromewebstore.google.com/detail/bitwarden-password-manage/nngceckbapebfimnlniiiahkandclblb",
+      "ms": 1017,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:17.761Z"
+    },
+    {
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/",
+      "usedIn": [
+        "Tool page: Bitwarden Password Manager (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://addons.mozilla.org/en-US/firefox/addon/bitwarden-password-manager/",
+      "ms": 433,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:17.503Z"
+    },
+    {
+      "url": "https://microsoftedge.microsoft.com/addons/detail/jbkfoedolllekgbhcbcoahefnbanhhlh",
+      "usedIn": [
+        "Tool page: Bitwarden Password Manager (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://microsoftedge.microsoft.com/addons/detail/jbkfoedolllekgbhcbcoahefnbanhhlh",
+      "ms": 802,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.116Z"
+    },
+    {
+      "url": "https://apps.apple.com/us/app/id1137397744",
+      "usedIn": [
+        "Tool page: Bitwarden Password Manager (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744",
+      "ms": 812,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.128Z"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden",
+      "usedIn": [
+        "Tool page: Bitwarden Password Manager (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://play.google.com/store/apps/details?id=com.x8bit.bitwarden",
+      "ms": 240,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:17.612Z"
+    },
+    {
+      "url": "https://contributing.bitwarden.com/contributing/accessibility/",
+      "usedIn": [
+        "Tool page: Bitwarden Password Manager (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://contributing.bitwarden.com/contributing/accessibility/",
+      "ms": 115,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:17.618Z"
+    },
+    {
+      "url": "https://privacybadger.org/",
+      "usedIn": [
+        "Tool page: Privacy Badger (official site)",
+        "Tool page: Privacy Badger (source)",
+        "Guide: A 15-minute privacy and account check-up"
+      ],
+      "status": 200,
+      "finalUrl": "https://privacybadger.org/",
+      "ms": 1360,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.972Z"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/EFForg/privacybadger/master/LICENSE",
+      "usedIn": [
+        "Tool page: Privacy Badger (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://raw.githubusercontent.com/EFForg/privacybadger/master/LICENSE",
+      "ms": 442,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.060Z"
+    },
+    {
+      "url": "https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp",
+      "usedIn": [
+        "Tool page: Privacy Badger (source)",
+        "Install link: privacy-badger"
+      ],
+      "status": 200,
+      "finalUrl": "https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp",
+      "ms": 511,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.273Z"
+    },
+    {
+      "url": "https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/",
+      "usedIn": [
+        "Tool page: Privacy Badger (source)",
+        "Install link: privacy-badger"
+      ],
+      "status": 200,
+      "finalUrl": "https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/",
+      "ms": 528,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.589Z"
+    },
+    {
+      "url": "https://microsoftedge.microsoft.com/addons/detail/mkejgcgkdlddbggjhhflekkondicpnop",
+      "usedIn": [
+        "Tool page: Privacy Badger (source)",
+        "Install link: privacy-badger"
+      ],
+      "status": 200,
+      "finalUrl": "https://microsoftedge.microsoft.com/addons/detail/mkejgcgkdlddbggjhhflekkondicpnop",
+      "ms": 280,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.396Z"
+    },
+    {
+      "url": "https://apps.apple.com/app/privacy-badger/id6761143693",
+      "usedIn": [
+        "Tool page: Privacy Badger (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://apps.apple.com/us/app/privacy-badger/id6761143693?mt=12",
+      "ms": 569,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.697Z"
+    },
+    {
+      "url": "https://addons.opera.com/en/extensions/details/privacy-badger/",
+      "usedIn": [
+        "Tool page: Privacy Badger (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://addons.opera.com/en/extensions/details/privacy-badger/",
+      "ms": 1884,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:20.157Z"
+    },
+    {
+      "url": "https://haveibeenpwned.com/",
+      "usedIn": [
+        "Tool page: Have I Been Pwned (official site)",
+        "Install link: have-i-been-pwned"
+      ],
+      "status": 200,
+      "finalUrl": "https://haveibeenpwned.com/",
+      "ms": 66,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.415Z"
+    },
+    {
+      "url": "https://haveibeenpwned.com/Subscription",
+      "usedIn": [
+        "Tool page: Have I Been Pwned (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://haveibeenpwned.com/Subscription",
+      "ms": 62,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.458Z"
+    },
+    {
+      "url": "https://haveibeenpwned.com/TermsOfUse",
+      "usedIn": [
+        "Tool page: Have I Been Pwned (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://haveibeenpwned.com/TermsOfUse",
+      "ms": 50,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.465Z"
+    },
+    {
+      "url": "https://haveibeenpwned.com/NotifyMe",
+      "usedIn": [
+        "Tool page: Have I Been Pwned (source)",
+        "Install link: have-i-been-pwned"
+      ],
+      "status": 200,
+      "finalUrl": "https://haveibeenpwned.com/NotifyMe",
+      "ms": 51,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.509Z"
+    },
+    {
+      "url": "https://haveibeenpwned.com/Privacy",
+      "usedIn": [
+        "Tool page: Have I Been Pwned (source)",
+        "Guide: A 15-minute privacy and account check-up"
+      ],
+      "status": 200,
+      "finalUrl": "https://haveibeenpwned.com/Privacy",
+      "ms": 46,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.511Z"
+    },
+    {
+      "url": "https://haveibeenpwned.com/Passwords",
+      "usedIn": [
+        "Tool page: Have I Been Pwned (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://haveibeenpwned.com/Passwords",
+      "ms": 47,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.556Z"
+    },
+    {
+      "url": "https://haveibeenpwned.com/FAQs",
+      "usedIn": [
+        "Tool page: Have I Been Pwned (source)"
+      ],
+      "status": 200,
+      "finalUrl": "https://haveibeenpwned.com/FAQs",
+      "ms": 47,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.558Z"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing",
+      "usedIn": [
+        "Install link: google-digital-wellbeing"
+      ],
+      "status": 200,
+      "finalUrl": "https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing",
+      "ms": 240,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.796Z"
+    },
+    {
+      "url": "https://play.google.com/store/apps/details?id=cc.forestapp",
+      "usedIn": [
+        "Install link: forest"
+      ],
+      "status": 200,
+      "finalUrl": "https://play.google.com/store/apps/details?id=cc.forestapp",
+      "ms": 186,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.744Z"
+    },
+    {
+      "url": "https://chromewebstore.google.com/detail/kjacjjdnoddnpbbcjilcajfhhbdhkpgk",
+      "usedIn": [
+        "Install link: forest"
+      ],
+      "status": 200,
+      "finalUrl": "https://chromewebstore.google.com/detail/forest-stay-focused-be-pr/kjacjjdnoddnpbbcjilcajfhhbdhkpgk",
+      "ms": 889,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:19.478Z"
+    },
+    {
+      "url": "https://app.super-productivity.com/",
+      "usedIn": [
+        "Install link: super-productivity"
+      ],
+      "status": 200,
+      "finalUrl": "https://app.super-productivity.com/",
+      "ms": 1095,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:19.792Z"
+    },
+    {
+      "url": "https://chromewebstore.google.com/detail/khncfooichmfjbepaaaebmommgaepoid",
+      "usedIn": [
+        "Install link: unhook"
+      ],
+      "status": 200,
+      "finalUrl": "https://chromewebstore.google.com/detail/unhook-remove-youtube-rec/khncfooichmfjbepaaaebmommgaepoid",
+      "ms": 943,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:19.687Z"
+    },
+    {
+      "url": "https://bitwarden.com/password-generator/",
+      "usedIn": [
+        "Install link: bitwarden"
+      ],
+      "status": 200,
+      "finalUrl": "https://bitwarden.com/password-generator/",
+      "ms": 126,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:18.922Z"
+    },
+    {
+      "url": "https://www.pewresearch.org/internet/2025/04/22/teens-social-media-and-mental-health/",
+      "usedIn": [
+        "Student needs: Teens, Social Media and Mental Health"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.pewresearch.org/internet/2025/04/22/teens-social-media-and-mental-health/",
+      "ms": 150,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:19.072Z"
+    },
+    {
+      "url": "https://www.commonsensemedia.org/sites/default/files/research/report/2023-cs-smartphone-research-report_final-for-web.pdf",
+      "usedIn": [
+        "Student needs: Constant Companion: A Week in the Life of a Young Person's Smartphone Use"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.commonsensemedia.org/sites/default/files/research/report/2023-cs-smartphone-research-report_final-for-web.pdf",
+      "ms": 409,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:19.381Z"
+    },
+    {
+      "url": "https://www.oecd.org/en/publications/managing-screen-time_7c225af4-en.html",
+      "usedIn": [
+        "Student needs: Managing screen time: How to protect and equip students against distraction (PISA in Focus No. 124)"
+      ],
+      "status": 403,
+      "finalUrl": "https://www.oecd.org/en/publications/managing-screen-time_7c225af4-en.html",
+      "ms": 130,
+      "method": "GET",
+      "result": "blocked-automated",
+      "checkedAt": "2026-11-11T13:23:19.202Z"
+    },
+    {
+      "url": "https://www.unesco.org/en/articles/smartphones-school-only-when-they-clearly-support-learning",
+      "usedIn": [
+        "Student needs: To ban or not to ban? Monitoring countries' regulations on smartphone use in school (on the 2023 Global Education Monitoring Report, 'Technology in education: A tool on whose terms?')"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.unesco.org/en/articles/smartphones-school-only-when-they-clearly-support-learning",
+      "ms": 744,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:19.946Z"
+    },
+    {
+      "url": "https://doi.org/10.1037/xhp0000100",
+      "usedIn": [
+        "Student needs: The attentional cost of receiving a cell phone notification"
+      ],
+      "status": 200,
+      "finalUrl": "https://doi.apa.org/doi/10.1037/xhp0000100",
+      "ms": 341,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:19.722Z"
+    },
+    {
+      "url": "https://doi.org/10.1086/691462",
+      "usedIn": [
+        "Student needs: Brain Drain: The Mere Presence of One's Own Smartphone Reduces Available Cognitive Capacity"
+      ],
+      "status": 403,
+      "finalUrl": "https://www.journals.uchicago.edu/doi/10.1086/691462",
+      "ms": 402,
+      "method": "GET",
+      "result": "blocked-automated",
+      "checkedAt": "2026-11-11T13:23:19.880Z"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.smrv.2014.07.007",
+      "usedIn": [
+        "Student needs: Screen time and sleep among school-aged children and adolescents: a systematic literature review"
+      ],
+      "status": 200,
+      "finalUrl": "https://linkinghub.elsevier.com/retrieve/pii/S1087079214000811",
+      "ms": 1391,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:21.078Z"
+    },
+    {
+      "url": "https://doi.org/10.1521/jscp.2018.37.10.751",
+      "usedIn": [
+        "Student needs: No More FOMO: Limiting Social Media Decreases Loneliness and Depression"
+      ],
+      "status": 403,
+      "finalUrl": "https://guilfordjournals.com/doi/10.1521/jscp.2018.37.10.751",
+      "ms": 651,
+      "method": "GET",
+      "result": "blocked-automated",
+      "checkedAt": "2026-11-11T13:23:20.373Z"
+    },
+    {
+      "url": "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/media-literacy-research/children/childrens-media-use-and-attitudes-report-2025/childrens-media-literacy-report-2025.pdf",
+      "usedIn": [
+        "Student needs: Children and Parents: Media Use and Attitudes Report 2025"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.ofcom.org.uk/siteassets/resources/documents/research-and-data/media-literacy-research/children/childrens-media-use-and-attitudes-report-2025/childrens-media-literacy-report-2025.pdf?v=396621",
+      "ms": 390,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:20.182Z"
+    },
+    {
+      "url": "https://www.pewresearch.org/internet/2022/12/15/teens-and-cyberbullying-2022/",
+      "usedIn": [
+        "Student needs: Teens and Cyberbullying 2022"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.pewresearch.org/internet/2022/12/15/teens-and-cyberbullying-2022/",
+      "ms": 1296,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:21.176Z"
+    },
+    {
+      "url": "https://doi.org/10.1145/3290605.3300616",
+      "usedIn": [
+        "User feedback research: The Race Towards Digital Wellbeing: Issues and Opportunities"
+      ],
+      "status": 403,
+      "finalUrl": "https://dl.acm.org/doi/10.1145/3290605.3300616",
+      "ms": 349,
+      "method": "GET",
+      "result": "blocked-automated",
+      "checkedAt": "2026-11-11T13:23:20.295Z"
+    },
+    {
+      "url": "https://doi.org/10.1145/3290605.3300361",
+      "usedIn": [
+        "User feedback research: Self-Control in Cyberspace: Applying Dual Systems Theory to a Review of Digital Self-Control Tools"
+      ],
+      "status": 403,
+      "finalUrl": "https://dl.acm.org/doi/10.1145/3290605.3300361",
+      "ms": 554,
+      "method": "GET",
+      "result": "blocked-automated",
+      "checkedAt": "2026-11-11T13:23:20.711Z"
+    },
+    {
+      "url": "https://doi.org/10.1145/3313831.3376672",
+      "usedIn": [
+        "User feedback research: 'I Just Want to Hack Myself to Not Get Distracted': Evaluating Design Interventions for Self-Control on Facebook"
+      ],
+      "status": 403,
+      "finalUrl": "https://dl.acm.org/doi/10.1145/3313831.3376672",
+      "ms": 592,
+      "method": "GET",
+      "result": "blocked-automated",
+      "checkedAt": "2026-11-11T13:23:20.774Z"
+    },
+    {
+      "url": "https://doi.org/10.1145/3314403",
+      "usedIn": [
+        "User feedback research: GoalKeeper: Exploring Interaction Lockout Mechanisms for Regulating Smartphone Use"
+      ],
+      "status": 403,
+      "finalUrl": "https://dl.acm.org/doi/10.1145/3314403",
+      "ms": 513,
+      "method": "GET",
+      "result": "blocked-automated",
+      "checkedAt": "2026-11-11T13:23:20.808Z"
+    },
+    {
+      "url": "https://doi.org/10.1086/714365",
+      "usedIn": [
+        "User feedback research: “Your Screen-Time App Is Keeping Track”: Consumers Are Happy to Monitor but Unlikely to Reduce Smartphone Usage"
+      ],
+      "status": 403,
+      "finalUrl": "https://www.journals.uchicago.edu/doi/10.1086/714365",
+      "ms": 364,
+      "method": "GET",
+      "result": "blocked-automated",
+      "checkedAt": "2026-11-11T13:23:20.737Z"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=0K5OO2ybueM",
+      "usedIn": [
+        "Videos: Why our screens make us less happy | Adam Alter"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=0K5OO2ybueM",
+      "ms": 688,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:21.399Z"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=C74amJRp730",
+      "usedIn": [
+        "Videos: How a handful of tech companies control billions of minds every day | Tristan Harris"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=C74amJRp730",
+      "ms": 945,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:21.682Z"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=D4VSG41nDOo",
+      "usedIn": [
+        "Videos: How to use Focus on your iPhone | Apple Support"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=D4VSG41nDOo",
+      "ms": 740,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:21.515Z"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=N1SQR9sri5c",
+      "usedIn": [
+        "Videos: Using Android’s Digital Wellbeing tools to spend less time on the phone"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=N1SQR9sri5c",
+      "ms": 752,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:21.560Z"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=L_2JaFnkZ4o",
+      "usedIn": [
+        "Videos: Focus & Concentration: Crash Course Study Skills #5"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=L_2JaFnkZ4o",
+      "ms": 722,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:21.800Z"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=sQ5oFX8ZMNA",
+      "usedIn": [
+        "Videos: How to Turn on MFA! (We Can Secure Our World)"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=sQ5oFX8ZMNA",
+      "ms": 791,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:21.967Z"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=w68BBPDAWr8",
+      "usedIn": [
+        "Videos: How Password Managers Work - Computerphile"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=w68BBPDAWr8",
+      "ms": 637,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:22.036Z"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=dYmb1qz2zmE",
+      "usedIn": [
+        "Videos: Common Sense Online Privacy Tips"
+      ],
+      "status": 200,
+      "finalUrl": "https://www.youtube.com/watch?v=dYmb1qz2zmE",
+      "ms": 679,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:22.194Z"
+    },
+    {
+      "url": "https://github.com/proginosko/LeechBlockNG",
+      "usedIn": [
+        "Guide: Block distracting websites during study hours"
+      ],
+      "status": 200,
+      "finalUrl": "https://github.com/proginosko/LeechBlockNG",
+      "ms": 804,
+      "method": "HEAD",
+      "result": "pass",
+      "checkedAt": "2026-11-11T13:23:22.364Z"
+    }
+  ],
+  "internal": []
+}

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { NAV } from "./Header";
+import { NAV } from "@/data/nav";
 import { LogoMark } from "./LogoMark";
 import { SITE } from "@/data/site";
 
